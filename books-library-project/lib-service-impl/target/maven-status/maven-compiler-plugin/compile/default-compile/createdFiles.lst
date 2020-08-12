@@ -1,0 +1,4 @@
+lib\service\mapper\BookEntityMapper.class
+lib\service\mapper\BookEntityMapperImpl.class
+lib\service\api\impl\AnotherBookServiceImpl.class
+lib\service\api\impl\BookServiceImpl.class

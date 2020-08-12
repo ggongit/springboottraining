@@ -1,0 +1,87 @@
+syntax = "proto3";
+
+package lib.grpc.services.auto;
+option java_outer_classname = "BookLibraryProtos";
+
+service BookService
+{
+	rpc addBook(BookRequest) returns (SingleBookResponse);
+	rpc getBooksByTitle(TitleRequest) returns (BookListResponse);
+	rpc getBookCounts(EmptyRequest) returns (CountResponse);
+	rpc getAllBooks(EmptyRequest) returns (BookListResponse);
+	rpc deleteBookByIsbn(IsbnRequest) returns (GenericResponse);
+	rpc getBooksByAuthorList(MultipleAuthorsRequest) returns (BookListResponse);
+}
+
+// <------------------ Requests ------------------>
+message EmptyRequest
+{
+
+}
+
+message BookDetails
+{
+	int64 isbn=1;
+	string title=2;
+	string author=3;
+	string publisher=4;
+}
+
+message BookRequest
+{
+	int32 bookRequestId=1;
+	BookDetails bookDetails=2;
+}
+
+message TitleRequest
+{
+	string title=1;
+}
+
+message IsbnRequest
+{
+	int64 isbn=1;
+}
+
+message SingleAuthorRequest
+{
+	string author=1;
+}
+
+message MultipleAuthorsRequest
+{
+	repeated SingleAuthorRequest authorRequest=1;
+}
+
+// <---------------------- Responses --------------------->
+message GenericResponse
+{
+	enum ResponseType
+	{
+		SUCCESS=0;
+		WARNING=1;
+		ERROR=2;
+	}
+
+	ResponseType type=1;
+	string message=2;
+}
+
+message SingleBookResponse
+{
+	BookDetails bookDetails=1;
+	GenericResponse genericResponse=2;
+}
+
+message BookListResponse
+{
+	repeated BookDetails bookList=1;
+	GenericResponse genericResponse=2;
+}
+
+message CountResponse
+{
+	int32 counts=1;
+	GenericResponse genericResponse=2;
+}
+
