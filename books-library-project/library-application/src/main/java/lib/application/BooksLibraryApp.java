@@ -20,7 +20,7 @@ import lib.service.api.BookService;
 
 @SpringBootApplication//(scanBasePackages = "lib")
 @EntityScan(basePackages = {"lib.model"})
-@ComponentScan(basePackages = {"lib.service.api.impl", "lib.service.api", "lib.grpc"})
+@ComponentScan(basePackages = {"lib.service.*", "lib.grpc"})
 @EnableJpaRepositories(basePackages = {"lib.book.repository"})
 @PropertySource("classpath:application.properties")
 public class BooksLibraryApp

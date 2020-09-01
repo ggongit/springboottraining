@@ -114,7 +114,10 @@ public class GrpcBookService extends BookServiceImplBase
 			bookListResponseBuilder.addBookList(bookDetailBuilder);
 		});
 		
-		bookListResponseBuilder.setGenericResponse(getGenericResponseBuilder(ResponseType.SUCCESS, "Books retrieved successfully"));
+		bookListResponseBuilder.setGenericResponse(getGenericResponseBuilder(
+				ResponseType.SUCCESS,
+				bookListResponseBuilder.getBookListCount() + " books retrieved successfully"));
+		
 		responseObserver.onNext(bookListResponseBuilder.build());
 		responseObserver.onCompleted();
 	}
