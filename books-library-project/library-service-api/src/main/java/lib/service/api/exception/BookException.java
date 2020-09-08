@@ -1,0 +1,11 @@
+package lib.service.api.exception;
+
+public class BookException extends Exception{
+
+	private static final long serialVersionUID = 1L;
+	
+	public BookException(String errorMessage) {
+		super(errorMessage);
+	}
+
+}

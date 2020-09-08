@@ -5,12 +5,13 @@ import java.util.List;
 import org.springframework.stereotype.Service;
 
 import lib.dto.BookDTO;
+import lib.service.api.exception.BookException;
 
 
 @Service
 public interface BookService
 {
-	public BookDTO addBook(Long isbn, String title, String author, String publisher);
+	public BookDTO addBook(Long isbn, String title, String author, String publisher) throws BookException;
 	
 	public List<BookDTO> getAllBooks();
 	public BookDTO getBookByIsbn(Long isbn);

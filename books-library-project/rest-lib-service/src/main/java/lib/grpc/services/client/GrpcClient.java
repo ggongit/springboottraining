@@ -2,6 +2,7 @@ package lib.grpc.services.client;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 import javax.annotation.PostConstruct;
 
@@ -11,6 +12,7 @@ import org.springframework.web.server.ResponseStatusException;
 
 import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
+import lib.grpc.services.auto.BookLibraryProtos.BookDetails;
 import lib.grpc.services.auto.BookLibraryProtos.BookListResponse;
 import lib.grpc.services.auto.BookLibraryProtos.BookRequest;
 import lib.grpc.services.auto.BookLibraryProtos.CountResponse;
@@ -61,9 +63,32 @@ public class GrpcClient
 		return bookServiceStub.getBookCounts(EmptyRequest.newBuilder().build());
 	}
 	
-	public BookListResponse getAllBooks()
+	public BookListResponse getAllBooks(String searchText)
 	{
-		return bookServiceStub.getAllBooks(EmptyRequest.newBuilder().build());
+		BookListResponse response = bookServiceStub.getAllBooks(EmptyRequest.newBuilder().build());
+		if(searchText == null || searchText.trim().isEmpty() || response.getBookListCount() == 0)
+		{
+			return response;
+		}
+		
+		BookListResponse.Builder respBuilder = BookListResponse.newBuilder();
+		//@TODO - As of now this capability not exposed in grpc server so as of now doing the 
+		// filtering here to check the UI search feature 
+		response.getBookListList()
+				.stream()
+				.filter(bookDetail->bookDetail.getTitle().toLowerCase().contains(searchText.toLowerCase())
+						|| bookDetail.getAuthor().toLowerCase().contains(searchText.toLowerCase())
+						|| bookDetail.getPublisher().toLowerCase().contains(searchText.toLowerCase())
+						|| String.valueOf(bookDetail.getIsbn()).contains(searchText))
+				.forEach(bookDetail->respBuilder.addBookList(bookDetail));
+		if(respBuilder.getBookListCount() == 0)
+		{
+			//respBuilder.addBookListBuilder();
+		}
+		String message = respBuilder.getBookListCount() + " books retrieved successfully";
+		respBuilder.setGenericResponse(GenericResponse.newBuilder().setType(response.getGenericResponse().getType()).setMessage(message));
+		return respBuilder.build();
+		
 	}
 	
 	public SingleBookResponse addBook(BookRequest bookRequest)

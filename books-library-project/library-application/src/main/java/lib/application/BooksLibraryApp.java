@@ -17,6 +17,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 import lib.grpc.server.GrpcServer;
 import lib.service.api.BookService;
+import lib.service.api.exception.BookException;
 
 @SpringBootApplication//(scanBasePackages = "lib")
 @EntityScan(basePackages = {"lib.model"})
@@ -59,7 +60,7 @@ public class BooksLibraryApp
 		}
 	}
 	
-	private static void testPOJOServices()
+	private static void testPOJOServices() throws BookException
 	{
 		BookService bookService  = applicationContext.getBean("bookServiceInProd", BookService.class);
 

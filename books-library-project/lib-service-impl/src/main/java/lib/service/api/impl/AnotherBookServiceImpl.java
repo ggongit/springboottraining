@@ -6,13 +6,14 @@ import org.springframework.stereotype.Service;
 
 import lib.dto.BookDTO;
 import lib.service.api.BookService;
+import lib.service.api.exception.BookException;
 
 @Service
 public class AnotherBookServiceImpl implements BookService
 {
 
 	@Override
-	public BookDTO addBook(Long iSBN, String title, String author, String publisher) {
+	public BookDTO addBook(Long iSBN, String title, String author, String publisher) throws BookException {
 		// TODO Auto-generated method stub
 		return null;
 	}

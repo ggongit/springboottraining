@@ -4,8 +4,10 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,6 +22,7 @@ import lib.grpc.services.client.GrpcClient;
 
 @RestController
 @RequestMapping("/book")
+@CrossOrigin
 public class BookController 
 {
 	@Autowired
@@ -55,10 +58,10 @@ public class BookController
 		return grpcClient.getAllBookCounts();
 	}
 	
-	@GetMapping(value = "/all", produces = MediaType.APPLICATION_JSON_VALUE)
-	public BookListResponse getAllBooks()
+	@GetMapping(value = {"/all", "/all/{searchText}"}, produces = MediaType.APPLICATION_JSON_VALUE)
+	public BookListResponse getAllBooks(@PathVariable(required = false) String searchText)
 	{
-		return grpcClient.getAllBooks();
+		return grpcClient.getAllBooks(searchText);
 	}
 	
 	@PostMapping(value = "/add", produces = MediaType.APPLICATION_JSON_VALUE)
@@ -67,8 +70,8 @@ public class BookController
 		return grpcClient.addBook(bookRequest);
 	}
 	
-	@DeleteMapping(value = "/byIsbn", produces = MediaType.APPLICATION_JSON_VALUE)
-	public GenericResponse deleteBookByIsbn(@RequestBody long isbn)
+	@DeleteMapping(value = "/byIsbn/{isbn}", produces = MediaType.APPLICATION_JSON_VALUE)
+	public GenericResponse deleteBookByIsbn(@PathVariable long isbn)
 	{
 		return grpcClient.deleteBookByIsbn(isbn);
 	}

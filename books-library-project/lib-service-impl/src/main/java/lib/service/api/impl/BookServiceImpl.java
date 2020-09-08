@@ -12,6 +12,7 @@ import lib.book.repository.BookRepository;
 import lib.dto.BookDTO;
 import lib.model.Book;
 import lib.service.api.BookService;
+import lib.service.api.exception.BookException;
 import lib.service.mapper.BookEntityMapper;
 
 @Service("bookServiceInProd")
@@ -21,8 +22,13 @@ public class BookServiceImpl implements BookService
 	private BookRepository bookRepository;
 	
 	@Override
-	public BookDTO addBook(Long iSBN, String title, String author, String publisher)
+	public BookDTO addBook(Long iSBN, String title, String author, String publisher) throws BookException
 	{
+		if(getBookByIsbn(iSBN) != null)
+		{
+			throw new BookException("Book with given ISBN already exists: " + iSBN);
+		}
+		
 		Book book = bookRepository.save(new Book(iSBN, title, author, publisher));
 		return convertBookToBookDTO(book);
 	}

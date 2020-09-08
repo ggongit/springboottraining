@@ -13,6 +13,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import lib.dto.BookDTO;
 import lib.service.api.BookService;
+import lib.service.api.exception.BookException;
 
 @RunWith(SpringRunner.class)
 //@SpringBootTest
@@ -51,7 +52,7 @@ public class BookServicesTest
 //	}
 //	
 	@Test
-	public void shouldAddFirstBookSuccessfully()
+	public void shouldAddFirstBookSuccessfully() throws BookException
 	{
 		BookDTO book = bookService.addBook(1617292540L, "Spring Boot in Action", "Craig Walls", "Manning Publications");
 		Assert.assertNotNull(book);
@@ -62,7 +63,7 @@ public class BookServicesTest
 	}
 	
 	@Test
-	public void shouldAddSecondBookSuccessfully()
+	public void shouldAddSecondBookSuccessfully() throws BookException
 	{
 		BookDTO book1 = bookService.addBook(1617292540L, "Spring Boot in Action", "Craig Walls", "Manning Publications");
 		BookDTO book2 =  bookService.addBook(618260307L, "The Hobbit", "J. R. R. Tolkien", "Houghton Mifflin USA");
@@ -74,14 +75,14 @@ public class BookServicesTest
 	}
 	
 	@Test
-	public void shouldRetrieveBookByIsbnSuccessfully()
+	public void shouldRetrieveBookByIsbnSuccessfully() throws BookException
 	{
 		bookService.addBook(1617292540L, "Spring Boot in Action", "Craig Walls", "Manning Publications");
 		Assert.assertNotNull(bookService.getBookByIsbn(1617292540L));
 	}
 	
 	@Test
-	public void shouldRetrieveBookByTitleSuccessfully()
+	public void shouldRetrieveBookByTitleSuccessfully() throws BookException
 	{
 		bookService.addBook(1617292540L, "Spring Boot in Action", "Craig Walls", "Manning Publications");
 		List<BookDTO> booksByTitle = bookService.getBooksByTitle("Spring Boot in Action");
@@ -90,7 +91,7 @@ public class BookServicesTest
 	}
 	
 	@Test
-	public void shouldRetrieveBookByAuthorSuccessfully()
+	public void shouldRetrieveBookByAuthorSuccessfully() throws BookException
 	{
 		bookService.addBook(1617292540L, "Spring Boot in Action", "Craig Walls", "Manning Publications");
 		List<BookDTO> booksByAuthor = bookService.getBooksByAuthor("Craig Walls");
@@ -99,7 +100,7 @@ public class BookServicesTest
 	}
 	
 	@Test
-	public void shouldRetrieveBookByPublisherSuccessfully()
+	public void shouldRetrieveBookByPublisherSuccessfully() throws BookException
 	{
 		bookService.addBook(1617292540L, "Spring Boot in Action", "Craig Walls", "Manning Publications");
 		List<BookDTO> booksByPublisher = bookService.getBooksByPublisher("Manning Publications");
@@ -108,7 +109,7 @@ public class BookServicesTest
 	}
 	
 	@Test
-	public void shouldRetrieveAllBooksSuccessfully()
+	public void shouldRetrieveAllBooksSuccessfully() throws BookException
 	{
 		bookService.addBook(1617292540L, "Spring Boot in Action", "Craig Walls", "Manning Publications");
 		bookService.addBook(618260307L, "The Hobbit", "J. R. R. Tolkien", "Houghton Mifflin USA");
@@ -119,7 +120,7 @@ public class BookServicesTest
 	}
 	
 	@Test
-	public void shouldRetrieveAllBookCountsSuccessfully()
+	public void shouldRetrieveAllBookCountsSuccessfully() throws BookException
 	{
 		bookService.addBook(1617292540L, "Spring Boot in Action", "Craig Walls", "Manning Publications");
 		bookService.addBook(618260307L, "The Hobbit", "J. R. R. Tolkien", "Houghton Mifflin USA");
@@ -127,7 +128,7 @@ public class BookServicesTest
 	}
 	
 	@Test
-	public void shouldDeleteBookSuccessfully()
+	public void shouldDeleteBookSuccessfully() throws BookException
 	{
 		bookService.addBook(618260307L, "The Hobbit", "J. R. R. Tolkien", "Houghton Mifflin USA");
 		bookService.deleteBookByIsbn(618260307L);

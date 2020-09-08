@@ -24,6 +24,7 @@ import lib.grpc.services.auto.BookLibraryProtos.SingleBookResponse;
 import lib.grpc.services.auto.BookLibraryProtos.TitleRequest;
 import lib.grpc.services.auto.BookServiceGrpc.BookServiceImplBase;
 import lib.service.api.BookService;
+import lib.service.api.exception.BookException;
 
 @GRpcService
 public class GrpcBookService extends BookServiceImplBase
@@ -42,28 +43,33 @@ public class GrpcBookService extends BookServiceImplBase
 		BookDetails.Builder bookDetailsBuilder = BookDetails.newBuilder();
 		SingleBookResponse.Builder finalResponseBuilder = SingleBookResponse.newBuilder();
 		
-		addedBook = bookService.addBook(
-				requestedBookDetails.getIsbn(),
-				requestedBookDetails.getTitle(),
-				requestedBookDetails.getAuthor(),
-				requestedBookDetails.getPublisher());
-		
-		Optional<BookDTO> bookOptional = Optional.ofNullable(addedBook);
-		
-		bookOptional.ifPresent(book->{
+		try {
+			addedBook = bookService.addBook(
+					requestedBookDetails.getIsbn(),
+					requestedBookDetails.getTitle(),
+					requestedBookDetails.getAuthor(),
+					requestedBookDetails.getPublisher());
 			
-			messageBuilder.setType(ResponseType.SUCCESS).setMessage("Given book is added successfully");
+			Optional<BookDTO> bookOptional = Optional.ofNullable(addedBook);
 			
-			bookDetailsBuilder
-				.setIsbn(book.getIsbn())
-				.setTitle(book.getTitle())
-				.setAuthor(book.getAuthor())
-				.setPublisher(book.getPublisher());
-		});
-		
-		if(bookOptional.isPresent() == false)
-		{
-			messageBuilder.setType(ResponseType.ERROR).setMessage("Failed to add book");
+			bookOptional.ifPresent(book->{
+				
+				messageBuilder.setType(ResponseType.SUCCESS).setMessage("Given book is added successfully");
+				
+				bookDetailsBuilder
+					.setIsbn(book.getIsbn())
+					.setTitle(book.getTitle())
+					.setAuthor(book.getAuthor())
+					.setPublisher(book.getPublisher());
+			});
+			
+			if(bookOptional.isPresent() == false)
+			{
+				messageBuilder.setType(ResponseType.ERROR).setMessage("Failed to add book");
+			}
+		} 
+		catch (BookException e) {
+			messageBuilder.setType(ResponseType.ERROR).setMessage(e.getMessage());
 		}
 		
 		SingleBookResponse bookResponse = finalResponseBuilder
