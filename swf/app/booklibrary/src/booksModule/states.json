@@ -1,0 +1,27 @@
+{
+    "cfRoot": {
+        "abstract": true,
+        "view": "cfRoot"
+    },
+    "booksFrame": {
+        "abstract": true,
+        "data": {
+            "headerTitle": "Books Library",
+            "browserSubTitle": "Assignment",
+            "viewBase": "myBooks"
+        },
+        "view": "cfLocation",
+        "parent": "cfRoot",
+        "dependencies": []
+    },
+    "books": {
+        "url": "/books",
+        "data": {
+            "label": "Library Books",
+            "nameToken": "",
+            "clientScopeURI": ""
+        },
+        "parent": "booksFrame",
+        "type": "subLocation"
+    }
+}

@@ -1,0 +1,5 @@
+{
+    "booksAuthenticator": {
+        "dep": "js/booksAuthenticatorService"
+    }
+}

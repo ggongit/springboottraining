@@ -1,0 +1,5 @@
+{
+    "name": "booksModule",
+    "description": "This is the module to handle books related operation",
+    "skipTest": true
+}

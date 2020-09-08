@@ -1,0 +1,8 @@
+{
+    "name": "booklib",
+    "solutionName": "booklib-kit",
+    "kits": [
+        "booklib-kit"
+    ]
+}
+

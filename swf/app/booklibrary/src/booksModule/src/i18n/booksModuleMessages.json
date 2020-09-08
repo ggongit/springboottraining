@@ -1,0 +1,9 @@
+{
+    "newWorkspaceName": "newWorkspace",
+    "booksText": "!! A Books Library !!",
+    "bookAuthor": "Author",
+    "bookPublisher": "Publisher",
+    "bookIsbn": "Isbn",
+    "addBookPanelTitle": "Add New Book",
+    "addBook": "Add Book"
+}

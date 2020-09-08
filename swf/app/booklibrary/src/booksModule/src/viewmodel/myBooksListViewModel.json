@@ -1,0 +1,129 @@
+{
+    "schemaVersion": "1.0.0",
+    "imports": [
+        "js/aw-panel.directive",
+        "js/aw-default-cell.directive",
+        "js/aw-list.directive",
+        "js/aw-search-box.directive"
+    ],
+    "dataProviders": {
+        "retriveBooks": {
+            "action": "getBooks",
+            "response": "{{data.searchResults}}",
+            "totalFound": "{{data.totalFound}}",
+            "selectionModelMode": "single",
+            "inputData": {
+                "selectionModel": "{{subPanelContext.selectionModel}}"
+            }
+        }
+    },
+    "actions": {
+        "reveal": {
+            "actionType": "dataProvider",
+            "method": "retriveBooks"
+        },
+        "getBooks": {
+            "actionType": "RESTService",
+            "serviceName": "",
+            "method": "GET",
+            "inputData": {
+                "request": {
+                    "method": "GET",
+                    "withCredentials": false,
+                    "url": "http://localhost:9999/book/all/{{data.searchBox.dbValue}}"
+                }
+            },
+            "dataParsers": [{
+                "id": "bookParser",
+                "responseObjs": "data.bookList"
+            }],
+            "outputData": {
+                "searchResults": "data.bookList",
+                "totalFound": "data.bookList.length",
+                "ctx.search.totalFound": "data.bookList.length",
+                "allBookData": "data"
+            }
+        },
+        "refreshDataProvider": {
+            "actionType": "Event",
+            "method": "Event",
+            "inputData": {
+                "events": [{
+                    "name": "primaryWorkarea.reset"
+                }]
+            }
+        },
+        "doSearch": {
+            "actionType": "Event",
+            "method": "Event",
+            "inputData": {
+                "events": [
+                    {
+                        "name": "searchInitiated"
+                    }
+                ]
+            }
+        },
+        "searchBooks": {
+            "actionType": "dataProvider",
+            "method": "retriveBooks"
+        }
+    },
+    "dataParseDefinitions": {
+        "bookParser": {
+            "identifier": "{{response.isbn}}",
+            "cellHeader1": "{{response.title}}",
+            "typeIconURL": "assets/images/book.jpg",
+            "cellProperties": {
+                "Author": {
+                    "key": "Author",
+                    "displayName": "{{i18n.bookAuthor}}",
+                    "value": "{{response.author}}",
+                    "displayValue": "{{response.author}}",
+                    "type": "String"
+                },
+                "Publisher": {
+                    "key": "Publisher",
+                    "displayName": "{{i18n.bookPublisher}}",
+                    "value": "{{response.publisher}}",
+                    "displayValue": "{{response.publisher}}",
+                    "type": "String"
+                },
+                "Isbn": {
+                    "key": "Isbn",
+                    "displayName": "{{i18n.bookIsbn}}",
+                    "value": "{{response.isbn}}",
+                    "displayValue": "{{response.isbn}}",
+                    "type": "String"
+                }
+            },
+            "props": {
+
+            }
+        }
+    },
+    "onEvent": [{
+        "eventId": "aw.refreshPrimaryWorkArea",
+        "action": "refreshDataProvider"
+    },
+    {
+        "eventId": "searchInitiated",
+        "action": "searchBooks"
+    }],
+    "data": {
+        "searchBox": {
+            "displayName": "Enter string value",
+            "type": "STRING"
+        },
+        "searchBoxPlaceHolder": {
+            "dbValue": "{{i18n.searchString}}"
+        }
+    },
+    "i18n": {
+        "bookAuthor": ["booksModuleMessages"],
+        "bookPublisher": ["booksModuleMessages"],
+        "bookIsbn": ["booksModuleMessages"],
+        "searchString": "Required"
+    }
+
+}

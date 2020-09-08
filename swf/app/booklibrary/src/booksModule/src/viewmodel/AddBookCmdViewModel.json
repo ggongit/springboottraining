@@ -1,0 +1,138 @@
+{
+    "schemaVersion": "1.0.0",
+    "imports": [
+        "js/aw-command-panel.directive",
+        "js/aw-panel-body.directive",
+        "js/aw-panel-footer.directive",
+        "js/aw-button.directive",
+        "js/aw-i18n.directive",
+        "js/aw-textbox.directive",
+        "js/aw-numeric.directive"
+    ],
+    "data": {
+        "Title": {
+            "displayName": "Title",
+            "type": "STRING",
+            "isRequired": true,
+            "isEditable": "true",
+            "dbValue": "",
+            "dispValue": ""
+        },
+        "Author": {
+            "displayName": "Author",
+            "type": "STRING",
+            "isRequired": true,
+            "isEditable": "true",
+            "dbValue": "",
+            "dispValue": ""
+        },
+        "Publisher": {
+            "displayName": "Publisher",
+            "type": "STRING",
+            "isRequired": true,
+            "isEditable": "true",
+            "dbValue": "",
+            "dispValue": ""
+        },
+        "Isbn": {
+            "displayName": "ISBN",
+            "type": "INTEGER",
+            "isRequired": "true",
+            "isEditable": "true",
+            "dbValue": "",
+            "dispValue": ""
+        }
+    },
+    "actions": {
+        "addBook": {
+            "actionType": "RESTService",
+            "inputData": {
+                "request": {
+                    "method": "POST",
+                    "withCredentials": false,
+                    "url": "http://localhost:9999/book/add",
+                    "data": {
+                        "bookDetails":{
+                            "isbn": "{{data.Isbn.dbValue}}",
+                            "title": "{{data.Title.dbValue}}",
+                            "author": "{{data.Author.dbValue}}",
+                            "publisher": "{{data.Publisher.dbValue}}"
+                        }
+                    }
+                }
+            },
+            "outputData": {
+                "overallStatus": "data.genericResponse",
+                "bookDetailsStatus": "data.bookDetails"
+            },
+            "actionMessages": {
+                "success":[
+                    {
+                        "message": "addBookWarningMessage",
+                        "condition": "conditions.errorResponse"
+                    },
+                    {
+                        "message": "addBookSuccessMessage",
+                        "condition": "conditions.successResponse"
+                    }
+                ]
+            },
+            "events": {
+                "success": [{
+                        "name": "aw.refreshPrimaryWorkArea",
+                        "condition": "conditions.successResponse"
+                    },
+                    {
+                        "name": "complete",
+                        "condition": "conditions.successResponse",
+                        "eventData": {
+                            "source": "toolAndInfoPanel"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "dataProviders": {},
+    "onEvent": [],
+    "i18n": {
+        "addBookPanelTitle": ["booksModuleMessages"],
+        "addBook": ["booksModuleMessages"]
+    },
+    "messages": {
+        "addBookSuccessMessage": {
+            "messageType": "INFO",
+            "messageText": "{{data.overallStatus.message}}"
+        },
+        "addBookWarningMessage": {
+            "messageType": "WARNING",
+            "messageText": "{0}",
+            "messageTextParams": [
+                "{{data.overallStatus.message}}"
+            ]
+        }
+    },
+    "conditions": {
+        "errorResponse": {
+            "expression": "data.overallStatus.type === 'ERROR'"
+        },
+        "successResponse": {
+            "expression": {
+                "$and": [
+                    {
+                    "$source": "data.bookDetailsStatus.isbn",
+                    "$query": {
+                        "$ne": []
+                        }
+                    },
+                    {
+                    "$source": "data.bookDetailsStatus.isbn",
+                    "$query": {
+                        "$notNull": true
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

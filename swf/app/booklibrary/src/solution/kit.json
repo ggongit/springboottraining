@@ -1,0 +1,29 @@
+{
+    "name": "booklib-kit",
+    "level": 6,
+    "solutionDef": {
+        "solutionId": "booklib-solution",
+        "solutionName": "booklib-solution",
+        "solutionVersion": "1.0",
+        "browserTitle": "Books Library",
+        "brandName": "Brand booklib",
+        "companyName": "Siemens PLM Software",
+        "copyrightText": "Copyright © 2020 Siemens Product Lifecycle Management Software Inc.",
+        "workspaces": [
+            "newWorkspace"
+        ],
+        "authenticator": "booksAuthenticator",
+        "defaultWorkspace": "newWorkspace"
+    },
+    "kitDeps": [
+        "afx"
+    ],
+    "modules": [
+        "booksModule",
+        "siteModule"
+    ],
+    "imageRepositoryConfiguration": {
+        "actionType": "GET",
+        "url": "{{baseUrl}}"
+    }
+}

@@ -1,0 +1,40 @@
+<aw-flex-column class="awLargeHeader" width="fill" aw-class="['aw-layout-locationPanel', data.locationPanelStyle, {'aw-layout-summaryOnly': data.layoutSummaryOnly === 'true'}]">
+    <aw-flex-row height="6.33f" class="aw-layout-header" wrap-style="nowrap" visible-when="!ctx.fullscreen" align-content="center">
+        <!-- Left (HEADER) Area -->
+        <aw-flex-column class="awHeader" width="fill" justify="left">
+            <aw-flex-row align-content="center" class="aw-layout-headerTitleContainer">
+                <aw-header-title headerVMO="data.headerViewModel" headerTitle="ctx['location.titles'].headerTitle" headerProperties="data.headerProperties"></aw-header-title>
+            </aw-flex-row>
+            <aw-flex-row>
+                <aw-sublocation-title>
+                    <div class="aw-layout-validationErrorMessage" exist-when="ctx.sublocationTitleErrorMessage">
+                        {{ctx.sublocationTitleErrorMessage}}
+                    </div>
+                    <aw-workarea-title provider="data.breadCrumbProvider" breadcrumb-config="data.breadcrumbConfig" exist-when="!ctx.sublocationTitleErrorMessage"></aw-workarea-title>
+                </aw-sublocation-title>
+            </aw-flex-row>
+        </aw-flex-column>
+        <!-- Center Area -->
+        <!-- <aw-column width="fill" align-content="center" justify="center">
+                    PUT YOUR CENTER-AREA CODE HERE
+                </aw-column> -->
+
+        <!-- Right Area -->
+        <!-- <aw-column width="fill" align-content="end" justify="right">
+                    PUT YOUR RIGHT-AREA CODE HERE
+                </aw-column> -->
+
+        <!-- Right Most SIEMENS Logo Area -->
+        <aw-flex-column width="8f" justify="center">
+            <aw-logo></aw-logo>
+        </aw-flex-column>
+    </aw-flex-row>
+    <aw-flex-row height="4f">
+        <aw-tab-set class="awTabs" action="switchSubLocation" exist-when="data.subLocationTabs.length > 1 && !ctx.fullscreen" tabs="data.subLocationTabs" class="aw-layout-subLocationTitles"></aw-tab-set>
+    </aw-flex-row>
+    <aw-flex-row height="fill" wrap-style="nowrap" class="aw-layout-subLocation afx-content-background">
+        <aw-flex-column width="fill" wrap-style="nowrap">
+            <ui-view class="aw-layout-flexColumn" ></ui-view>
+        </aw-flex-column>
+    </aw-flex-row>
+</aw-flex-column>

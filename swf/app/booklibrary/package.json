@@ -1,0 +1,19 @@
+{
+    "name": "booklib",
+    "version": "1.0.0",
+    "description": "An afx based solution",
+    "scripts": {
+        "prebuild": "node node_modules/afx/build/js/createCache.js",
+        "build": "gulp --gulpfile node_modules/afx/gulpfile.js --cwd .",
+        "audit": "gulp --gulpfile node_modules/afx/gulpfile.js --cwd . audit",
+        "test": "gulp --gulpfile node_modules/afx/gulpfile.js --cwd . test",
+        "start": "express --path out/site_last --port 3000 --launch",
+        "clean": "gulp --gulpfile node_modules/afx/gulpfile.js --cwd . clean"
+    },
+    "dependencies": {
+        "afx": "^4.3.0-110",
+        "afx-gateway": "next"
+    },
+    "author": "Siemens Product Lifecycle Management Software Inc.",
+    "license": "UNLICENSED"
+}

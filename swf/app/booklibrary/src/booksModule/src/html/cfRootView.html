@@ -1,0 +1,35 @@
+<aw-flex-column width="12">
+    <aw-flex-row class="awRoot">
+        <aw-progress-indicator visible-when="!ctx.fullscreen"></aw-progress-indicator>
+        <!-- L.H.N. AREA -->
+        <aw-flex-column width="5.33f" class="global-navigation-toolbar">
+            <!-- LHN (Top) App Logo Area -->
+            <aw-flex-row height="0.5" offset="1f">
+                <aw-flex-column align-content="center">
+                    <aw-image source="data.appLogo"></aw-image>
+                </aw-flex-column>
+            </aw-flex-row>
+            <!-- LHN (Top) Navigation Items Area -->
+            <!-- Put your LHN (Top) Navigation Items Command through this anchor: aw_globalNavigationbar -->
+            <!-- Put your LHN (Bottom) User Commands Commands through this anchor: aw_userSessionbar -->
+            <aw-flex-row height="fill">
+                <aw-toolbar first-anchor="aw_globalNavigationbar" second-anchor="aw_userSessionbar"
+                    orientation="VERTICAL" reverse="false"></aw-toolbar>
+            </aw-flex-row>
+            <!-- LHN (Bottom) AVATAR AREA which opens LHN Panel -->
+            <aw-flex-row offset-bottom="1f" height="4f" align-content="center">
+                <aw-flex-column align-content="center">
+                    <aw-avatar size="xsmall" source="" action="userAvatarAction"></aw-avatar>
+                </aw-flex-column>
+            </aw-flex-row>
+        </aw-flex-column>
+        <aw-flex-column width="auto" class="global-navigation">
+            <aw-sidenav id="globalNavigationSideNav" config="data.sideNavData"></aw-sidenav>
+        </aw-flex-column>
+        <aw-flex-column width="fill">
+            <ui-view class="aw-layout-flexColumn" ></ui-view>
+        </aw-flex-column>
+        <aw-flex-column width="1.33f" justify="right">
+        </aw-flex-column>
+    </aw-flex-row>
+</aw-flex-column>
