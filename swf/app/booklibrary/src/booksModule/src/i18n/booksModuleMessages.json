@@ -5,5 +5,8 @@
     "bookPublisher": "Publisher",
     "bookIsbn": "Isbn",
     "addBookPanelTitle": "Add New Book",
-    "addBook": "Add Book"
+    "addBook": "Add Book",
+    "loginTitle": "Login to Server",
+    "login": "Login",
+    "cancel": "Cancel"
 }

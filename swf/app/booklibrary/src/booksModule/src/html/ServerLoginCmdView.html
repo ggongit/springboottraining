@@ -1,0 +1,11 @@
+<aw-command-panel caption="{{i18n.loginTitle}}">
+    <aw-panel-body>
+        <aw-textbox prop="data.ServerUrl"></aw-textbox>
+        <aw-textbox prop="data.UserId"></aw-textbox>
+        <aw-password prop="data.Password"></aw-password>
+      </aw-panel-body>
+    <aw-panel-footer>
+        <aw-button action="login" enable-when="conditions.allInputsExist"><aw-i18n>i18n.login</aw-i18n></aw-button>
+        <aw-button action="cancelLogin" button-type="base">{{i18n.cancel}}</aw-button>
+    </aw-panel-footer>
+</aw-command-panel>

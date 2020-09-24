@@ -10,6 +10,21 @@
             "title": "Delete Book",
             "description": "Delete the selected book from the list."
         },
+        "ServerLoginCmd":{
+            "iconId": "cmdLinktoNX",
+            "title": "Login",
+            "description": "Login to server."
+        },
+        "ServerLogoutCmd":{
+            "iconId": "cmdUnlinkfromNX",
+            "title": "Logout",
+            "description": "Logout from server."
+        },
+        "SaveBookCmd":{
+            "iconId": "cmdUpload",
+            "title": "Save into Server",
+            "description": "Save the selected book into server."
+        },
         "Awp0ModelObjListDisplayToggles": {
             "isShuttle": true
         },
@@ -26,17 +41,40 @@
         "addBookCommandHandler": {
             "id": "AddBookCmd",
             "action": "addBook",
-            "activeWhen": {
-                "condition": "conditions.noSelection"
-            },
+            "activeWhen": true,
             "visibleWhen": true,
-            "enableWhen": {
-                "condition": "conditions.noSelection"
-            }
+            "enableWhen":  true
         },
         "deleteBookCommandHandler": {
             "id": "DeleteBookCmd",
             "action": "deleteBookConfirmation",
+            "activeWhen": true,
+            "visibleWhen": true,
+            "enableWhen": {
+                "condition": "conditions.singleSelection"
+            }
+        },
+        "serverLoginCommandHandler": {
+            "id": "ServerLoginCmd",
+            "action": "loginServer",
+            "activeWhen": true,
+            "visibleWhen": true,
+            "enableWhen": {
+                "condition": "conditions.isUserNotLoggedin"
+            }
+        },
+        "serverLogoutCommandHandler": {
+            "id": "ServerLogoutCmd",
+            "action": "logoutServer",
+            "activeWhen": true,
+            "visibleWhen": true,
+            "enableWhen": {
+                "condition": "conditions.isUserLoggedin"
+            }
+        },
+        "saveBookCommandHandler": {
+            "id": "SaveBookCmd",
+            "action": "saveBook",
             "activeWhen": true,
             "visibleWhen": true,
             "enableWhen": {
@@ -76,8 +114,23 @@
             "uiAnchor": "aw_rightWall",
             "priority": 20
         },
+        "ServerLoginCmdPlacement": {
+            "id": "ServerLoginCmd",
+            "uiAnchor": "aw_rightWall",
+            "priority": 30
+        },
+        "ServerLogoutCmdPlacement": {
+            "id": "ServerLogoutCmd",
+            "uiAnchor": "aw_rightWall",
+            "priority": 40
+        },
         "deleteBookCmdPlacement": {
             "id": "DeleteBookCmd",
+            "uiAnchor": "aw_primaryWorkArea",
+            "priority": 50
+        },
+        "saveBookCmdPlacement": {
+            "id": "SaveBookCmd",
             "uiAnchor": "aw_primaryWorkArea",
             "priority": 100
         },
@@ -118,8 +171,15 @@
         },
         "isListView": {
             "expression": "ctx.ViewModeContext.ViewModeContext === 'ListView'"
-        },        "isSummaryView": {
+        },
+        "isSummaryView": {
             "expression": "ctx.ViewModeContext.ViewModeContext === 'SummaryView'"
+        },
+        "isUserNotLoggedin" : {
+            "expression": "true"
+        },
+        "isUserLoggedin" : {
+            "expression": "true"
         }
     },
     "actions": {
@@ -155,6 +215,81 @@
             "events": {
                 "success": [{
                     "name": "aw.refreshPrimaryWorkArea"
+                }]
+            }
+        },
+        "loginServer": {
+            "actionType": "JSFunction",
+            "method": "activateCommandPanel",
+            "deps": "js/commandPanel.service",
+            "inputData": {
+                "commandId": "ServerLoginCmd",
+                "location": "aw_toolsAndInfo"
+            }
+        },
+        "logoutServer": {
+            "actionType": "RESTService",
+            "method": "POST",
+            "inputData": {
+                "request": {
+                    "method": "POST",
+                    "withCredentials": false,
+                    "url": "http://localhost:9999/book/logout"
+                }
+            },
+            "outputData": {
+                "logoutResponse": "data"
+            },
+            "actionMessages": {
+                "success":[
+                    {
+                        "message": "logoutErrorMessage",
+                        "condition": "data.logoutResponse.type === 'ERROR'"
+                    },
+                    {
+                        "message": "logoutWarningMessage",
+                        "condition": "data.logoutResponse.type === 'WARNING'"
+                    },
+                    {
+                        "message": "logoutSuccessMessage",
+                        "condition": "data.logoutResponse.type === 'SUCCESS'"
+                    }
+                ]
+            }
+        },
+        "saveBook": {
+            "actionType": "RESTService",
+            "method": "POST",
+            "inputData": {
+                "request": {
+                    "method": "POST",
+                    "withCredentials": false,
+                    "url": "http://localhost:9999/book/save/{{ctx.selected.uid}}"
+                }
+            },
+            "outputData": {
+                "saveBookResponse": "data"
+            },
+            "actionMessages": {
+                "success":[
+                    {
+                        "message": "saveBookErrorMessage",
+                        "condition": "data.saveBookResponse.type === 'ERROR'"
+                    },
+                    {
+                        "message": "saveBookWarningMessage",
+                        "condition": "data.saveBookResponse.type === 'WARNING'"
+                    },
+                    {
+                        "message": "saveBookSuccessMessage",
+                        "condition": "data.saveBookResponse.type === 'SUCCESS'"
+                    }
+                ]
+            },
+            "events": {
+                "success": [{
+                    "name": "aw.refreshPrimaryWorkArea",
+                    "condition": "data.saveBookResponse.type === 'SUCCESS'"
                 }]
             }
         },
@@ -197,6 +332,36 @@
             "messageTextParams": [
                 "{{ctx.selected.cellHeader1}}"
             ]
+        },
+        "saveBookSuccessMessage": {
+            "messageType": "INFO",
+            "messageText": "{{data.saveBookResponse.message}}"
+        },
+        "saveBookWarningMessage": {
+            "messageType": "WARNING",
+            "messageText": "{0}",
+            "messageTextParams": [
+                "{{data.saveBookResponse.message}}"
+            ]
+        },
+        "saveBookErrorMessage": {
+            "messageType": "ERROR",
+            "messageText": "{{data.saveBookResponse.message}}"
+        },
+        "logoutSuccessMessage": {
+            "messageType": "INFO",
+            "messageText": "{{data.logoutResponse.message}}"
+        },
+        "logoutWarningMessage": {
+            "messageType": "WARNING",
+            "messageText": "{0}",
+            "messageTextParams": [
+                "{{data.logoutResponse.message}}"
+            ]
+        },
+        "logoutErrorMessage": {
+            "messageType": "ERROR",
+            "messageText": "{{data.logoutResponse.message}}"
         }
     },
     "i18n": {

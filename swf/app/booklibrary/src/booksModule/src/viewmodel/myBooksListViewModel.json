@@ -95,6 +95,13 @@
                     "value": "{{response.isbn}}",
                     "displayValue": "{{response.isbn}}",
                     "type": "String"
+                },
+                "RepoId": {
+                    "key": "RepoId",
+                    "displayName": "RepoId",
+                    "value": "{{response.repoId}}",
+                    "displayValue": "{{response.repoId}}",
+                    "type": "String"
                 }
             },
             "props": {

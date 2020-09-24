@@ -1,0 +1,138 @@
+{
+    "schemaVersion": "1.0.0",
+    "imports": [
+        "js/aw-command-panel.directive",
+        "js/aw-panel-body.directive",
+        "js/aw-textbox.directive",
+        "js/aw-password.directive",
+        "js/aw-panel-footer.directive",
+        "js/aw-button.directive",
+        "js/enable-when.directive",
+        "js/aw-i18n.directive",
+        "js/aw-numeric.directive"
+    ],
+    "data": {
+        "ServerUrl": {
+            "displayName": "Server Url",
+            "type": "STRING",
+            "isRequired": true,
+            "isEditable": "true",
+            "dbValue": "http://localhost:8080/nuxeo",
+            "dispValue": "http://localhost:8080/nuxeo"
+        },
+        "UserId": {
+            "displayName": "User Id",
+            "type": "STRING",
+            "isRequired": true,
+            "isEditable": "true",
+            "dbValue": "",
+            "dispValue": ""
+        },
+        "Password": {
+            "displayName": "Password",
+            "type": "STRING",
+            "isRequired": true,
+            "isEditable": "true",
+            "dbValue": "",
+            "dispValue": ""
+        }
+    },
+    "actions": {
+        "login": {
+            "actionType": "RESTService",
+            "inputData": {
+                "request": {
+                    "method": "POST",
+                    "withCredentials": false,
+                    "url": "http://localhost:9999/book/login",
+                    "data": {
+                        "serverUrl": "{{data.ServerUrl.dbValue}}",
+                        "userId": "{{data.UserId.dbValue}}",
+                        "password": "{{data.Password.dbValue}}"
+                    }
+                }
+            },
+            "outputData": {
+                "loginStatus": "data"
+            },
+            "actionMessages": {
+                "success":[
+                    {
+                        "message": "loginErrorMessage",
+                        "condition": "conditions.errorResponse"
+                    },
+                    {
+                        "message": "loginWarningMessage",
+                        "condition": "conditions.warningResponse"
+                    },
+                    {
+                        "message": "loginSuccessMessage",
+                        "condition": "conditions.successResponse"
+                    }
+                ]
+            },
+            "events": {
+                "success": [
+                    {
+                        "name": "complete",
+                        "condition": "conditions.successResponse",
+                        "eventData": {
+                            "source": "toolAndInfoPanel"
+                        }
+                    }
+                ]
+            }
+        },
+        "cancelLogin": {
+            "actionType": "Event",
+            "method": "Event",
+            "inputData": {
+                "ctx": "{{ctx}}",
+                "events": [{
+                    "name": "complete",
+                    "eventData": {
+                        "source": "toolAndInfoPanel"
+                    }
+                }]
+            }
+        }
+    },
+    "dataProviders": {},
+    "onEvent": [],
+    "i18n": {
+        "loginTitle": ["booksModuleMessages"],
+        "login": ["booksModuleMessages"],
+        "cancel": ["booksModuleMessages"]
+    },
+    "messages": {
+        "loginSuccessMessage": {
+            "messageType": "INFO",
+            "messageText": "{{data.loginStatus.message}}"
+        },
+        "loginWarningMessage": {
+            "messageType": "WARNING",
+            "messageText": "{0}",
+            "messageTextParams": [
+                "{{data.loginStatus.message}}"
+            ]
+        },
+        "loginErrorMessage": {
+            "messageType": "ERROR",
+            "messageText": "{{data.loginStatus.message}}"
+        }
+    },
+    "conditions": {
+        "errorResponse": {
+            "expression": "data.loginStatus.type === 'ERROR'"
+        },
+        "warningResponse": {
+            "expression": "data.loginStatus.type === 'WARNING'"
+        },
+        "successResponse": {
+            "expression": "data.loginStatus.type === 'SUCCESS'"
+        },
+        "allInputsExist": {
+            "expression": "(data.ServerUrl.uiValue !== '') && (data.UserId.uiValue !== '') && (data.Password.uiValue !== '')"
+          }
+    }
+}
