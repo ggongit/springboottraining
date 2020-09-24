@@ -1,1 +1,2 @@
 lib\book\repository\BookRepository.class
+lib\book\repository\BookServerInfoRepository.class

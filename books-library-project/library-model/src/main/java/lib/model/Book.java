@@ -1,10 +1,13 @@
 package lib.model;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
 
 @Entity
 public class Book
@@ -22,7 +25,11 @@ public class Book
 	@Column(nullable = false)
 	private String publisher;
 	
-	protected Book()
+//	@OneToOne(mappedBy="book", cascade = {CascadeType.MERGE,CascadeType.REFRESH}, fetch = FetchType.EAGER)
+	@OneToOne(mappedBy="book", cascade = {CascadeType.REMOVE})
+	private BookServerInfo bookServerInfo;
+	
+	public Book()
 	{
 		
 	}
@@ -61,6 +68,26 @@ public class Book
 		return publisher;
 	}
 	
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+	public void setIsbn(Long isbn) {
+		this.isbn = isbn;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+	public void setAuthor(String author) {
+		this.author = author;
+	}
+
+	public void setPublisher(String publisher) {
+		this.publisher = publisher;
+	}
+
 	@Override
 	public String toString() 
 	{

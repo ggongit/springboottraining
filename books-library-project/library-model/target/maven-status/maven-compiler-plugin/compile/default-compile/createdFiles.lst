@@ -1,2 +1,3 @@
 lib\dto\BookDTO.class
+lib\model\BookServerInfo.class
 lib\model\Book.class

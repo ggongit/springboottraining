@@ -22,6 +22,7 @@ lib\grpc\services\auto\BookLibraryProtos$EmptyRequest$Builder.class
 lib\grpc\services\auto\BookLibraryProtos$BookRequest$1.class
 lib\grpc\services\auto\BookLibraryProtos$MultipleAuthorsRequestOrBuilder.class
 lib\grpc\services\auto\BookLibraryProtos$SingleAuthorRequest.class
+lib\grpc\services\auto\BookLibraryProtos$UserLoginRequest.class
 lib\grpc\services\auto\BookLibraryProtos$BookRequest.class
 lib\grpc\services\auto\BookLibraryProtos$BookDetailsOrBuilder.class
 lib\grpc\services\auto\BookLibraryProtos$EmptyRequest.class
@@ -29,6 +30,7 @@ lib\grpc\services\auto\BookLibraryProtos$BookDetails$Builder.class
 lib\grpc\services\auto\BookLibraryProtos$MultipleAuthorsRequest$1.class
 lib\grpc\services\auto\BookLibraryProtos$GenericResponse.class
 lib\grpc\services\auto\BookLibraryProtos$SingleBookResponse$Builder.class
+lib\grpc\services\auto\BookLibraryProtos$UserLoginRequest$1.class
 lib\grpc\services\auto\BookLibraryProtos$MultipleAuthorsRequest$Builder.class
 lib\grpc\services\auto\BookLibraryProtos$BookListResponse.class
 lib\grpc\services\auto\BookLibraryProtos$GenericResponse$ResponseType$1.class
@@ -36,10 +38,12 @@ lib\grpc\services\auto\BookLibraryProtos$GenericResponse$ResponseType.class
 lib\grpc\services\auto\BookLibraryProtos$TitleRequestOrBuilder.class
 lib\grpc\services\auto\BookLibraryProtos$SingleAuthorRequestOrBuilder.class
 lib\grpc\services\auto\BookLibraryProtos$TitleRequest$1.class
+lib\grpc\services\auto\BookLibraryProtos$UserLoginRequest$Builder.class
 lib\grpc\services\auto\BookLibraryProtos$SingleBookResponseOrBuilder.class
 lib\grpc\services\auto\BookLibraryProtos$EmptyRequestOrBuilder.class
 lib\grpc\services\auto\BookLibraryProtos$BookListResponse$Builder.class
 lib\grpc\services\auto\BookServiceGrpc$BookServiceImplBase.class
+lib\grpc\services\auto\BookLibraryProtos$UserLoginRequestOrBuilder.class
 lib\grpc\services\auto\BookServiceGrpc$BookServiceFileDescriptorSupplier.class
 lib\grpc\services\auto\BookLibraryProtos$BookDetails$1.class
 lib\grpc\server\CustomServerInterceptor$1.class

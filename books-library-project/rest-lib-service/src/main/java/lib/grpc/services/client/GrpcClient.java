@@ -23,6 +23,7 @@ import lib.grpc.services.auto.BookLibraryProtos.MultipleAuthorsRequest;
 import lib.grpc.services.auto.BookLibraryProtos.SingleAuthorRequest;
 import lib.grpc.services.auto.BookLibraryProtos.SingleBookResponse;
 import lib.grpc.services.auto.BookLibraryProtos.TitleRequest;
+import lib.grpc.services.auto.BookLibraryProtos.UserLoginRequest;
 import lib.grpc.services.auto.BookServiceGrpc;
 import lib.grpc.services.auto.BookServiceGrpc.BookServiceBlockingStub;
 
@@ -105,5 +106,31 @@ public class GrpcClient
 	{
 		IsbnRequest.Builder reqBuilder = IsbnRequest.newBuilder().setIsbn(isbn);
 		return bookServiceStub.deleteBookByIsbn(reqBuilder.build());
+	}
+	
+	public GenericResponse login(UserLoginRequest loginRequest)
+	{
+		return bookServiceStub.login(loginRequest);
+	}
+	
+	public GenericResponse saveBookInServer(long isbn)
+	{
+		IsbnRequest request = IsbnRequest.newBuilder().setIsbn(isbn).build();
+		return bookServiceStub.saveBookToServer(request);
+	}
+
+	public GenericResponse logout() 
+	{
+		return bookServiceStub.logout(EmptyRequest.newBuilder().build());
+	}
+	
+	public BookListResponse fetchAllBooksFromServer()
+	{
+		return bookServiceStub.fetchAllBooksFromServer(EmptyRequest.newBuilder().build());
+	}
+	
+	public SingleBookResponse downloadBookFromServer(Long isbn)
+	{
+		return bookServiceStub.downloadBookFromServer(IsbnRequest.newBuilder().setIsbn(isbn).build());
 	}
 }

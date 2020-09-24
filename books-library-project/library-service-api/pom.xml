@@ -13,5 +13,10 @@
       <artifactId>library-model</artifactId>
       <version>${project.version}</version>
     </dependency>
+    <dependency>
+      <groupId>spring.assignment</groupId>
+      <artifactId>ServerWrapper</artifactId>
+      <version>${project.version}</version>
+    </dependency>
   </dependencies>
 </project>

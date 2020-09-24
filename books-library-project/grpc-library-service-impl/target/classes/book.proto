@@ -11,6 +11,12 @@ service BookService
 	rpc getAllBooks(EmptyRequest) returns (BookListResponse);
 	rpc deleteBookByIsbn(IsbnRequest) returns (GenericResponse);
 	rpc getBooksByAuthorList(MultipleAuthorsRequest) returns (BookListResponse);
+
+	rpc login(UserLoginRequest) returns (GenericResponse);
+	rpc logout(EmptyRequest) returns (GenericResponse);
+	rpc saveBookToServer(IsbnRequest) returns (GenericResponse);
+	rpc fetchAllBooksFromServer(EmptyRequest) returns (BookListResponse);
+	rpc downloadBookFromServer(IsbnRequest) returns (SingleBookResponse);
 }
 
 // <------------------ Requests ------------------>
@@ -25,6 +31,7 @@ message BookDetails
 	string title=2;
 	string author=3;
 	string publisher=4;
+	string repoId=5;
 }
 
 message BookRequest
@@ -53,14 +60,22 @@ message MultipleAuthorsRequest
 	repeated SingleAuthorRequest authorRequest=1;
 }
 
+message UserLoginRequest
+{
+	string serverUrl=1;
+	string userId=2;
+	string password=3;
+}
+
 // <---------------------- Responses --------------------->
 message GenericResponse
 {
 	enum ResponseType
 	{
-		SUCCESS=0;
-		WARNING=1;
-		ERROR=2;
+		NONE=0;
+		SUCCESS=1;
+		WARNING=2;
+		ERROR=3;
 	}
 
 	ResponseType type=1;

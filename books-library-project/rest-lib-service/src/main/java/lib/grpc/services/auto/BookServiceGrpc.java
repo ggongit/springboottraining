@@ -219,6 +219,166 @@ public final class BookServiceGrpc {
      return getGetBooksByAuthorListMethod;
   }
 
+  private static volatile io.grpc.MethodDescriptor<lib.grpc.services.auto.BookLibraryProtos.UserLoginRequest,
+      lib.grpc.services.auto.BookLibraryProtos.GenericResponse> getLoginMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "login",
+      requestType = lib.grpc.services.auto.BookLibraryProtos.UserLoginRequest.class,
+      responseType = lib.grpc.services.auto.BookLibraryProtos.GenericResponse.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<lib.grpc.services.auto.BookLibraryProtos.UserLoginRequest,
+      lib.grpc.services.auto.BookLibraryProtos.GenericResponse> getLoginMethod() {
+    io.grpc.MethodDescriptor<lib.grpc.services.auto.BookLibraryProtos.UserLoginRequest, lib.grpc.services.auto.BookLibraryProtos.GenericResponse> getLoginMethod;
+    if ((getLoginMethod = BookServiceGrpc.getLoginMethod) == null) {
+      synchronized (BookServiceGrpc.class) {
+        if ((getLoginMethod = BookServiceGrpc.getLoginMethod) == null) {
+          BookServiceGrpc.getLoginMethod = getLoginMethod = 
+              io.grpc.MethodDescriptor.<lib.grpc.services.auto.BookLibraryProtos.UserLoginRequest, lib.grpc.services.auto.BookLibraryProtos.GenericResponse>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(
+                  "lib.grpc.services.auto.BookService", "login"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  lib.grpc.services.auto.BookLibraryProtos.UserLoginRequest.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  lib.grpc.services.auto.BookLibraryProtos.GenericResponse.getDefaultInstance()))
+                  .setSchemaDescriptor(new BookServiceMethodDescriptorSupplier("login"))
+                  .build();
+          }
+        }
+     }
+     return getLoginMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<lib.grpc.services.auto.BookLibraryProtos.EmptyRequest,
+      lib.grpc.services.auto.BookLibraryProtos.GenericResponse> getLogoutMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "logout",
+      requestType = lib.grpc.services.auto.BookLibraryProtos.EmptyRequest.class,
+      responseType = lib.grpc.services.auto.BookLibraryProtos.GenericResponse.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<lib.grpc.services.auto.BookLibraryProtos.EmptyRequest,
+      lib.grpc.services.auto.BookLibraryProtos.GenericResponse> getLogoutMethod() {
+    io.grpc.MethodDescriptor<lib.grpc.services.auto.BookLibraryProtos.EmptyRequest, lib.grpc.services.auto.BookLibraryProtos.GenericResponse> getLogoutMethod;
+    if ((getLogoutMethod = BookServiceGrpc.getLogoutMethod) == null) {
+      synchronized (BookServiceGrpc.class) {
+        if ((getLogoutMethod = BookServiceGrpc.getLogoutMethod) == null) {
+          BookServiceGrpc.getLogoutMethod = getLogoutMethod = 
+              io.grpc.MethodDescriptor.<lib.grpc.services.auto.BookLibraryProtos.EmptyRequest, lib.grpc.services.auto.BookLibraryProtos.GenericResponse>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(
+                  "lib.grpc.services.auto.BookService", "logout"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  lib.grpc.services.auto.BookLibraryProtos.EmptyRequest.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  lib.grpc.services.auto.BookLibraryProtos.GenericResponse.getDefaultInstance()))
+                  .setSchemaDescriptor(new BookServiceMethodDescriptorSupplier("logout"))
+                  .build();
+          }
+        }
+     }
+     return getLogoutMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<lib.grpc.services.auto.BookLibraryProtos.IsbnRequest,
+      lib.grpc.services.auto.BookLibraryProtos.GenericResponse> getSaveBookToServerMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "saveBookToServer",
+      requestType = lib.grpc.services.auto.BookLibraryProtos.IsbnRequest.class,
+      responseType = lib.grpc.services.auto.BookLibraryProtos.GenericResponse.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<lib.grpc.services.auto.BookLibraryProtos.IsbnRequest,
+      lib.grpc.services.auto.BookLibraryProtos.GenericResponse> getSaveBookToServerMethod() {
+    io.grpc.MethodDescriptor<lib.grpc.services.auto.BookLibraryProtos.IsbnRequest, lib.grpc.services.auto.BookLibraryProtos.GenericResponse> getSaveBookToServerMethod;
+    if ((getSaveBookToServerMethod = BookServiceGrpc.getSaveBookToServerMethod) == null) {
+      synchronized (BookServiceGrpc.class) {
+        if ((getSaveBookToServerMethod = BookServiceGrpc.getSaveBookToServerMethod) == null) {
+          BookServiceGrpc.getSaveBookToServerMethod = getSaveBookToServerMethod = 
+              io.grpc.MethodDescriptor.<lib.grpc.services.auto.BookLibraryProtos.IsbnRequest, lib.grpc.services.auto.BookLibraryProtos.GenericResponse>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(
+                  "lib.grpc.services.auto.BookService", "saveBookToServer"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  lib.grpc.services.auto.BookLibraryProtos.IsbnRequest.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  lib.grpc.services.auto.BookLibraryProtos.GenericResponse.getDefaultInstance()))
+                  .setSchemaDescriptor(new BookServiceMethodDescriptorSupplier("saveBookToServer"))
+                  .build();
+          }
+        }
+     }
+     return getSaveBookToServerMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<lib.grpc.services.auto.BookLibraryProtos.EmptyRequest,
+      lib.grpc.services.auto.BookLibraryProtos.BookListResponse> getFetchAllBooksFromServerMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "fetchAllBooksFromServer",
+      requestType = lib.grpc.services.auto.BookLibraryProtos.EmptyRequest.class,
+      responseType = lib.grpc.services.auto.BookLibraryProtos.BookListResponse.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<lib.grpc.services.auto.BookLibraryProtos.EmptyRequest,
+      lib.grpc.services.auto.BookLibraryProtos.BookListResponse> getFetchAllBooksFromServerMethod() {
+    io.grpc.MethodDescriptor<lib.grpc.services.auto.BookLibraryProtos.EmptyRequest, lib.grpc.services.auto.BookLibraryProtos.BookListResponse> getFetchAllBooksFromServerMethod;
+    if ((getFetchAllBooksFromServerMethod = BookServiceGrpc.getFetchAllBooksFromServerMethod) == null) {
+      synchronized (BookServiceGrpc.class) {
+        if ((getFetchAllBooksFromServerMethod = BookServiceGrpc.getFetchAllBooksFromServerMethod) == null) {
+          BookServiceGrpc.getFetchAllBooksFromServerMethod = getFetchAllBooksFromServerMethod = 
+              io.grpc.MethodDescriptor.<lib.grpc.services.auto.BookLibraryProtos.EmptyRequest, lib.grpc.services.auto.BookLibraryProtos.BookListResponse>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(
+                  "lib.grpc.services.auto.BookService", "fetchAllBooksFromServer"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  lib.grpc.services.auto.BookLibraryProtos.EmptyRequest.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  lib.grpc.services.auto.BookLibraryProtos.BookListResponse.getDefaultInstance()))
+                  .setSchemaDescriptor(new BookServiceMethodDescriptorSupplier("fetchAllBooksFromServer"))
+                  .build();
+          }
+        }
+     }
+     return getFetchAllBooksFromServerMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<lib.grpc.services.auto.BookLibraryProtos.IsbnRequest,
+      lib.grpc.services.auto.BookLibraryProtos.SingleBookResponse> getDownloadBookFromServerMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "downloadBookFromServer",
+      requestType = lib.grpc.services.auto.BookLibraryProtos.IsbnRequest.class,
+      responseType = lib.grpc.services.auto.BookLibraryProtos.SingleBookResponse.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<lib.grpc.services.auto.BookLibraryProtos.IsbnRequest,
+      lib.grpc.services.auto.BookLibraryProtos.SingleBookResponse> getDownloadBookFromServerMethod() {
+    io.grpc.MethodDescriptor<lib.grpc.services.auto.BookLibraryProtos.IsbnRequest, lib.grpc.services.auto.BookLibraryProtos.SingleBookResponse> getDownloadBookFromServerMethod;
+    if ((getDownloadBookFromServerMethod = BookServiceGrpc.getDownloadBookFromServerMethod) == null) {
+      synchronized (BookServiceGrpc.class) {
+        if ((getDownloadBookFromServerMethod = BookServiceGrpc.getDownloadBookFromServerMethod) == null) {
+          BookServiceGrpc.getDownloadBookFromServerMethod = getDownloadBookFromServerMethod = 
+              io.grpc.MethodDescriptor.<lib.grpc.services.auto.BookLibraryProtos.IsbnRequest, lib.grpc.services.auto.BookLibraryProtos.SingleBookResponse>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(
+                  "lib.grpc.services.auto.BookService", "downloadBookFromServer"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  lib.grpc.services.auto.BookLibraryProtos.IsbnRequest.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  lib.grpc.services.auto.BookLibraryProtos.SingleBookResponse.getDefaultInstance()))
+                  .setSchemaDescriptor(new BookServiceMethodDescriptorSupplier("downloadBookFromServer"))
+                  .build();
+          }
+        }
+     }
+     return getDownloadBookFromServerMethod;
+  }
+
   /**
    * Creates a new async stub that supports all call types for the service
    */
@@ -288,6 +448,41 @@ public final class BookServiceGrpc {
       asyncUnimplementedUnaryCall(getGetBooksByAuthorListMethod(), responseObserver);
     }
 
+    /**
+     */
+    public void login(lib.grpc.services.auto.BookLibraryProtos.UserLoginRequest request,
+        io.grpc.stub.StreamObserver<lib.grpc.services.auto.BookLibraryProtos.GenericResponse> responseObserver) {
+      asyncUnimplementedUnaryCall(getLoginMethod(), responseObserver);
+    }
+
+    /**
+     */
+    public void logout(lib.grpc.services.auto.BookLibraryProtos.EmptyRequest request,
+        io.grpc.stub.StreamObserver<lib.grpc.services.auto.BookLibraryProtos.GenericResponse> responseObserver) {
+      asyncUnimplementedUnaryCall(getLogoutMethod(), responseObserver);
+    }
+
+    /**
+     */
+    public void saveBookToServer(lib.grpc.services.auto.BookLibraryProtos.IsbnRequest request,
+        io.grpc.stub.StreamObserver<lib.grpc.services.auto.BookLibraryProtos.GenericResponse> responseObserver) {
+      asyncUnimplementedUnaryCall(getSaveBookToServerMethod(), responseObserver);
+    }
+
+    /**
+     */
+    public void fetchAllBooksFromServer(lib.grpc.services.auto.BookLibraryProtos.EmptyRequest request,
+        io.grpc.stub.StreamObserver<lib.grpc.services.auto.BookLibraryProtos.BookListResponse> responseObserver) {
+      asyncUnimplementedUnaryCall(getFetchAllBooksFromServerMethod(), responseObserver);
+    }
+
+    /**
+     */
+    public void downloadBookFromServer(lib.grpc.services.auto.BookLibraryProtos.IsbnRequest request,
+        io.grpc.stub.StreamObserver<lib.grpc.services.auto.BookLibraryProtos.SingleBookResponse> responseObserver) {
+      asyncUnimplementedUnaryCall(getDownloadBookFromServerMethod(), responseObserver);
+    }
+
     @java.lang.Override public final io.grpc.ServerServiceDefinition bindService() {
       return io.grpc.ServerServiceDefinition.builder(getServiceDescriptor())
           .addMethod(
@@ -332,6 +527,41 @@ public final class BookServiceGrpc {
                 lib.grpc.services.auto.BookLibraryProtos.MultipleAuthorsRequest,
                 lib.grpc.services.auto.BookLibraryProtos.BookListResponse>(
                   this, METHODID_GET_BOOKS_BY_AUTHOR_LIST)))
+          .addMethod(
+            getLoginMethod(),
+            asyncUnaryCall(
+              new MethodHandlers<
+                lib.grpc.services.auto.BookLibraryProtos.UserLoginRequest,
+                lib.grpc.services.auto.BookLibraryProtos.GenericResponse>(
+                  this, METHODID_LOGIN)))
+          .addMethod(
+            getLogoutMethod(),
+            asyncUnaryCall(
+              new MethodHandlers<
+                lib.grpc.services.auto.BookLibraryProtos.EmptyRequest,
+                lib.grpc.services.auto.BookLibraryProtos.GenericResponse>(
+                  this, METHODID_LOGOUT)))
+          .addMethod(
+            getSaveBookToServerMethod(),
+            asyncUnaryCall(
+              new MethodHandlers<
+                lib.grpc.services.auto.BookLibraryProtos.IsbnRequest,
+                lib.grpc.services.auto.BookLibraryProtos.GenericResponse>(
+                  this, METHODID_SAVE_BOOK_TO_SERVER)))
+          .addMethod(
+            getFetchAllBooksFromServerMethod(),
+            asyncUnaryCall(
+              new MethodHandlers<
+                lib.grpc.services.auto.BookLibraryProtos.EmptyRequest,
+                lib.grpc.services.auto.BookLibraryProtos.BookListResponse>(
+                  this, METHODID_FETCH_ALL_BOOKS_FROM_SERVER)))
+          .addMethod(
+            getDownloadBookFromServerMethod(),
+            asyncUnaryCall(
+              new MethodHandlers<
+                lib.grpc.services.auto.BookLibraryProtos.IsbnRequest,
+                lib.grpc.services.auto.BookLibraryProtos.SingleBookResponse>(
+                  this, METHODID_DOWNLOAD_BOOK_FROM_SERVER)))
           .build();
     }
   }
@@ -401,6 +631,46 @@ public final class BookServiceGrpc {
       asyncUnaryCall(
           getChannel().newCall(getGetBooksByAuthorListMethod(), getCallOptions()), request, responseObserver);
     }
+
+    /**
+     */
+    public void login(lib.grpc.services.auto.BookLibraryProtos.UserLoginRequest request,
+        io.grpc.stub.StreamObserver<lib.grpc.services.auto.BookLibraryProtos.GenericResponse> responseObserver) {
+      asyncUnaryCall(
+          getChannel().newCall(getLoginMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     */
+    public void logout(lib.grpc.services.auto.BookLibraryProtos.EmptyRequest request,
+        io.grpc.stub.StreamObserver<lib.grpc.services.auto.BookLibraryProtos.GenericResponse> responseObserver) {
+      asyncUnaryCall(
+          getChannel().newCall(getLogoutMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     */
+    public void saveBookToServer(lib.grpc.services.auto.BookLibraryProtos.IsbnRequest request,
+        io.grpc.stub.StreamObserver<lib.grpc.services.auto.BookLibraryProtos.GenericResponse> responseObserver) {
+      asyncUnaryCall(
+          getChannel().newCall(getSaveBookToServerMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     */
+    public void fetchAllBooksFromServer(lib.grpc.services.auto.BookLibraryProtos.EmptyRequest request,
+        io.grpc.stub.StreamObserver<lib.grpc.services.auto.BookLibraryProtos.BookListResponse> responseObserver) {
+      asyncUnaryCall(
+          getChannel().newCall(getFetchAllBooksFromServerMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     */
+    public void downloadBookFromServer(lib.grpc.services.auto.BookLibraryProtos.IsbnRequest request,
+        io.grpc.stub.StreamObserver<lib.grpc.services.auto.BookLibraryProtos.SingleBookResponse> responseObserver) {
+      asyncUnaryCall(
+          getChannel().newCall(getDownloadBookFromServerMethod(), getCallOptions()), request, responseObserver);
+    }
   }
 
   /**
@@ -461,6 +731,41 @@ public final class BookServiceGrpc {
     public lib.grpc.services.auto.BookLibraryProtos.BookListResponse getBooksByAuthorList(lib.grpc.services.auto.BookLibraryProtos.MultipleAuthorsRequest request) {
       return blockingUnaryCall(
           getChannel(), getGetBooksByAuthorListMethod(), getCallOptions(), request);
+    }
+
+    /**
+     */
+    public lib.grpc.services.auto.BookLibraryProtos.GenericResponse login(lib.grpc.services.auto.BookLibraryProtos.UserLoginRequest request) {
+      return blockingUnaryCall(
+          getChannel(), getLoginMethod(), getCallOptions(), request);
+    }
+
+    /**
+     */
+    public lib.grpc.services.auto.BookLibraryProtos.GenericResponse logout(lib.grpc.services.auto.BookLibraryProtos.EmptyRequest request) {
+      return blockingUnaryCall(
+          getChannel(), getLogoutMethod(), getCallOptions(), request);
+    }
+
+    /**
+     */
+    public lib.grpc.services.auto.BookLibraryProtos.GenericResponse saveBookToServer(lib.grpc.services.auto.BookLibraryProtos.IsbnRequest request) {
+      return blockingUnaryCall(
+          getChannel(), getSaveBookToServerMethod(), getCallOptions(), request);
+    }
+
+    /**
+     */
+    public lib.grpc.services.auto.BookLibraryProtos.BookListResponse fetchAllBooksFromServer(lib.grpc.services.auto.BookLibraryProtos.EmptyRequest request) {
+      return blockingUnaryCall(
+          getChannel(), getFetchAllBooksFromServerMethod(), getCallOptions(), request);
+    }
+
+    /**
+     */
+    public lib.grpc.services.auto.BookLibraryProtos.SingleBookResponse downloadBookFromServer(lib.grpc.services.auto.BookLibraryProtos.IsbnRequest request) {
+      return blockingUnaryCall(
+          getChannel(), getDownloadBookFromServerMethod(), getCallOptions(), request);
     }
   }
 
@@ -529,6 +834,46 @@ public final class BookServiceGrpc {
       return futureUnaryCall(
           getChannel().newCall(getGetBooksByAuthorListMethod(), getCallOptions()), request);
     }
+
+    /**
+     */
+    public com.google.common.util.concurrent.ListenableFuture<lib.grpc.services.auto.BookLibraryProtos.GenericResponse> login(
+        lib.grpc.services.auto.BookLibraryProtos.UserLoginRequest request) {
+      return futureUnaryCall(
+          getChannel().newCall(getLoginMethod(), getCallOptions()), request);
+    }
+
+    /**
+     */
+    public com.google.common.util.concurrent.ListenableFuture<lib.grpc.services.auto.BookLibraryProtos.GenericResponse> logout(
+        lib.grpc.services.auto.BookLibraryProtos.EmptyRequest request) {
+      return futureUnaryCall(
+          getChannel().newCall(getLogoutMethod(), getCallOptions()), request);
+    }
+
+    /**
+     */
+    public com.google.common.util.concurrent.ListenableFuture<lib.grpc.services.auto.BookLibraryProtos.GenericResponse> saveBookToServer(
+        lib.grpc.services.auto.BookLibraryProtos.IsbnRequest request) {
+      return futureUnaryCall(
+          getChannel().newCall(getSaveBookToServerMethod(), getCallOptions()), request);
+    }
+
+    /**
+     */
+    public com.google.common.util.concurrent.ListenableFuture<lib.grpc.services.auto.BookLibraryProtos.BookListResponse> fetchAllBooksFromServer(
+        lib.grpc.services.auto.BookLibraryProtos.EmptyRequest request) {
+      return futureUnaryCall(
+          getChannel().newCall(getFetchAllBooksFromServerMethod(), getCallOptions()), request);
+    }
+
+    /**
+     */
+    public com.google.common.util.concurrent.ListenableFuture<lib.grpc.services.auto.BookLibraryProtos.SingleBookResponse> downloadBookFromServer(
+        lib.grpc.services.auto.BookLibraryProtos.IsbnRequest request) {
+      return futureUnaryCall(
+          getChannel().newCall(getDownloadBookFromServerMethod(), getCallOptions()), request);
+    }
   }
 
   private static final int METHODID_ADD_BOOK = 0;
@@ -537,6 +882,11 @@ public final class BookServiceGrpc {
   private static final int METHODID_GET_ALL_BOOKS = 3;
   private static final int METHODID_DELETE_BOOK_BY_ISBN = 4;
   private static final int METHODID_GET_BOOKS_BY_AUTHOR_LIST = 5;
+  private static final int METHODID_LOGIN = 6;
+  private static final int METHODID_LOGOUT = 7;
+  private static final int METHODID_SAVE_BOOK_TO_SERVER = 8;
+  private static final int METHODID_FETCH_ALL_BOOKS_FROM_SERVER = 9;
+  private static final int METHODID_DOWNLOAD_BOOK_FROM_SERVER = 10;
 
   private static final class MethodHandlers<Req, Resp> implements
       io.grpc.stub.ServerCalls.UnaryMethod<Req, Resp>,
@@ -578,6 +928,26 @@ public final class BookServiceGrpc {
         case METHODID_GET_BOOKS_BY_AUTHOR_LIST:
           serviceImpl.getBooksByAuthorList((lib.grpc.services.auto.BookLibraryProtos.MultipleAuthorsRequest) request,
               (io.grpc.stub.StreamObserver<lib.grpc.services.auto.BookLibraryProtos.BookListResponse>) responseObserver);
+          break;
+        case METHODID_LOGIN:
+          serviceImpl.login((lib.grpc.services.auto.BookLibraryProtos.UserLoginRequest) request,
+              (io.grpc.stub.StreamObserver<lib.grpc.services.auto.BookLibraryProtos.GenericResponse>) responseObserver);
+          break;
+        case METHODID_LOGOUT:
+          serviceImpl.logout((lib.grpc.services.auto.BookLibraryProtos.EmptyRequest) request,
+              (io.grpc.stub.StreamObserver<lib.grpc.services.auto.BookLibraryProtos.GenericResponse>) responseObserver);
+          break;
+        case METHODID_SAVE_BOOK_TO_SERVER:
+          serviceImpl.saveBookToServer((lib.grpc.services.auto.BookLibraryProtos.IsbnRequest) request,
+              (io.grpc.stub.StreamObserver<lib.grpc.services.auto.BookLibraryProtos.GenericResponse>) responseObserver);
+          break;
+        case METHODID_FETCH_ALL_BOOKS_FROM_SERVER:
+          serviceImpl.fetchAllBooksFromServer((lib.grpc.services.auto.BookLibraryProtos.EmptyRequest) request,
+              (io.grpc.stub.StreamObserver<lib.grpc.services.auto.BookLibraryProtos.BookListResponse>) responseObserver);
+          break;
+        case METHODID_DOWNLOAD_BOOK_FROM_SERVER:
+          serviceImpl.downloadBookFromServer((lib.grpc.services.auto.BookLibraryProtos.IsbnRequest) request,
+              (io.grpc.stub.StreamObserver<lib.grpc.services.auto.BookLibraryProtos.SingleBookResponse>) responseObserver);
           break;
         default:
           throw new AssertionError();
@@ -646,6 +1016,11 @@ public final class BookServiceGrpc {
               .addMethod(getGetAllBooksMethod())
               .addMethod(getDeleteBookByIsbnMethod())
               .addMethod(getGetBooksByAuthorListMethod())
+              .addMethod(getLoginMethod())
+              .addMethod(getLogoutMethod())
+              .addMethod(getSaveBookToServerMethod())
+              .addMethod(getFetchAllBooksFromServerMethod())
+              .addMethod(getDownloadBookFromServerMethod())
               .build();
         }
       }

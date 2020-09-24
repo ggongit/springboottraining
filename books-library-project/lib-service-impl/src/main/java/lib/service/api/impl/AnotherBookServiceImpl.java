@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.stereotype.Service;
 
 import lib.dto.BookDTO;
+import lib.server.wrapper.exceptions.ServerException;
 import lib.service.api.BookService;
 import lib.service.api.exception.BookException;
 
@@ -77,6 +78,37 @@ public class AnotherBookServiceImpl implements BookService
 	public List<BookDTO> getBooksByAuthorList(List<String> authors) {
 		// TODO Auto-generated method stub
 		return null;
+	}
+
+	@Override
+	public void saveBookInServer(BookDTO book) {
+		// TODO Auto-generated method stub
+	}
+
+	@Override
+	public void login(String url, String username, String password) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void logout() throws ServerException {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public List<BookDTO> getAllBooksFromServer() throws ServerException {
+		return null;
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public BookDTO downloadBookFromServer(Long isbn) throws ServerException {
+		return null;
+		// TODO Auto-generated method stub
+		
 	}
 
 }

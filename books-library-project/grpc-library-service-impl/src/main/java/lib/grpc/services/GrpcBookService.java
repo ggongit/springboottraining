@@ -16,13 +16,14 @@ import lib.grpc.services.auto.BookLibraryProtos.BookRequest;
 import lib.grpc.services.auto.BookLibraryProtos.CountResponse;
 import lib.grpc.services.auto.BookLibraryProtos.EmptyRequest;
 import lib.grpc.services.auto.BookLibraryProtos.GenericResponse;
+import lib.grpc.services.auto.BookLibraryProtos.GenericResponse.ResponseType;
 import lib.grpc.services.auto.BookLibraryProtos.IsbnRequest;
 import lib.grpc.services.auto.BookLibraryProtos.MultipleAuthorsRequest;
-import lib.grpc.services.auto.BookLibraryProtos.GenericResponse.Builder;
-import lib.grpc.services.auto.BookLibraryProtos.GenericResponse.ResponseType;
 import lib.grpc.services.auto.BookLibraryProtos.SingleBookResponse;
 import lib.grpc.services.auto.BookLibraryProtos.TitleRequest;
+import lib.grpc.services.auto.BookLibraryProtos.UserLoginRequest;
 import lib.grpc.services.auto.BookServiceGrpc.BookServiceImplBase;
+import lib.server.wrapper.exceptions.ServerException;
 import lib.service.api.BookService;
 import lib.service.api.exception.BookException;
 
@@ -60,7 +61,8 @@ public class GrpcBookService extends BookServiceImplBase
 					.setIsbn(book.getIsbn())
 					.setTitle(book.getTitle())
 					.setAuthor(book.getAuthor())
-					.setPublisher(book.getPublisher());
+					.setPublisher(book.getPublisher())
+					.setRepoId(book.getRepoId());
 			});
 			
 			if(bookOptional.isPresent() == false)
@@ -116,7 +118,8 @@ public class GrpcBookService extends BookServiceImplBase
 					.setIsbn(bookDto.getIsbn())
 					.setTitle(bookDto.getTitle())
 					.setAuthor(bookDto.getAuthor())
-					.setPublisher(bookDto.getPublisher());
+					.setPublisher(bookDto.getPublisher())
+					.setRepoId(bookDto.getRepoId());
 			bookListResponseBuilder.addBookList(bookDetailBuilder);
 		});
 		
@@ -134,7 +137,7 @@ public class GrpcBookService extends BookServiceImplBase
 		long isbn = request.getIsbn();
 		boolean isSuccess = bookService.deleteBookByIsbn(isbn);
 		
-		Builder builder;
+		GenericResponse.Builder builder;
 		if(isSuccess)
 		{
 			builder = getGenericResponseBuilder(ResponseType.SUCCESS, "Book deleted successfully");
@@ -157,6 +160,98 @@ public class GrpcBookService extends BookServiceImplBase
 		responseObserver.onCompleted();
 	}
 	
+	@Override
+	public void login(UserLoginRequest request, StreamObserver<GenericResponse> responseObserver) 
+	{
+		GenericResponse.Builder builder;
+		
+		try {
+			bookService.login(request.getServerUrl(), request.getUserId(), request.getPassword());
+			builder = getGenericResponseBuilder(ResponseType.SUCCESS, "User logged-in successful");
+		} catch (ServerException e) {
+			builder = getGenericResponseBuilder(ResponseType.ERROR, e.getMessage());
+		}
+		responseObserver.onNext(builder.build());
+		responseObserver.onCompleted();
+	}
+	
+	@Override
+	public void logout(EmptyRequest request, StreamObserver<GenericResponse> responseObserver) {
+		
+		GenericResponse.Builder builder;
+		try {
+			bookService.logout();
+			builder = getGenericResponseBuilder(ResponseType.SUCCESS, "User logged out successful");
+		} catch (ServerException e) {
+			builder = getGenericResponseBuilder(ResponseType.ERROR, e.getMessage());
+		}
+		responseObserver.onNext(builder.build());
+		responseObserver.onCompleted();
+	}
+	
+	@Override
+	public void saveBookToServer(IsbnRequest request, StreamObserver<GenericResponse> responseObserver) 
+	{
+		long isbn = request.getIsbn();
+		BookDTO bookDTO = bookService.getBookByIsbn(isbn);
+		
+		GenericResponse.Builder builder;
+		if(bookDTO == null)
+		{
+			builder = getGenericResponseBuilder(ResponseType.WARNING, "No book found with given isbn: " + isbn);
+		}
+		else
+		{
+			try {
+				bookService.saveBookInServer(bookDTO);
+				builder = getGenericResponseBuilder(ResponseType.SUCCESS, "Book saved in server successfully");
+			} catch (ServerException | BookException e) {
+				builder = getGenericResponseBuilder(ResponseType.ERROR, e.getMessage());
+			}
+		}
+		
+		responseObserver.onNext(builder.build());
+		responseObserver.onCompleted();
+	}
+	
+	@Override
+	public void downloadBookFromServer(IsbnRequest request, StreamObserver<SingleBookResponse> responseObserver) {
+	
+		GenericResponse.Builder genericResponse;
+		SingleBookResponse.Builder finalResponseBuilder = SingleBookResponse.newBuilder();
+		try {
+			BookDTO bookDto = bookService.downloadBookFromServer(request.getIsbn());
+			BookDetails.Builder bookDetailBuilder = BookDetails.newBuilder()
+					.setIsbn(bookDto.getIsbn())
+					.setTitle(bookDto.getTitle())
+					.setAuthor(bookDto.getAuthor())
+					.setPublisher(bookDto.getPublisher())
+					.setRepoId(bookDto.getRepoId());
+			genericResponse = getGenericResponseBuilder(ResponseType.SUCCESS, "Book is downloaded successfully from server");
+			finalResponseBuilder.setBookDetails(bookDetailBuilder);
+		} catch (ServerException | BookException e) {
+			genericResponse = getGenericResponseBuilder(ResponseType.ERROR, e.getMessage());
+		}
+		finalResponseBuilder.setGenericResponse(genericResponse);
+		responseObserver.onNext(finalResponseBuilder.build());
+		responseObserver.onCompleted();
+	}
+	
+	@Override
+	public void fetchAllBooksFromServer(EmptyRequest request, StreamObserver<BookListResponse> responseObserver) {
+		BookListResponse.Builder responseBuilder;
+		try {
+			List<BookDTO> bookList = bookService.getAllBooksFromServer();
+			responseBuilder = getBookListResponseBuilder(bookList);
+
+		} catch (ServerException e) {
+			responseBuilder = BookListResponse.newBuilder()
+					.setGenericResponse(getGenericResponseBuilder(ResponseType.ERROR, e.getMessage()));
+		}
+		responseObserver.onNext(responseBuilder.build());
+		responseObserver.onCompleted();
+	}
+	
 	private GenericResponse.Builder getGenericResponseBuilder(ResponseType type, String message)
 	{
 		return GenericResponse.newBuilder().setType(type).setMessage(message);
@@ -172,7 +267,8 @@ public class GrpcBookService extends BookServiceImplBase
 					.setIsbn(bookDto.getIsbn())
 					.setTitle(bookDto.getTitle())
 					.setAuthor(bookDto.getAuthor())
-					.setPublisher(bookDto.getPublisher());
+					.setPublisher(bookDto.getPublisher())
+					.setRepoId(bookDto.getRepoId());
 			
 			bookListResBuilder.addBookList(bookDetailsBuilder);
 		});

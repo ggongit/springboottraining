@@ -472,6 +472,16 @@ public final class BookLibraryProtos {
      */
     com.google.protobuf.ByteString
         getPublisherBytes();
+
+    /**
+     * <code>string repoId = 5;</code>
+     */
+    java.lang.String getRepoId();
+    /**
+     * <code>string repoId = 5;</code>
+     */
+    com.google.protobuf.ByteString
+        getRepoIdBytes();
   }
   /**
    * Protobuf type {@code lib.grpc.services.auto.BookDetails}
@@ -490,6 +500,7 @@ public final class BookLibraryProtos {
       title_ = "";
       author_ = "";
       publisher_ = "";
+      repoId_ = "";
     }
 
     @java.lang.Override
@@ -537,6 +548,12 @@ public final class BookLibraryProtos {
               java.lang.String s = input.readStringRequireUtf8();
 
               publisher_ = s;
+              break;
+            }
+            case 42: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              repoId_ = s;
               break;
             }
             default: {
@@ -682,6 +699,40 @@ public final class BookLibraryProtos {
       }
     }
 
+    public static final int REPOID_FIELD_NUMBER = 5;
+    private volatile java.lang.Object repoId_;
+    /**
+     * <code>string repoId = 5;</code>
+     */
+    public java.lang.String getRepoId() {
+      java.lang.Object ref = repoId_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        repoId_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string repoId = 5;</code>
+     */
+    public com.google.protobuf.ByteString
+        getRepoIdBytes() {
+      java.lang.Object ref = repoId_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        repoId_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -708,6 +759,9 @@ public final class BookLibraryProtos {
       if (!getPublisherBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 4, publisher_);
       }
+      if (!getRepoIdBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 5, repoId_);
+      }
       unknownFields.writeTo(output);
     }
 
@@ -729,6 +783,9 @@ public final class BookLibraryProtos {
       }
       if (!getPublisherBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, publisher_);
+      }
+      if (!getRepoIdBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, repoId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -754,6 +811,8 @@ public final class BookLibraryProtos {
           .equals(other.getAuthor());
       result = result && getPublisher()
           .equals(other.getPublisher());
+      result = result && getRepoId()
+          .equals(other.getRepoId());
       result = result && unknownFields.equals(other.unknownFields);
       return result;
     }
@@ -774,6 +833,8 @@ public final class BookLibraryProtos {
       hash = (53 * hash) + getAuthor().hashCode();
       hash = (37 * hash) + PUBLISHER_FIELD_NUMBER;
       hash = (53 * hash) + getPublisher().hashCode();
+      hash = (37 * hash) + REPOID_FIELD_NUMBER;
+      hash = (53 * hash) + getRepoId().hashCode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -915,6 +976,8 @@ public final class BookLibraryProtos {
 
         publisher_ = "";
 
+        repoId_ = "";
+
         return this;
       }
 
@@ -945,6 +1008,7 @@ public final class BookLibraryProtos {
         result.title_ = title_;
         result.author_ = author_;
         result.publisher_ = publisher_;
+        result.repoId_ = repoId_;
         onBuilt();
         return result;
       }
@@ -1006,6 +1070,10 @@ public final class BookLibraryProtos {
         }
         if (!other.getPublisher().isEmpty()) {
           publisher_ = other.publisher_;
+          onChanged();
+        }
+        if (!other.getRepoId().isEmpty()) {
+          repoId_ = other.repoId_;
           onChanged();
         }
         this.mergeUnknownFields(other.unknownFields);
@@ -1266,6 +1334,75 @@ public final class BookLibraryProtos {
   checkByteStringIsUtf8(value);
         
         publisher_ = value;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object repoId_ = "";
+      /**
+       * <code>string repoId = 5;</code>
+       */
+      public java.lang.String getRepoId() {
+        java.lang.Object ref = repoId_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          repoId_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string repoId = 5;</code>
+       */
+      public com.google.protobuf.ByteString
+          getRepoIdBytes() {
+        java.lang.Object ref = repoId_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          repoId_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string repoId = 5;</code>
+       */
+      public Builder setRepoId(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        repoId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string repoId = 5;</code>
+       */
+      public Builder clearRepoId() {
+        
+        repoId_ = getDefaultInstance().getRepoId();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string repoId = 5;</code>
+       */
+      public Builder setRepoIdBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        repoId_ = value;
         onChanged();
         return this;
       }
@@ -4351,6 +4488,830 @@ public final class BookLibraryProtos {
 
   }
 
+  public interface UserLoginRequestOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:lib.grpc.services.auto.UserLoginRequest)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>string serverUrl = 1;</code>
+     */
+    java.lang.String getServerUrl();
+    /**
+     * <code>string serverUrl = 1;</code>
+     */
+    com.google.protobuf.ByteString
+        getServerUrlBytes();
+
+    /**
+     * <code>string userId = 2;</code>
+     */
+    java.lang.String getUserId();
+    /**
+     * <code>string userId = 2;</code>
+     */
+    com.google.protobuf.ByteString
+        getUserIdBytes();
+
+    /**
+     * <code>string password = 3;</code>
+     */
+    java.lang.String getPassword();
+    /**
+     * <code>string password = 3;</code>
+     */
+    com.google.protobuf.ByteString
+        getPasswordBytes();
+  }
+  /**
+   * Protobuf type {@code lib.grpc.services.auto.UserLoginRequest}
+   */
+  public  static final class UserLoginRequest extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:lib.grpc.services.auto.UserLoginRequest)
+      UserLoginRequestOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use UserLoginRequest.newBuilder() to construct.
+    private UserLoginRequest(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private UserLoginRequest() {
+      serverUrl_ = "";
+      userId_ = "";
+      password_ = "";
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private UserLoginRequest(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            case 10: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              serverUrl_ = s;
+              break;
+            }
+            case 18: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              userId_ = s;
+              break;
+            }
+            case 26: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              password_ = s;
+              break;
+            }
+            default: {
+              if (!parseUnknownFieldProto3(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return lib.grpc.services.auto.BookLibraryProtos.internal_static_lib_grpc_services_auto_UserLoginRequest_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return lib.grpc.services.auto.BookLibraryProtos.internal_static_lib_grpc_services_auto_UserLoginRequest_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              lib.grpc.services.auto.BookLibraryProtos.UserLoginRequest.class, lib.grpc.services.auto.BookLibraryProtos.UserLoginRequest.Builder.class);
+    }
+
+    public static final int SERVERURL_FIELD_NUMBER = 1;
+    private volatile java.lang.Object serverUrl_;
+    /**
+     * <code>string serverUrl = 1;</code>
+     */
+    public java.lang.String getServerUrl() {
+      java.lang.Object ref = serverUrl_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        serverUrl_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string serverUrl = 1;</code>
+     */
+    public com.google.protobuf.ByteString
+        getServerUrlBytes() {
+      java.lang.Object ref = serverUrl_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        serverUrl_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int USERID_FIELD_NUMBER = 2;
+    private volatile java.lang.Object userId_;
+    /**
+     * <code>string userId = 2;</code>
+     */
+    public java.lang.String getUserId() {
+      java.lang.Object ref = userId_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        userId_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string userId = 2;</code>
+     */
+    public com.google.protobuf.ByteString
+        getUserIdBytes() {
+      java.lang.Object ref = userId_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        userId_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int PASSWORD_FIELD_NUMBER = 3;
+    private volatile java.lang.Object password_;
+    /**
+     * <code>string password = 3;</code>
+     */
+    public java.lang.String getPassword() {
+      java.lang.Object ref = password_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        password_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string password = 3;</code>
+     */
+    public com.google.protobuf.ByteString
+        getPasswordBytes() {
+      java.lang.Object ref = password_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        password_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (!getServerUrlBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, serverUrl_);
+      }
+      if (!getUserIdBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, userId_);
+      }
+      if (!getPasswordBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, password_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (!getServerUrlBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, serverUrl_);
+      }
+      if (!getUserIdBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, userId_);
+      }
+      if (!getPasswordBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, password_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof lib.grpc.services.auto.BookLibraryProtos.UserLoginRequest)) {
+        return super.equals(obj);
+      }
+      lib.grpc.services.auto.BookLibraryProtos.UserLoginRequest other = (lib.grpc.services.auto.BookLibraryProtos.UserLoginRequest) obj;
+
+      boolean result = true;
+      result = result && getServerUrl()
+          .equals(other.getServerUrl());
+      result = result && getUserId()
+          .equals(other.getUserId());
+      result = result && getPassword()
+          .equals(other.getPassword());
+      result = result && unknownFields.equals(other.unknownFields);
+      return result;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + SERVERURL_FIELD_NUMBER;
+      hash = (53 * hash) + getServerUrl().hashCode();
+      hash = (37 * hash) + USERID_FIELD_NUMBER;
+      hash = (53 * hash) + getUserId().hashCode();
+      hash = (37 * hash) + PASSWORD_FIELD_NUMBER;
+      hash = (53 * hash) + getPassword().hashCode();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static lib.grpc.services.auto.BookLibraryProtos.UserLoginRequest parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static lib.grpc.services.auto.BookLibraryProtos.UserLoginRequest parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static lib.grpc.services.auto.BookLibraryProtos.UserLoginRequest parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static lib.grpc.services.auto.BookLibraryProtos.UserLoginRequest parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static lib.grpc.services.auto.BookLibraryProtos.UserLoginRequest parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static lib.grpc.services.auto.BookLibraryProtos.UserLoginRequest parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static lib.grpc.services.auto.BookLibraryProtos.UserLoginRequest parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static lib.grpc.services.auto.BookLibraryProtos.UserLoginRequest parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static lib.grpc.services.auto.BookLibraryProtos.UserLoginRequest parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static lib.grpc.services.auto.BookLibraryProtos.UserLoginRequest parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static lib.grpc.services.auto.BookLibraryProtos.UserLoginRequest parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static lib.grpc.services.auto.BookLibraryProtos.UserLoginRequest parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(lib.grpc.services.auto.BookLibraryProtos.UserLoginRequest prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @java.lang.Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code lib.grpc.services.auto.UserLoginRequest}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:lib.grpc.services.auto.UserLoginRequest)
+        lib.grpc.services.auto.BookLibraryProtos.UserLoginRequestOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return lib.grpc.services.auto.BookLibraryProtos.internal_static_lib_grpc_services_auto_UserLoginRequest_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return lib.grpc.services.auto.BookLibraryProtos.internal_static_lib_grpc_services_auto_UserLoginRequest_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                lib.grpc.services.auto.BookLibraryProtos.UserLoginRequest.class, lib.grpc.services.auto.BookLibraryProtos.UserLoginRequest.Builder.class);
+      }
+
+      // Construct using lib.grpc.services.auto.BookLibraryProtos.UserLoginRequest.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      @java.lang.Override
+      public Builder clear() {
+        super.clear();
+        serverUrl_ = "";
+
+        userId_ = "";
+
+        password_ = "";
+
+        return this;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return lib.grpc.services.auto.BookLibraryProtos.internal_static_lib_grpc_services_auto_UserLoginRequest_descriptor;
+      }
+
+      @java.lang.Override
+      public lib.grpc.services.auto.BookLibraryProtos.UserLoginRequest getDefaultInstanceForType() {
+        return lib.grpc.services.auto.BookLibraryProtos.UserLoginRequest.getDefaultInstance();
+      }
+
+      @java.lang.Override
+      public lib.grpc.services.auto.BookLibraryProtos.UserLoginRequest build() {
+        lib.grpc.services.auto.BookLibraryProtos.UserLoginRequest result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public lib.grpc.services.auto.BookLibraryProtos.UserLoginRequest buildPartial() {
+        lib.grpc.services.auto.BookLibraryProtos.UserLoginRequest result = new lib.grpc.services.auto.BookLibraryProtos.UserLoginRequest(this);
+        result.serverUrl_ = serverUrl_;
+        result.userId_ = userId_;
+        result.password_ = password_;
+        onBuilt();
+        return result;
+      }
+
+      @java.lang.Override
+      public Builder clone() {
+        return (Builder) super.clone();
+      }
+      @java.lang.Override
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.setField(field, value);
+      }
+      @java.lang.Override
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return (Builder) super.clearField(field);
+      }
+      @java.lang.Override
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return (Builder) super.clearOneof(oneof);
+      }
+      @java.lang.Override
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return (Builder) super.setRepeatedField(field, index, value);
+      }
+      @java.lang.Override
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.addRepeatedField(field, value);
+      }
+      @java.lang.Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof lib.grpc.services.auto.BookLibraryProtos.UserLoginRequest) {
+          return mergeFrom((lib.grpc.services.auto.BookLibraryProtos.UserLoginRequest)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(lib.grpc.services.auto.BookLibraryProtos.UserLoginRequest other) {
+        if (other == lib.grpc.services.auto.BookLibraryProtos.UserLoginRequest.getDefaultInstance()) return this;
+        if (!other.getServerUrl().isEmpty()) {
+          serverUrl_ = other.serverUrl_;
+          onChanged();
+        }
+        if (!other.getUserId().isEmpty()) {
+          userId_ = other.userId_;
+          onChanged();
+        }
+        if (!other.getPassword().isEmpty()) {
+          password_ = other.password_;
+          onChanged();
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      @java.lang.Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        lib.grpc.services.auto.BookLibraryProtos.UserLoginRequest parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (lib.grpc.services.auto.BookLibraryProtos.UserLoginRequest) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+
+      private java.lang.Object serverUrl_ = "";
+      /**
+       * <code>string serverUrl = 1;</code>
+       */
+      public java.lang.String getServerUrl() {
+        java.lang.Object ref = serverUrl_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          serverUrl_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string serverUrl = 1;</code>
+       */
+      public com.google.protobuf.ByteString
+          getServerUrlBytes() {
+        java.lang.Object ref = serverUrl_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          serverUrl_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string serverUrl = 1;</code>
+       */
+      public Builder setServerUrl(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        serverUrl_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string serverUrl = 1;</code>
+       */
+      public Builder clearServerUrl() {
+        
+        serverUrl_ = getDefaultInstance().getServerUrl();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string serverUrl = 1;</code>
+       */
+      public Builder setServerUrlBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        serverUrl_ = value;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object userId_ = "";
+      /**
+       * <code>string userId = 2;</code>
+       */
+      public java.lang.String getUserId() {
+        java.lang.Object ref = userId_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          userId_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string userId = 2;</code>
+       */
+      public com.google.protobuf.ByteString
+          getUserIdBytes() {
+        java.lang.Object ref = userId_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          userId_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string userId = 2;</code>
+       */
+      public Builder setUserId(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        userId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string userId = 2;</code>
+       */
+      public Builder clearUserId() {
+        
+        userId_ = getDefaultInstance().getUserId();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string userId = 2;</code>
+       */
+      public Builder setUserIdBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        userId_ = value;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object password_ = "";
+      /**
+       * <code>string password = 3;</code>
+       */
+      public java.lang.String getPassword() {
+        java.lang.Object ref = password_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          password_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string password = 3;</code>
+       */
+      public com.google.protobuf.ByteString
+          getPasswordBytes() {
+        java.lang.Object ref = password_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          password_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string password = 3;</code>
+       */
+      public Builder setPassword(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        password_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string password = 3;</code>
+       */
+      public Builder clearPassword() {
+        
+        password_ = getDefaultInstance().getPassword();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string password = 3;</code>
+       */
+      public Builder setPasswordBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        password_ = value;
+        onChanged();
+        return this;
+      }
+      @java.lang.Override
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFieldsProto3(unknownFields);
+      }
+
+      @java.lang.Override
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:lib.grpc.services.auto.UserLoginRequest)
+    }
+
+    // @@protoc_insertion_point(class_scope:lib.grpc.services.auto.UserLoginRequest)
+    private static final lib.grpc.services.auto.BookLibraryProtos.UserLoginRequest DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new lib.grpc.services.auto.BookLibraryProtos.UserLoginRequest();
+    }
+
+    public static lib.grpc.services.auto.BookLibraryProtos.UserLoginRequest getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<UserLoginRequest>
+        PARSER = new com.google.protobuf.AbstractParser<UserLoginRequest>() {
+      @java.lang.Override
+      public UserLoginRequest parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new UserLoginRequest(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<UserLoginRequest> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<UserLoginRequest> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public lib.grpc.services.auto.BookLibraryProtos.UserLoginRequest getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
   public interface GenericResponseOrBuilder extends
       // @@protoc_insertion_point(interface_extends:lib.grpc.services.auto.GenericResponse)
       com.google.protobuf.MessageOrBuilder {
@@ -4469,32 +5430,40 @@ public final class BookLibraryProtos {
     public enum ResponseType
         implements com.google.protobuf.ProtocolMessageEnum {
       /**
-       * <code>SUCCESS = 0;</code>
+       * <code>NONE = 0;</code>
        */
-      SUCCESS(0),
+      NONE(0),
       /**
-       * <code>WARNING = 1;</code>
+       * <code>SUCCESS = 1;</code>
        */
-      WARNING(1),
+      SUCCESS(1),
       /**
-       * <code>ERROR = 2;</code>
+       * <code>WARNING = 2;</code>
        */
-      ERROR(2),
+      WARNING(2),
+      /**
+       * <code>ERROR = 3;</code>
+       */
+      ERROR(3),
       UNRECOGNIZED(-1),
       ;
 
       /**
-       * <code>SUCCESS = 0;</code>
+       * <code>NONE = 0;</code>
        */
-      public static final int SUCCESS_VALUE = 0;
+      public static final int NONE_VALUE = 0;
       /**
-       * <code>WARNING = 1;</code>
+       * <code>SUCCESS = 1;</code>
        */
-      public static final int WARNING_VALUE = 1;
+      public static final int SUCCESS_VALUE = 1;
       /**
-       * <code>ERROR = 2;</code>
+       * <code>WARNING = 2;</code>
        */
-      public static final int ERROR_VALUE = 2;
+      public static final int WARNING_VALUE = 2;
+      /**
+       * <code>ERROR = 3;</code>
+       */
+      public static final int ERROR_VALUE = 3;
 
 
       public final int getNumber() {
@@ -4515,9 +5484,10 @@ public final class BookLibraryProtos {
 
       public static ResponseType forNumber(int value) {
         switch (value) {
-          case 0: return SUCCESS;
-          case 1: return WARNING;
-          case 2: return ERROR;
+          case 0: return NONE;
+          case 1: return SUCCESS;
+          case 2: return WARNING;
+          case 3: return ERROR;
           default: return null;
         }
       }
@@ -4635,7 +5605,7 @@ public final class BookLibraryProtos {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (type_ != lib.grpc.services.auto.BookLibraryProtos.GenericResponse.ResponseType.SUCCESS.getNumber()) {
+      if (type_ != lib.grpc.services.auto.BookLibraryProtos.GenericResponse.ResponseType.NONE.getNumber()) {
         output.writeEnum(1, type_);
       }
       if (!getMessageBytes().isEmpty()) {
@@ -4650,7 +5620,7 @@ public final class BookLibraryProtos {
       if (size != -1) return size;
 
       size = 0;
-      if (type_ != lib.grpc.services.auto.BookLibraryProtos.GenericResponse.ResponseType.SUCCESS.getNumber()) {
+      if (type_ != lib.grpc.services.auto.BookLibraryProtos.GenericResponse.ResponseType.NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(1, type_);
       }
@@ -7596,6 +8566,11 @@ public final class BookLibraryProtos {
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_lib_grpc_services_auto_MultipleAuthorsRequest_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_lib_grpc_services_auto_UserLoginRequest_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_lib_grpc_services_auto_UserLoginRequest_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_lib_grpc_services_auto_GenericResponse_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
@@ -7625,46 +8600,60 @@ public final class BookLibraryProtos {
   static {
     java.lang.String[] descriptorData = {
       "\n\nbook.proto\022\026lib.grpc.services.auto\"\016\n\014" +
-      "EmptyRequest\"M\n\013BookDetails\022\014\n\004isbn\030\001 \001(" +
+      "EmptyRequest\"]\n\013BookDetails\022\014\n\004isbn\030\001 \001(" +
       "\003\022\r\n\005title\030\002 \001(\t\022\016\n\006author\030\003 \001(\t\022\021\n\tpubl" +
-      "isher\030\004 \001(\t\"^\n\013BookRequest\022\025\n\rbookReques" +
-      "tId\030\001 \001(\005\0228\n\013bookDetails\030\002 \001(\0132#.lib.grp" +
-      "c.services.auto.BookDetails\"\035\n\014TitleRequ" +
-      "est\022\r\n\005title\030\001 \001(\t\"\033\n\013IsbnRequest\022\014\n\004isb" +
-      "n\030\001 \001(\003\"%\n\023SingleAuthorRequest\022\016\n\006author" +
-      "\030\001 \001(\t\"\\\n\026MultipleAuthorsRequest\022B\n\rauth" +
-      "orRequest\030\001 \003(\0132+.lib.grpc.services.auto" +
-      ".SingleAuthorRequest\"\233\001\n\017GenericResponse" +
-      "\022B\n\004type\030\001 \001(\01624.lib.grpc.services.auto." +
-      "GenericResponse.ResponseType\022\017\n\007message\030" +
-      "\002 \001(\t\"3\n\014ResponseType\022\013\n\007SUCCESS\020\000\022\013\n\007WA" +
-      "RNING\020\001\022\t\n\005ERROR\020\002\"\220\001\n\022SingleBookRespons" +
-      "e\0228\n\013bookDetails\030\001 \001(\0132#.lib.grpc.servic" +
-      "es.auto.BookDetails\022@\n\017genericResponse\030\002" +
-      " \001(\0132\'.lib.grpc.services.auto.GenericRes" +
-      "ponse\"\213\001\n\020BookListResponse\0225\n\010bookList\030\001" +
-      " \003(\0132#.lib.grpc.services.auto.BookDetail" +
-      "s\022@\n\017genericResponse\030\002 \001(\0132\'.lib.grpc.se" +
-      "rvices.auto.GenericResponse\"a\n\rCountResp" +
-      "onse\022\016\n\006counts\030\001 \001(\005\022@\n\017genericResponse\030" +
+      "isher\030\004 \001(\t\022\016\n\006repoId\030\005 \001(\t\"^\n\013BookReque" +
+      "st\022\025\n\rbookRequestId\030\001 \001(\005\0228\n\013bookDetails" +
+      "\030\002 \001(\0132#.lib.grpc.services.auto.BookDeta" +
+      "ils\"\035\n\014TitleRequest\022\r\n\005title\030\001 \001(\t\"\033\n\013Is" +
+      "bnRequest\022\014\n\004isbn\030\001 \001(\003\"%\n\023SingleAuthorR" +
+      "equest\022\016\n\006author\030\001 \001(\t\"\\\n\026MultipleAuthor" +
+      "sRequest\022B\n\rauthorRequest\030\001 \003(\0132+.lib.gr" +
+      "pc.services.auto.SingleAuthorRequest\"G\n\020" +
+      "UserLoginRequest\022\021\n\tserverUrl\030\001 \001(\t\022\016\n\006u" +
+      "serId\030\002 \001(\t\022\020\n\010password\030\003 \001(\t\"\245\001\n\017Generi" +
+      "cResponse\022B\n\004type\030\001 \001(\01624.lib.grpc.servi" +
+      "ces.auto.GenericResponse.ResponseType\022\017\n" +
+      "\007message\030\002 \001(\t\"=\n\014ResponseType\022\010\n\004NONE\020\000" +
+      "\022\013\n\007SUCCESS\020\001\022\013\n\007WARNING\020\002\022\t\n\005ERROR\020\003\"\220\001" +
+      "\n\022SingleBookResponse\0228\n\013bookDetails\030\001 \001(" +
+      "\0132#.lib.grpc.services.auto.BookDetails\022@" +
+      "\n\017genericResponse\030\002 \001(\0132\'.lib.grpc.servi" +
+      "ces.auto.GenericResponse\"\213\001\n\020BookListRes" +
+      "ponse\0225\n\010bookList\030\001 \003(\0132#.lib.grpc.servi" +
+      "ces.auto.BookDetails\022@\n\017genericResponse\030" +
       "\002 \001(\0132\'.lib.grpc.services.auto.GenericRe" +
-      "sponse2\335\004\n\013BookService\022Z\n\007addBook\022#.lib." +
-      "grpc.services.auto.BookRequest\032*.lib.grp" +
-      "c.services.auto.SingleBookResponse\022a\n\017ge" +
-      "tBooksByTitle\022$.lib.grpc.services.auto.T" +
-      "itleRequest\032(.lib.grpc.services.auto.Boo" +
-      "kListResponse\022\\\n\rgetBookCounts\022$.lib.grp" +
-      "c.services.auto.EmptyRequest\032%.lib.grpc." +
-      "services.auto.CountResponse\022]\n\013getAllBoo" +
-      "ks\022$.lib.grpc.services.auto.EmptyRequest" +
-      "\032(.lib.grpc.services.auto.BookListRespon" +
-      "se\022`\n\020deleteBookByIsbn\022#.lib.grpc.servic" +
-      "es.auto.IsbnRequest\032\'.lib.grpc.services." +
-      "auto.GenericResponse\022p\n\024getBooksByAuthor" +
-      "List\022..lib.grpc.services.auto.MultipleAu" +
-      "thorsRequest\032(.lib.grpc.services.auto.Bo" +
-      "okListResponseB\023B\021BookLibraryProtosb\006pro" +
-      "to3"
+      "sponse\"a\n\rCountResponse\022\016\n\006counts\030\001 \001(\005\022" +
+      "@\n\017genericResponse\030\002 \001(\0132\'.lib.grpc.serv" +
+      "ices.auto.GenericResponse2\312\010\n\013BookServic" +
+      "e\022Z\n\007addBook\022#.lib.grpc.services.auto.Bo" +
+      "okRequest\032*.lib.grpc.services.auto.Singl" +
+      "eBookResponse\022a\n\017getBooksByTitle\022$.lib.g" +
+      "rpc.services.auto.TitleRequest\032(.lib.grp" +
+      "c.services.auto.BookListResponse\022\\\n\rgetB" +
+      "ookCounts\022$.lib.grpc.services.auto.Empty" +
+      "Request\032%.lib.grpc.services.auto.CountRe" +
+      "sponse\022]\n\013getAllBooks\022$.lib.grpc.service" +
+      "s.auto.EmptyRequest\032(.lib.grpc.services." +
+      "auto.BookListResponse\022`\n\020deleteBookByIsb" +
+      "n\022#.lib.grpc.services.auto.IsbnRequest\032\'" +
+      ".lib.grpc.services.auto.GenericResponse\022" +
+      "p\n\024getBooksByAuthorList\022..lib.grpc.servi" +
+      "ces.auto.MultipleAuthorsRequest\032(.lib.gr" +
+      "pc.services.auto.BookListResponse\022Z\n\005log" +
+      "in\022(.lib.grpc.services.auto.UserLoginReq" +
+      "uest\032\'.lib.grpc.services.auto.GenericRes" +
+      "ponse\022W\n\006logout\022$.lib.grpc.services.auto" +
+      ".EmptyRequest\032\'.lib.grpc.services.auto.G" +
+      "enericResponse\022`\n\020saveBookToServer\022#.lib" +
+      ".grpc.services.auto.IsbnRequest\032\'.lib.gr" +
+      "pc.services.auto.GenericResponse\022i\n\027fetc" +
+      "hAllBooksFromServer\022$.lib.grpc.services." +
+      "auto.EmptyRequest\032(.lib.grpc.services.au" +
+      "to.BookListResponse\022i\n\026downloadBookFromS" +
+      "erver\022#.lib.grpc.services.auto.IsbnReque" +
+      "st\032*.lib.grpc.services.auto.SingleBookRe" +
+      "sponseB\023B\021BookLibraryProtosb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -7689,7 +8678,7 @@ public final class BookLibraryProtos {
     internal_static_lib_grpc_services_auto_BookDetails_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_lib_grpc_services_auto_BookDetails_descriptor,
-        new java.lang.String[] { "Isbn", "Title", "Author", "Publisher", });
+        new java.lang.String[] { "Isbn", "Title", "Author", "Publisher", "RepoId", });
     internal_static_lib_grpc_services_auto_BookRequest_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_lib_grpc_services_auto_BookRequest_fieldAccessorTable = new
@@ -7720,26 +8709,32 @@ public final class BookLibraryProtos {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_lib_grpc_services_auto_MultipleAuthorsRequest_descriptor,
         new java.lang.String[] { "AuthorRequest", });
-    internal_static_lib_grpc_services_auto_GenericResponse_descriptor =
+    internal_static_lib_grpc_services_auto_UserLoginRequest_descriptor =
       getDescriptor().getMessageTypes().get(7);
+    internal_static_lib_grpc_services_auto_UserLoginRequest_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_lib_grpc_services_auto_UserLoginRequest_descriptor,
+        new java.lang.String[] { "ServerUrl", "UserId", "Password", });
+    internal_static_lib_grpc_services_auto_GenericResponse_descriptor =
+      getDescriptor().getMessageTypes().get(8);
     internal_static_lib_grpc_services_auto_GenericResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_lib_grpc_services_auto_GenericResponse_descriptor,
         new java.lang.String[] { "Type", "Message", });
     internal_static_lib_grpc_services_auto_SingleBookResponse_descriptor =
-      getDescriptor().getMessageTypes().get(8);
+      getDescriptor().getMessageTypes().get(9);
     internal_static_lib_grpc_services_auto_SingleBookResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_lib_grpc_services_auto_SingleBookResponse_descriptor,
         new java.lang.String[] { "BookDetails", "GenericResponse", });
     internal_static_lib_grpc_services_auto_BookListResponse_descriptor =
-      getDescriptor().getMessageTypes().get(9);
+      getDescriptor().getMessageTypes().get(10);
     internal_static_lib_grpc_services_auto_BookListResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_lib_grpc_services_auto_BookListResponse_descriptor,
         new java.lang.String[] { "BookList", "GenericResponse", });
     internal_static_lib_grpc_services_auto_CountResponse_descriptor =
-      getDescriptor().getMessageTypes().get(10);
+      getDescriptor().getMessageTypes().get(11);
     internal_static_lib_grpc_services_auto_CountResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_lib_grpc_services_auto_CountResponse_descriptor,

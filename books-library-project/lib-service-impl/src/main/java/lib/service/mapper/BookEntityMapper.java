@@ -21,4 +21,5 @@ public interface BookEntityMapper
 	//@Mapping(source = "id", ignore = true)
 	//@BeanMapping(ignoreByDefault = true, ignoreUnmappedSourceProperties = {"id"})
 	BookDTO bookToBookDTO(Book book);
+	Book bookDTOToBook(BookDTO book);
 }

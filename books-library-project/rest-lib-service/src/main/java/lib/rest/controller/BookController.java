@@ -18,6 +18,7 @@ import lib.grpc.services.auto.BookLibraryProtos.BookRequest;
 import lib.grpc.services.auto.BookLibraryProtos.CountResponse;
 import lib.grpc.services.auto.BookLibraryProtos.GenericResponse;
 import lib.grpc.services.auto.BookLibraryProtos.SingleBookResponse;
+import lib.grpc.services.auto.BookLibraryProtos.UserLoginRequest;
 import lib.grpc.services.client.GrpcClient;
 
 @RestController

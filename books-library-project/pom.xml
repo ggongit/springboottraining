@@ -18,6 +18,7 @@
   	<module>lib-service-impl</module>
   	<module>grpc-library-service-impl</module>
   	<module>rest-lib-service</module>
+  	<module>ServerWrapper</module>
   </modules>
   <dependencies>
     <dependency>

@@ -1,1 +1,2 @@
 lib\service\api\BookService.class
+lib\service\api\exception\BookException.class

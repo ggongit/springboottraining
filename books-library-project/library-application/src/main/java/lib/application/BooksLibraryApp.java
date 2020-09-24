@@ -15,13 +15,17 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+import lib.dto.BookDTO;
 import lib.grpc.server.GrpcServer;
+import lib.server.wrapper.exceptions.ServerException;
 import lib.service.api.BookService;
 import lib.service.api.exception.BookException;
 
 @SpringBootApplication//(scanBasePackages = "lib")
 @EntityScan(basePackages = {"lib.model"})
-@ComponentScan(basePackages = {"lib.service.*", "lib.grpc"})
+@ComponentScan(basePackages = {"lib.*", "lib.service.*", "lib.grpc"})
 @EnableJpaRepositories(basePackages = {"lib.book.repository"})
 @PropertySource("classpath:application.properties")
 public class BooksLibraryApp
@@ -30,7 +34,7 @@ public class BooksLibraryApp
 	private String welcomeMsg;
 
 	private static ApplicationContext applicationContext;
-	
+	private static String SERVER_URL = "http://localhost:8080/nuxeo";
 	private ConfigurationPropertySource a;
 	
 	public static void main(String[] args)
@@ -45,7 +49,7 @@ public class BooksLibraryApp
 		
 		//testPOJOServices();
 		//testGrpcServices();
-		
+		//testServerServices();
 	}
 	
 	private static void testGrpcServices()
@@ -58,6 +62,36 @@ public class BooksLibraryApp
 		{
 			e.printStackTrace();
 		}
+	}
+	
+	private static String toJson(Object obj)
+	{
+		ObjectMapper mapper = new ObjectMapper();
+		String jsonString = "";
+		try {
+			jsonString = mapper.writeValueAsString(obj);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return jsonString;
+	}
+	
+	private static void testServerServices()
+	{
+		BookService bookService  = applicationContext.getBean("bookServiceInProd", BookService.class);
+		Long isbn = getNewIsbn();
+		BookDTO book;
+		try {
+			book = bookService.addBook(isbn, "To Kill a Mockingbird", "Harper Lee", "Grand Central Publishing");
+			bookService.login(SERVER_URL, "gaurav", "gaurav");
+			bookService.saveBookInServer(book);
+			
+			//bookService.deleteBookByIsbn(isbn);
+			
+		} catch (BookException | ServerException e) {
+			e.printStackTrace();
+		}
+
 	}
 	
 	private static void testPOJOServices() throws BookException

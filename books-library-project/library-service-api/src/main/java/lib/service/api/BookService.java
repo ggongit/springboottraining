@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.stereotype.Service;
 
 import lib.dto.BookDTO;
+import lib.server.wrapper.exceptions.ServerException;
 import lib.service.api.exception.BookException;
 
 
@@ -25,4 +26,10 @@ public interface BookService
 
 	public boolean deleteBookByIsbn(Long isbn);
 	public void deleteAllRecords();
+	
+	public void login(String url, String username, String password) throws ServerException;
+	public void saveBookInServer(BookDTO book) throws ServerException, BookException;
+	public void logout() throws ServerException;
+	public List<BookDTO> getAllBooksFromServer() throws ServerException;
+	public BookDTO downloadBookFromServer(Long isbn) throws ServerException, BookException;
 }

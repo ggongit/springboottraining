@@ -7,6 +7,7 @@ public class BookDTO
 	private String title;
 	private String author;
 	private String publisher;
+	private String repoId;
 	
 	public BookDTO() {}
 	public BookDTO(Long isbn, String title, String author, String publisher)
@@ -65,6 +66,13 @@ public class BookDTO
 	public void setPublisher(String publisher) 
 	{
 		this.publisher = publisher;
+	}
+	
+	public String getRepoId() {
+		return repoId;
+	}
+	public void setRepoId(String repoId) {
+		this.repoId = repoId;
 	}
 	
 	@Override
