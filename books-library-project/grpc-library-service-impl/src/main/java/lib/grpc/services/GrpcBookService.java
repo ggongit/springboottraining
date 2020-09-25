@@ -218,21 +218,21 @@ public class GrpcBookService extends BookServiceImplBase
 	public void downloadBookFromServer(IsbnRequest request, StreamObserver<SingleBookResponse> responseObserver) {
 	
 		GenericResponse.Builder genericResponse;
+		BookDetails.Builder bookDetailsBuilder = BookDetails.newBuilder();
 		SingleBookResponse.Builder finalResponseBuilder = SingleBookResponse.newBuilder();
 		try {
 			BookDTO bookDto = bookService.downloadBookFromServer(request.getIsbn());
-			BookDetails.Builder bookDetailBuilder = BookDetails.newBuilder()
+			bookDetailsBuilder
 					.setIsbn(bookDto.getIsbn())
 					.setTitle(bookDto.getTitle())
 					.setAuthor(bookDto.getAuthor())
 					.setPublisher(bookDto.getPublisher())
 					.setRepoId(bookDto.getRepoId());
 			genericResponse = getGenericResponseBuilder(ResponseType.SUCCESS, "Book is downloaded successfully from server");
-			finalResponseBuilder.setBookDetails(bookDetailBuilder);
 		} catch (ServerException | BookException e) {
 			genericResponse = getGenericResponseBuilder(ResponseType.ERROR, e.getMessage());
 		}
-		finalResponseBuilder.setGenericResponse(genericResponse);
+		finalResponseBuilder.setGenericResponse(genericResponse).setBookDetails(bookDetailsBuilder);
 		responseObserver.onNext(finalResponseBuilder.build());
 		responseObserver.onCompleted();
 	}

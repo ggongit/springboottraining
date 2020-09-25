@@ -853,3 +853,557 @@ password: "gaurav"
 2020-09-24 20:56:27,562 285606 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.getAllBooks(EmptyRequest,StreamObserver))
 2020-09-24 20:56:27,855 285899 INFO  - ==> GRPC service request ended:  >>> 
 2020-09-24 20:56:27,856 285900 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 09:55:40,886 47038930 WARN  - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=12h52m31s247ms630µs800ns).
+2020-09-25 11:24:34,165 52372209 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.getAllBooks(EmptyRequest,StreamObserver))
+2020-09-25 11:24:34,266 52372310 WARN  - SQL Warning Code: 10000, SQLState: 01J01
+2020-09-25 11:24:34,268 52372312 WARN  - Database 'mydb' not created, connection made to existing database instead.
+2020-09-25 11:24:34,641 52372685 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 11:24:34,642 52372686 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 11:33:13,689 52891733 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.getAllBooks(EmptyRequest,StreamObserver))
+2020-09-25 11:33:13,723 52891767 WARN  - SQL Warning Code: 10000, SQLState: 01J01
+2020-09-25 11:33:13,724 52891768 WARN  - Database 'mydb' not created, connection made to existing database instead.
+2020-09-25 11:33:14,121 52892165 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 11:33:14,121 52892165 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 11:50:02,489 53900533 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.fetchAllBooksFromServer(EmptyRequest,StreamObserver))
+2020-09-25 11:50:02,621 53900665 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 11:50:02,621 53900665 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 11:59:47,580 54485624 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.getAllBooks(EmptyRequest,StreamObserver))
+2020-09-25 11:59:47,611 54485655 WARN  - SQL Warning Code: 10000, SQLState: 01J01
+2020-09-25 11:59:47,612 54485656 WARN  - Database 'mydb' not created, connection made to existing database instead.
+2020-09-25 11:59:47,861 54485905 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 11:59:47,861 54485905 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 12:21:09,579 55767623 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.fetchAllBooksFromServer(EmptyRequest,StreamObserver))
+2020-09-25 12:21:09,608 55767652 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 12:21:09,608 55767652 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 12:25:08,332 56006376 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.getAllBooks(EmptyRequest,StreamObserver))
+2020-09-25 12:25:08,355 56006399 WARN  - SQL Warning Code: 10000, SQLState: 01J01
+2020-09-25 12:25:08,355 56006399 WARN  - Database 'mydb' not created, connection made to existing database instead.
+2020-09-25 12:25:08,702 56006746 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 12:25:08,702 56006746 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 12:25:13,907 56011951 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.fetchAllBooksFromServer(EmptyRequest,StreamObserver))
+2020-09-25 12:25:13,926 56011970 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 12:25:13,926 56011970 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 12:25:48,933 56046977 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.fetchAllBooksFromServer(EmptyRequest,StreamObserver))
+2020-09-25 12:25:48,958 56047002 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 12:25:48,958 56047002 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 12:48:21,747 57399791 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.getAllBooks(EmptyRequest,StreamObserver))
+2020-09-25 12:48:22,074 57400118 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 12:48:22,074 57400118 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 12:48:39,759 57417803 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.fetchAllBooksFromServer(EmptyRequest,StreamObserver))
+2020-09-25 12:48:39,777 57417821 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 12:48:39,777 57417821 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 12:50:09,396 57507440 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.fetchAllBooksFromServer(EmptyRequest,StreamObserver))
+2020-09-25 12:50:09,411 57507455 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 12:50:09,412 57507456 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 12:51:52,816 57610860 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.getAllBooks(EmptyRequest,StreamObserver))
+2020-09-25 12:51:53,079 57611123 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 12:51:53,080 57611124 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 12:52:01,539 57619583 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.fetchAllBooksFromServer(EmptyRequest,StreamObserver))
+2020-09-25 12:52:01,551 57619595 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 12:52:01,552 57619596 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 13:33:28,353 60106397 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.getAllBooks(EmptyRequest,StreamObserver))
+2020-09-25 13:33:28,388 60106432 WARN  - SQL Warning Code: 10000, SQLState: 01J01
+2020-09-25 13:33:28,388 60106432 WARN  - Database 'mydb' not created, connection made to existing database instead.
+2020-09-25 13:33:28,678 60106722 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 13:33:28,679 60106723 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 13:33:49,602 60127646 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.getAllBooks(EmptyRequest,StreamObserver))
+2020-09-25 13:33:49,798 60127842 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 13:33:49,800 60127844 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 13:33:56,234 60134278 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.fetchAllBooksFromServer(EmptyRequest,StreamObserver))
+2020-09-25 13:33:56,304 60134348 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 13:33:56,304 60134348 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 13:38:04,993 60383037 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.getAllBooks(EmptyRequest,StreamObserver))
+2020-09-25 13:38:05,142 60383186 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 13:38:05,142 60383186 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 13:38:09,349 60387393 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.fetchAllBooksFromServer(EmptyRequest,StreamObserver))
+2020-09-25 13:38:09,363 60387407 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 13:38:09,363 60387407 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 13:38:57,935 60435979 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.getAllBooks(EmptyRequest,StreamObserver))
+2020-09-25 13:38:58,100 60436144 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 13:38:58,100 60436144 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 13:39:02,136 60440180 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.fetchAllBooksFromServer(EmptyRequest,StreamObserver))
+2020-09-25 13:39:02,150 60440194 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 13:39:02,153 60440197 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 13:40:16,682 60514726 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.IsbnRequest >>> isbn: 618260307
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.downloadBookFromServer(IsbnRequest,StreamObserver))
+2020-09-25 13:40:16,689 60514733 INFO  - ==> GRPC service request ended:  >>> isbn: 618260307
+
+2020-09-25 13:40:16,690 60514734 INFO  - ==> GRPC service request successfull:  >>> isbn: 618260307
+
+2020-09-25 13:46:13,465 60871509 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.getAllBooks(EmptyRequest,StreamObserver))
+2020-09-25 13:46:13,734 60871778 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 13:46:13,735 60871779 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 13:46:22,405 60880449 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.fetchAllBooksFromServer(EmptyRequest,StreamObserver))
+2020-09-25 13:46:22,417 60880461 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 13:46:22,417 60880461 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 13:46:48,018 60906062 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.IsbnRequest >>> isbn: 618260307
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.downloadBookFromServer(IsbnRequest,StreamObserver))
+2020-09-25 13:46:48,019 60906063 INFO  - ==> GRPC service request ended:  >>> isbn: 618260307
+
+2020-09-25 13:46:48,020 60906064 INFO  - ==> GRPC service request successfull:  >>> isbn: 618260307
+
+2020-09-25 13:47:06,308 60924352 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.IsbnRequest >>> isbn: 618260307
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.downloadBookFromServer(IsbnRequest,StreamObserver))
+2020-09-25 13:47:06,311 60924355 INFO  - ==> GRPC service request ended:  >>> isbn: 618260307
+
+2020-09-25 13:47:06,311 60924355 INFO  - ==> GRPC service request successfull:  >>> isbn: 618260307
+
+2020-09-25 13:48:09,244 60987288 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.IsbnRequest >>> isbn: 618260307
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.downloadBookFromServer(IsbnRequest,StreamObserver))
+2020-09-25 13:48:09,247 60987291 INFO  - ==> GRPC service request ended:  >>> isbn: 618260307
+
+2020-09-25 13:48:09,247 60987291 INFO  - ==> GRPC service request successfull:  >>> isbn: 618260307
+
+2020-09-25 13:50:47,526 61145570 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.getAllBooks(EmptyRequest,StreamObserver))
+2020-09-25 13:50:47,694 61145738 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 13:50:47,694 61145738 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 13:52:12,978 61231022 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.getAllBooks(EmptyRequest,StreamObserver))
+2020-09-25 13:52:13,212 61231256 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 13:52:13,212 61231256 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 13:52:30,652 61248696 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.fetchAllBooksFromServer(EmptyRequest,StreamObserver))
+2020-09-25 13:52:30,663 61248707 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 13:52:30,664 61248708 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 13:52:37,765 61255809 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.IsbnRequest >>> isbn: 618260307
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.downloadBookFromServer(IsbnRequest,StreamObserver))
+2020-09-25 13:52:37,766 61255810 WARN  - SQL Warning Code: 10000, SQLState: 01J01
+2020-09-25 13:52:37,766 61255810 WARN  - Database 'mydb' not created, connection made to existing database instead.
+2020-09-25 13:52:37,767 61255811 INFO  - ==> GRPC service request ended:  >>> isbn: 618260307
+
+2020-09-25 13:52:37,768 61255812 INFO  - ==> GRPC service request successfull:  >>> isbn: 618260307
+
+2020-09-25 13:52:45,265 61263309 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.IsbnRequest >>> isbn: 618260307
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.downloadBookFromServer(IsbnRequest,StreamObserver))
+2020-09-25 13:52:45,267 61263311 INFO  - ==> GRPC service request ended:  >>> isbn: 618260307
+
+2020-09-25 13:52:45,267 61263311 INFO  - ==> GRPC service request successfull:  >>> isbn: 618260307
+
+2020-09-25 13:52:46,424 61264468 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.IsbnRequest >>> isbn: 618260307
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.downloadBookFromServer(IsbnRequest,StreamObserver))
+2020-09-25 13:52:46,426 61264470 INFO  - ==> GRPC service request ended:  >>> isbn: 618260307
+
+2020-09-25 13:52:46,426 61264470 INFO  - ==> GRPC service request successfull:  >>> isbn: 618260307
+
+2020-09-25 13:52:47,144 61265188 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.IsbnRequest >>> isbn: 618260307
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.downloadBookFromServer(IsbnRequest,StreamObserver))
+2020-09-25 13:52:47,146 61265190 INFO  - ==> GRPC service request ended:  >>> isbn: 618260307
+
+2020-09-25 13:52:47,146 61265190 INFO  - ==> GRPC service request successfull:  >>> isbn: 618260307
+
+2020-09-25 13:53:09,438 61287482 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.IsbnRequest >>> isbn: 618260307
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.downloadBookFromServer(IsbnRequest,StreamObserver))
+2020-09-25 13:53:09,439 61287483 WARN  - SQL Warning Code: 10000, SQLState: 01J01
+2020-09-25 13:53:09,439 61287483 WARN  - Database 'mydb' not created, connection made to existing database instead.
+2020-09-25 13:53:09,440 61287484 INFO  - ==> GRPC service request ended:  >>> isbn: 618260307
+
+2020-09-25 13:53:09,440 61287484 INFO  - ==> GRPC service request successfull:  >>> isbn: 618260307
+
+2020-09-25 13:53:20,721 61298765 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.IsbnRequest >>> isbn: 618260307
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.downloadBookFromServer(IsbnRequest,StreamObserver))
+2020-09-25 13:53:20,722 61298766 WARN  - SQL Warning Code: 10000, SQLState: 01J01
+2020-09-25 13:53:20,722 61298766 WARN  - Database 'mydb' not created, connection made to existing database instead.
+2020-09-25 13:53:20,723 61298767 INFO  - ==> GRPC service request ended:  >>> isbn: 618260307
+
+2020-09-25 13:53:20,723 61298767 INFO  - ==> GRPC service request successfull:  >>> isbn: 618260307
+
+2020-09-25 13:54:49,329 61387373 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.fetchAllBooksFromServer(EmptyRequest,StreamObserver))
+2020-09-25 13:54:49,348 61387392 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 13:54:49,348 61387392 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 13:54:50,850 61388894 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.IsbnRequest >>> isbn: 618260307
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.downloadBookFromServer(IsbnRequest,StreamObserver))
+2020-09-25 13:54:50,851 61388895 WARN  - SQL Warning Code: 10000, SQLState: 01J01
+2020-09-25 13:54:50,851 61388895 WARN  - Database 'mydb' not created, connection made to existing database instead.
+2020-09-25 13:54:50,852 61388896 INFO  - ==> GRPC service request ended:  >>> isbn: 618260307
+
+2020-09-25 13:54:50,852 61388896 INFO  - ==> GRPC service request successfull:  >>> isbn: 618260307
+
+2020-09-25 13:54:53,205 61391249 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.fetchAllBooksFromServer(EmptyRequest,StreamObserver))
+2020-09-25 13:54:53,216 61391260 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 13:54:53,216 61391260 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 13:54:54,459 61392503 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.IsbnRequest >>> isbn: 618260307
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.downloadBookFromServer(IsbnRequest,StreamObserver))
+2020-09-25 13:54:54,461 61392505 INFO  - ==> GRPC service request ended:  >>> isbn: 618260307
+
+2020-09-25 13:54:54,461 61392505 INFO  - ==> GRPC service request successfull:  >>> isbn: 618260307
+
+2020-09-25 13:54:55,029 61393073 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.IsbnRequest >>> isbn: 618260307
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.downloadBookFromServer(IsbnRequest,StreamObserver))
+2020-09-25 13:54:55,034 61393078 INFO  - ==> GRPC service request ended:  >>> isbn: 618260307
+
+2020-09-25 13:54:55,034 61393078 INFO  - ==> GRPC service request successfull:  >>> isbn: 618260307
+
+2020-09-25 13:57:29,612 61547656 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.IsbnRequest >>> isbn: 618260307
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.downloadBookFromServer(IsbnRequest,StreamObserver))
+2020-09-25 13:57:29,615 61547659 INFO  - ==> GRPC service request ended:  >>> isbn: 618260307
+
+2020-09-25 13:57:29,615 61547659 INFO  - ==> GRPC service request successfull:  >>> isbn: 618260307
+
+2020-09-25 14:00:42,859 61740903 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.getAllBooks(EmptyRequest,StreamObserver))
+2020-09-25 14:00:43,179 61741223 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 14:00:43,179 61741223 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 14:00:46,568 61744612 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.fetchAllBooksFromServer(EmptyRequest,StreamObserver))
+2020-09-25 14:00:46,582 61744626 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 14:00:46,583 61744627 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 14:00:48,048 61746092 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.IsbnRequest >>> isbn: 618260307
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.downloadBookFromServer(IsbnRequest,StreamObserver))
+2020-09-25 14:00:48,050 61746094 INFO  - ==> GRPC service request ended:  >>> isbn: 618260307
+
+2020-09-25 14:00:48,050 61746094 INFO  - ==> GRPC service request successfull:  >>> isbn: 618260307
+
+2020-09-25 14:26:17,514 63275558 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.IsbnRequest >>> isbn: 618260307
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.downloadBookFromServer(IsbnRequest,StreamObserver))
+2020-09-25 14:26:17,515 63275559 WARN  - SQL Warning Code: 10000, SQLState: 01J01
+2020-09-25 14:26:17,515 63275559 WARN  - Database 'mydb' not created, connection made to existing database instead.
+2020-09-25 14:26:17,517 63275561 INFO  - ==> GRPC service request ended:  >>> isbn: 618260307
+
+2020-09-25 14:26:17,518 63275562 INFO  - ==> GRPC service request successfull:  >>> isbn: 618260307
+
+2020-09-25 14:26:36,550 63294594 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.IsbnRequest >>> isbn: 908606664
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.saveBookToServer(IsbnRequest,StreamObserver))
+2020-09-25 14:26:36,553 63294597 INFO  - ==> GRPC service request ended:  >>> isbn: 908606664
+
+2020-09-25 14:26:36,554 63294598 INFO  - ==> GRPC service request successfull:  >>> isbn: 908606664
+
+2020-09-25 14:27:11,463 63329507 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.BookRequest >>> bookDetails {
+  isbn: 393310728
+  title: "gg"
+  author: "gg"
+  publisher: "gg"
+}
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.addBook(BookRequest,StreamObserver))
+2020-09-25 14:27:11,466 63329510 INFO  - ==> GRPC service request ended:  >>> bookDetails {
+  isbn: 393310728
+  title: "gg"
+  author: "gg"
+  publisher: "gg"
+}
+
+2020-09-25 14:27:11,467 63329511 INFO  - ==> GRPC service request successfull:  >>> bookDetails {
+  isbn: 393310728
+  title: "gg"
+  author: "gg"
+  publisher: "gg"
+}
+
+2020-09-25 14:33:10,235 63688279 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.fetchAllBooksFromServer(EmptyRequest,StreamObserver))
+2020-09-25 14:33:10,276 63688320 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 14:33:10,276 63688320 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 14:33:13,785 63691829 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.IsbnRequest >>> isbn: 618260307
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.downloadBookFromServer(IsbnRequest,StreamObserver))
+2020-09-25 14:33:13,796 63691840 INFO  - ==> GRPC service request ended:  >>> isbn: 618260307
+
+2020-09-25 14:33:13,796 63691840 INFO  - ==> GRPC service request successfull:  >>> isbn: 618260307
+
+2020-09-25 14:33:27,712 63705756 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.fetchAllBooksFromServer(EmptyRequest,StreamObserver))
+2020-09-25 14:33:27,723 63705767 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 14:33:27,723 63705767 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 14:34:13,331 63751375 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.IsbnRequest >>> isbn: 618260307
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.downloadBookFromServer(IsbnRequest,StreamObserver))
+2020-09-25 14:34:13,333 63751377 INFO  - ==> GRPC service request ended:  >>> isbn: 618260307
+
+2020-09-25 14:34:13,334 63751378 INFO  - ==> GRPC service request successfull:  >>> isbn: 618260307
+
+2020-09-25 14:49:14,204 64652248 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.getAllBooks(EmptyRequest,StreamObserver))
+2020-09-25 14:49:14,377 64652421 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 14:49:14,378 64652422 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 14:49:21,691 64659735 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.fetchAllBooksFromServer(EmptyRequest,StreamObserver))
+2020-09-25 14:49:21,713 64659757 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 14:49:21,713 64659757 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 14:49:24,299 64662343 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.IsbnRequest >>> isbn: 618260307
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.downloadBookFromServer(IsbnRequest,StreamObserver))
+2020-09-25 14:49:24,301 64662345 INFO  - ==> GRPC service request ended:  >>> isbn: 618260307
+
+2020-09-25 14:49:24,301 64662345 INFO  - ==> GRPC service request successfull:  >>> isbn: 618260307
+
+2020-09-25 14:49:30,851 64668895 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.IsbnRequest >>> isbn: 618260307
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.downloadBookFromServer(IsbnRequest,StreamObserver))
+2020-09-25 14:49:30,853 64668897 INFO  - ==> GRPC service request ended:  >>> isbn: 618260307
+
+2020-09-25 14:49:30,853 64668897 INFO  - ==> GRPC service request successfull:  >>> isbn: 618260307
+
+2020-09-25 14:49:31,687 64669731 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.IsbnRequest >>> isbn: 618260307
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.downloadBookFromServer(IsbnRequest,StreamObserver))
+2020-09-25 14:49:31,690 64669734 INFO  - ==> GRPC service request ended:  >>> isbn: 618260307
+
+2020-09-25 14:49:31,690 64669734 INFO  - ==> GRPC service request successfull:  >>> isbn: 618260307
+
+2020-09-25 17:57:17,167 75935211 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.getAllBooks(EmptyRequest,StreamObserver))
+2020-09-25 17:57:17,211 75935255 WARN  - SQL Warning Code: 10000, SQLState: 01J01
+2020-09-25 17:57:17,211 75935255 WARN  - Database 'mydb' not created, connection made to existing database instead.
+2020-09-25 17:57:17,373 75935417 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 17:57:17,374 75935418 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 17:57:21,984 75940028 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.fetchAllBooksFromServer(EmptyRequest,StreamObserver))
+2020-09-25 17:57:22,058 75940102 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 17:57:22,058 75940102 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 18:04:41,705 76379749 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.getAllBooks(EmptyRequest,StreamObserver))
+2020-09-25 18:04:41,907 76379951 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 18:04:41,907 76379951 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 18:04:44,691 76382735 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.fetchAllBooksFromServer(EmptyRequest,StreamObserver))
+2020-09-25 18:04:44,713 76382757 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 18:04:44,714 76382758 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 18:06:17,699 76475743 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.getAllBooks(EmptyRequest,StreamObserver))
+2020-09-25 18:06:17,867 76475911 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 18:06:17,867 76475911 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 18:06:23,852 76481896 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.fetchAllBooksFromServer(EmptyRequest,StreamObserver))
+2020-09-25 18:06:23,866 76481910 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 18:06:23,866 76481910 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 19:38:56,488 82034532 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.getAllBooks(EmptyRequest,StreamObserver))
+2020-09-25 19:38:56,525 82034569 WARN  - SQL Warning Code: 10000, SQLState: 01J01
+2020-09-25 19:38:56,526 82034570 WARN  - Database 'mydb' not created, connection made to existing database instead.
+2020-09-25 19:38:56,722 82034766 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 19:38:56,723 82034767 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 19:39:18,780 82056824 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.fetchAllBooksFromServer(EmptyRequest,StreamObserver))
+2020-09-25 19:39:18,835 82056879 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 19:39:18,835 82056879 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 19:41:51,368 82209412 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.getAllBooks(EmptyRequest,StreamObserver))
+2020-09-25 19:41:51,504 82209548 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 19:41:51,505 82209549 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 19:41:54,280 82212324 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.fetchAllBooksFromServer(EmptyRequest,StreamObserver))
+2020-09-25 19:41:54,299 82212343 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 19:41:54,299 82212343 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 19:59:15,697 83253741 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.getAllBooks(EmptyRequest,StreamObserver))
+2020-09-25 19:59:15,711 83253755 WARN  - SQL Warning Code: 10000, SQLState: 01J01
+2020-09-25 19:59:15,711 83253755 WARN  - Database 'mydb' not created, connection made to existing database instead.
+2020-09-25 19:59:15,868 83253912 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 19:59:15,875 83253919 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 19:59:20,085 83258129 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.fetchAllBooksFromServer(EmptyRequest,StreamObserver))
+2020-09-25 19:59:20,099 83258143 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 19:59:20,100 83258144 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 19:59:24,897 83262941 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.fetchAllBooksFromServer(EmptyRequest,StreamObserver))
+2020-09-25 19:59:24,907 83262951 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 19:59:24,908 83262952 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 19:59:29,562 83267606 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.fetchAllBooksFromServer(EmptyRequest,StreamObserver))
+2020-09-25 19:59:29,570 83267614 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 19:59:29,570 83267614 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 19:59:32,815 83270859 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.fetchAllBooksFromServer(EmptyRequest,StreamObserver))
+2020-09-25 19:59:32,824 83270868 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 19:59:32,825 83270869 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 19:59:35,051 83273095 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.fetchAllBooksFromServer(EmptyRequest,StreamObserver))
+2020-09-25 19:59:35,061 83273105 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 19:59:35,062 83273106 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 19:59:37,354 83275398 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.fetchAllBooksFromServer(EmptyRequest,StreamObserver))
+2020-09-25 19:59:37,360 83275404 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 19:59:37,361 83275405 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 19:59:39,527 83277571 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.fetchAllBooksFromServer(EmptyRequest,StreamObserver))
+2020-09-25 19:59:39,535 83277579 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 19:59:39,536 83277580 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 19:59:41,862 83279906 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.fetchAllBooksFromServer(EmptyRequest,StreamObserver))
+2020-09-25 19:59:41,868 83279912 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 19:59:41,868 83279912 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 20:01:24,315 83382359 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.fetchAllBooksFromServer(EmptyRequest,StreamObserver))
+2020-09-25 20:01:24,330 83382374 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 20:01:24,330 83382374 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 20:03:26,090 83504134 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.fetchAllBooksFromServer(EmptyRequest,StreamObserver))
+2020-09-25 20:03:26,100 83504144 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 20:03:26,100 83504144 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 20:03:28,903 83506947 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.fetchAllBooksFromServer(EmptyRequest,StreamObserver))
+2020-09-25 20:03:28,912 83506956 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 20:03:28,912 83506956 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 20:11:56,889 84014933 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.getAllBooks(EmptyRequest,StreamObserver))
+2020-09-25 20:11:57,009 84015053 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 20:11:57,009 84015053 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 20:12:48,131 84066175 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.fetchAllBooksFromServer(EmptyRequest,StreamObserver))
+2020-09-25 20:12:48,145 84066189 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 20:12:48,145 84066189 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 20:12:51,985 84070029 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.fetchAllBooksFromServer(EmptyRequest,StreamObserver))
+2020-09-25 20:12:51,994 84070038 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 20:12:51,994 84070038 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 20:12:54,586 84072630 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.fetchAllBooksFromServer(EmptyRequest,StreamObserver))
+2020-09-25 20:12:54,594 84072638 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 20:12:54,594 84072638 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 20:12:56,872 84074916 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.fetchAllBooksFromServer(EmptyRequest,StreamObserver))
+2020-09-25 20:12:56,878 84074922 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 20:12:56,878 84074922 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 20:13:09,544 84087588 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.getAllBooks(EmptyRequest,StreamObserver))
+2020-09-25 20:13:09,673 84087717 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 20:13:09,674 84087718 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 20:13:12,681 84090725 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.fetchAllBooksFromServer(EmptyRequest,StreamObserver))
+2020-09-25 20:13:12,687 84090731 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 20:13:12,687 84090731 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 20:13:14,608 84092652 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.fetchAllBooksFromServer(EmptyRequest,StreamObserver))
+2020-09-25 20:13:14,616 84092660 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 20:13:14,616 84092660 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 20:20:25,161 84523205 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.getAllBooks(EmptyRequest,StreamObserver))
+2020-09-25 20:20:25,181 84523225 WARN  - SQL Warning Code: 10000, SQLState: 01J01
+2020-09-25 20:20:25,181 84523225 WARN  - Database 'mydb' not created, connection made to existing database instead.
+2020-09-25 20:20:25,322 84523366 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 20:20:25,322 84523366 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 20:20:41,279 84539323 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.fetchAllBooksFromServer(EmptyRequest,StreamObserver))
+2020-09-25 20:20:41,291 84539335 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 20:20:41,292 84539336 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 20:20:55,793 84553837 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.fetchAllBooksFromServer(EmptyRequest,StreamObserver))
+2020-09-25 20:20:55,801 84553845 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 20:20:55,801 84553845 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 20:20:59,389 84557433 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.fetchAllBooksFromServer(EmptyRequest,StreamObserver))
+2020-09-25 20:20:59,398 84557442 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 20:20:59,398 84557442 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 20:21:01,527 84559571 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.fetchAllBooksFromServer(EmptyRequest,StreamObserver))
+2020-09-25 20:21:01,535 84559579 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 20:21:01,535 84559579 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 20:21:04,641 84562685 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.fetchAllBooksFromServer(EmptyRequest,StreamObserver))
+2020-09-25 20:21:04,647 84562691 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 20:21:04,647 84562691 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 20:21:06,775 84564819 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.fetchAllBooksFromServer(EmptyRequest,StreamObserver))
+2020-09-25 20:21:06,780 84564824 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 20:21:06,781 84564825 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 20:21:08,051 84566095 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.fetchAllBooksFromServer(EmptyRequest,StreamObserver))
+2020-09-25 20:21:08,056 84566100 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 20:21:08,056 84566100 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 20:23:03,156 84681200 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.getAllBooks(EmptyRequest,StreamObserver))
+2020-09-25 20:23:03,396 84681440 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 20:23:03,397 84681441 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 20:24:03,957 84742001 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.getAllBooks(EmptyRequest,StreamObserver))
+2020-09-25 20:24:04,074 84742118 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 20:24:04,074 84742118 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 20:24:07,454 84745498 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.fetchAllBooksFromServer(EmptyRequest,StreamObserver))
+2020-09-25 20:24:07,466 84745510 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 20:24:07,467 84745511 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 20:25:57,980 84856024 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.getAllBooks(EmptyRequest,StreamObserver))
+2020-09-25 20:25:58,185 84856229 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 20:25:58,188 84856232 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 20:26:00,808 84858852 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.fetchAllBooksFromServer(EmptyRequest,StreamObserver))
+2020-09-25 20:26:00,821 84858865 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 20:26:00,821 84858865 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 20:27:54,295 84972339 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.getAllBooks(EmptyRequest,StreamObserver))
+2020-09-25 20:27:54,462 84972506 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 20:27:54,462 84972506 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 20:27:57,568 84975612 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.fetchAllBooksFromServer(EmptyRequest,StreamObserver))
+2020-09-25 20:27:57,580 84975624 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 20:27:57,580 84975624 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 20:28:16,286 84994330 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.IsbnRequest >>> isbn: 77432
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.downloadBookFromServer(IsbnRequest,StreamObserver))
+2020-09-25 20:28:16,291 84994335 INFO  - ==> GRPC service request ended:  >>> isbn: 77432
+
+2020-09-25 20:28:16,291 84994335 INFO  - ==> GRPC service request successfull:  >>> isbn: 77432
+
+2020-09-25 20:28:23,014 85001058 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.getAllBooks(EmptyRequest,StreamObserver))
+2020-09-25 20:28:23,119 85001163 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 20:28:23,119 85001163 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 20:28:33,220 85011264 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.IsbnRequest >>> isbn: 77432
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.deleteBookByIsbn(IsbnRequest,StreamObserver))
+2020-09-25 20:28:33,241 85011285 INFO  - ==> GRPC service request ended:  >>> isbn: 77432
+
+2020-09-25 20:28:33,242 85011286 INFO  - ==> GRPC service request successfull:  >>> isbn: 77432
+
+2020-09-25 20:28:33,262 85011306 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.getAllBooks(EmptyRequest,StreamObserver))
+2020-09-25 20:28:33,416 85011460 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 20:28:33,416 85011460 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 20:28:50,080 85028124 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.getAllBooks(EmptyRequest,StreamObserver))
+2020-09-25 20:28:50,210 85028254 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 20:28:50,210 85028254 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 20:28:52,449 85030493 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.IsbnRequest >>> isbn: 77432
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.downloadBookFromServer(IsbnRequest,StreamObserver))
+2020-09-25 20:28:52,476 85030520 INFO  - ==> GRPC service request ended:  >>> isbn: 77432
+
+2020-09-25 20:28:52,477 85030521 INFO  - ==> GRPC service request successfull:  >>> isbn: 77432
+
+2020-09-25 20:28:52,605 85030649 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.getAllBooks(EmptyRequest,StreamObserver))
+2020-09-25 20:28:52,738 85030782 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 20:28:52,738 85030782 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 20:29:01,698 85039742 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.getAllBooks(EmptyRequest,StreamObserver))
+2020-09-25 20:29:01,824 85039868 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 20:29:01,824 85039868 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 20:31:00,739 85158783 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.getAllBooks(EmptyRequest,StreamObserver))
+2020-09-25 20:31:00,908 85158952 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 20:31:00,908 85158952 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 20:31:09,368 85167412 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.fetchAllBooksFromServer(EmptyRequest,StreamObserver))
+2020-09-25 20:31:09,380 85167424 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 20:31:09,380 85167424 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 20:33:10,804 85288848 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.getAllBooks(EmptyRequest,StreamObserver))
+2020-09-25 20:33:10,946 85288990 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 20:33:10,946 85288990 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 20:33:36,835 85314879 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.BookRequest >>> bookDetails {
+  isbn: 1
+  title: "a"
+  author: "a"
+  publisher: "a"
+}
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.addBook(BookRequest,StreamObserver))
+2020-09-25 20:33:36,849 85314893 INFO  - ==> GRPC service request ended:  >>> bookDetails {
+  isbn: 1
+  title: "a"
+  author: "a"
+  publisher: "a"
+}
+
+2020-09-25 20:33:36,849 85314893 INFO  - ==> GRPC service request successfull:  >>> bookDetails {
+  isbn: 1
+  title: "a"
+  author: "a"
+  publisher: "a"
+}
+
+2020-09-25 20:33:36,940 85314984 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.getAllBooks(EmptyRequest,StreamObserver))
+2020-09-25 20:33:37,056 85315100 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 20:33:37,056 85315100 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 20:33:45,767 85323811 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.getAllBooks(EmptyRequest,StreamObserver))
+2020-09-25 20:33:45,978 85324022 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 20:33:45,978 85324022 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 20:33:50,799 85328843 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.getAllBooks(EmptyRequest,StreamObserver))
+2020-09-25 20:33:50,928 85328972 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 20:33:50,928 85328972 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 20:34:04,084 85342128 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.BookRequest >>> bookDetails {
+  isbn: 1111
+  title: "1"
+  author: "1"
+  publisher: "1"
+}
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.addBook(BookRequest,StreamObserver))
+2020-09-25 20:34:04,098 85342142 INFO  - ==> GRPC service request ended:  >>> bookDetails {
+  isbn: 1111
+  title: "1"
+  author: "1"
+  publisher: "1"
+}
+
+2020-09-25 20:34:04,098 85342142 INFO  - ==> GRPC service request successfull:  >>> bookDetails {
+  isbn: 1111
+  title: "1"
+  author: "1"
+  publisher: "1"
+}
+
+2020-09-25 20:34:04,223 85342267 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.getAllBooks(EmptyRequest,StreamObserver))
+2020-09-25 20:34:04,345 85342389 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 20:34:04,346 85342390 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 20:34:07,584 85345628 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.getAllBooks(EmptyRequest,StreamObserver))
+2020-09-25 20:34:07,718 85345762 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 20:34:07,718 85345762 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 20:34:11,665 85349709 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.IsbnRequest >>> isbn: 1111
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.saveBookToServer(IsbnRequest,StreamObserver))
+2020-09-25 20:34:11,737 85349781 INFO  - ==> GRPC service request ended:  >>> isbn: 1111
+
+2020-09-25 20:34:11,737 85349781 INFO  - ==> GRPC service request successfull:  >>> isbn: 1111
+
+2020-09-25 20:34:11,758 85349802 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.getAllBooks(EmptyRequest,StreamObserver))
+2020-09-25 20:34:11,919 85349963 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 20:34:11,919 85349963 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 20:36:40,359 85498403 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.fetchAllBooksFromServer(EmptyRequest,StreamObserver))
+2020-09-25 20:36:40,375 85498419 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 20:36:40,376 85498420 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 20:36:44,487 85502531 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.IsbnRequest >>> isbn: 1111
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.downloadBookFromServer(IsbnRequest,StreamObserver))
+2020-09-25 20:36:44,490 85502534 INFO  - ==> GRPC service request ended:  >>> isbn: 1111
+
+2020-09-25 20:36:44,491 85502535 INFO  - ==> GRPC service request successfull:  >>> isbn: 1111
+
+2020-09-25 20:36:55,374 85513418 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.IsbnRequest >>> isbn: 1111
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.deleteBookByIsbn(IsbnRequest,StreamObserver))
+2020-09-25 20:36:55,386 85513430 INFO  - ==> GRPC service request ended:  >>> isbn: 1111
+
+2020-09-25 20:36:55,386 85513430 INFO  - ==> GRPC service request successfull:  >>> isbn: 1111
+
+2020-09-25 20:36:55,406 85513450 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.getAllBooks(EmptyRequest,StreamObserver))
+2020-09-25 20:36:55,580 85513624 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 20:36:55,580 85513624 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 20:36:59,538 85517582 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.IsbnRequest >>> isbn: 1111
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.downloadBookFromServer(IsbnRequest,StreamObserver))
+2020-09-25 20:36:59,561 85517605 INFO  - ==> GRPC service request ended:  >>> isbn: 1111
+
+2020-09-25 20:36:59,561 85517605 INFO  - ==> GRPC service request successfull:  >>> isbn: 1111
+
+2020-09-25 20:36:59,627 85517671 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.getAllBooks(EmptyRequest,StreamObserver))
+2020-09-25 20:36:59,795 85517839 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 20:36:59,795 85517839 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 20:38:56,973 85635017 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.getAllBooks(EmptyRequest,StreamObserver))
+2020-09-25 20:38:57,135 85635179 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 20:38:57,135 85635179 INFO  - ==> GRPC service request successfull:  >>> 
