@@ -11,12 +11,12 @@
             "description": "Delete the selected book from the list."
         },
         "ServerLoginCmd":{
-            "iconId": "cmdLinktoNX",
+            "iconId": "cmdNavigate",
             "title": "Login",
             "description": "Login to server."
         },
         "ServerLogoutCmd":{
-            "iconId": "cmdUnlinkfromNX",
+            "iconId": "cmdSignOut",
             "title": "Logout",
             "description": "Logout from server."
         },
@@ -24,6 +24,11 @@
             "iconId": "cmdUpload",
             "title": "Save into Server",
             "description": "Save the selected book into server."
+        },
+        "DownloadBookCmd":{
+            "iconId": "cmdDownload",
+            "title": "Download",
+            "description": "Download from server."
         },
         "Awp0ModelObjListDisplayToggles": {
             "isShuttle": true
@@ -81,6 +86,13 @@
                 "condition": "conditions.singleSelection"
             }
         },
+        "downloadBookCommandHandler": {
+            "id": "DownloadBookCmd",
+            "action": "downloadBook",
+            "activeWhen": true,
+            "visibleWhen": true,
+            "enableWhen":  true
+        },
         "Awp0ModelObjListDisplayTogglesHandler": {
             "id": "Awp0ModelObjListDisplayToggles",
             "activeWhen": true
@@ -123,6 +135,11 @@
             "id": "ServerLogoutCmd",
             "uiAnchor": "aw_rightWall",
             "priority": 40
+        },
+        "DownloadBookCmdPlacement": {
+            "id": "DownloadBookCmd",
+            "uiAnchor": "aw_rightWall",
+            "priority": 50
         },
         "deleteBookCmdPlacement": {
             "id": "DeleteBookCmd",
@@ -224,6 +241,15 @@
             "deps": "js/commandPanel.service",
             "inputData": {
                 "commandId": "ServerLoginCmd",
+                "location": "aw_toolsAndInfo"
+            }
+        },
+        "downloadBook": {
+            "actionType": "JSFunction",
+            "method": "activateCommandPanel",
+            "deps": "js/commandPanel.service",
+            "inputData": {
+                "commandId": "DownloadBookCmd",
                 "location": "aw_toolsAndInfo"
             }
         },

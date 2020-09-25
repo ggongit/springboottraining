@@ -8,5 +8,7 @@
     "addBook": "Add Book",
     "loginTitle": "Login to Server",
     "login": "Login",
-    "cancel": "Cancel"
+    "cancel": "Cancel",
+    "downloadBookTitle": "Download Book",
+    "download": "Download"
 }

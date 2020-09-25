@@ -1,0 +1,173 @@
+{
+    "schemaVersion": "1.0.0",
+    "imports": [
+        "js/aw-command-panel.directive",
+        "js/aw-panel-body.directive",
+        "js/aw-panel-footer.directive",
+        "js/aw-button.directive",
+        "js/enable-when.directive",
+        "js/aw-i18n.directive",
+        "js/aw-numeric.directive",
+        "js/aw-default-cell.directive",
+        "js/aw-list.directive"
+    ],
+    "dataProviders": {
+        "retriveServerBooks": {
+            "action": "getServerBooks",
+            "response": "{{data.searchResults}}",
+            "totalFound": "{{data.totalFound}}",
+            "selectionModelMode": "single"
+        }
+    },
+    "actions": {
+        "reveal": {
+            "actionType": "dataProvider",
+            "method": "retriveServerBooks"
+        },
+        "getServerBooks": {
+            "actionType": "RESTService",
+            "serviceName": "",
+            "method": "GET",
+            "inputData": {
+                "request": {
+                    "method": "GET",
+                    "withCredentials": false,
+                    "url": "http://localhost:9999/book/allRepo"
+                }
+            },
+            "dataParsers": [{
+                "id": "bookParser",
+                "responseObjs": "data.bookList"
+            }],
+            "outputData": {
+                "searchResults": "data.bookList",
+                "totalFound": "data.bookList.length",
+                "allBookData": "data"
+            }
+        },
+        "cancelDownload": {
+            "actionType": "Event",
+            "method": "Event",
+            "inputData": {
+                "ctx": "{{ctx}}",
+                "events": [{
+                    "name": "complete",
+                    "eventData": {
+                        "source": "toolAndInfoPanel"
+                    }
+                }]
+            }
+        },
+        "downloadBook": {
+            "actionType": "RESTService",
+            "inputData": {
+                "request": {
+                    "method": "GET",
+                    "withCredentials": false,
+                    "url": "http://localhost:9999/book/download/{{data.dataProviders.retriveServerBooks.selectedObjects[0].uid}}"
+                }
+            },
+            "outputData": {
+                "overallStatus": "data.genericResponse",
+                "bookDetailsStatus": "data.bookDetails"
+            },
+            "actionMessages": {
+                "success":[
+                    {
+                        "message": "downloadBookWarningMessage",
+                        "condition": "conditions.downloadBookWarningResponse"
+                    },
+                    {
+                        "message": "downloadBookErrorMessage",
+                        "condition": "conditions.downloadBookErrorResponse"
+                    },
+                    {
+                        "message": "downloadBookSuccessMessage",
+                        "condition": "conditions.downloadBookSuccessResponse"
+                    }
+                ]
+            },
+            "events": {
+                "success": [{
+                        "name": "aw.refreshPrimaryWorkArea",
+                        "condition": "conditions.downloadBookSuccessResponse"
+                    }
+                ]
+            }
+        }
+    },
+    "dataParseDefinitions": {
+        "bookParser": {
+            "identifier": "{{response.isbn}}",
+            "cellHeader1": "{{response.title}}",
+            "typeIconURL": "assets/images/RepoBook.png",
+            "cellProperties": {
+                "Author": {
+                    "key": "Author",
+                    "displayName": "{{i18n.bookAuthor}}",
+                    "value": "{{response.author}}",
+                    "displayValue": "{{response.author}}",
+                    "type": "String"
+                },
+                "Publisher": {
+                    "key": "Publisher",
+                    "displayName": "{{i18n.bookPublisher}}",
+                    "value": "{{response.publisher}}",
+                    "displayValue": "{{response.publisher}}",
+                    "type": "String"
+                },
+                "Isbn": {
+                    "key": "Isbn",
+                    "displayName": "{{i18n.bookIsbn}}",
+                    "value": "{{response.isbn}}",
+                    "displayValue": "{{response.isbn}}",
+                    "type": "String"
+                },
+                "RepoId": {
+                    "key": "RepoId",
+                    "displayName": "RepoId",
+                    "value": "{{response.repoId}}",
+                    "displayValue": "{{response.repoId}}",
+                    "type": "String"
+                }
+            },
+            "props": {
+
+            }
+        }
+    },
+    "messages": {
+        "downloadBookSuccessMessage": {
+            "messageType": "INFO",
+            "messageText": "{{data.overallStatus.message}}"
+        },
+        "downloadBookWarningMessage": {
+            "messageType": "WARNING",
+            "messageText": "{{data.overallStatus.message}}"
+        },
+        "downloadBookErrorMessage": {
+            "messageType": "ERROR",
+            "messageText": "{{data.overallStatus.message}}"
+        }
+
+    },
+    "conditions": {
+        "singleSelection": {
+            "expression": "true"
+        },
+        "downloadBookErrorResponse": {
+            "expression": "data.overallStatus.type === 'ERROR'"
+        },
+        "downloadBookWarningResponse": {
+            "expression": "data.overallStatus.type === 'WARNING'"
+        },
+        "downloadBookSuccessResponse": {
+            "expression": "data.overallStatus.type === 'SUCCESS'"
+        }
+    },
+    "i18n": {
+        "downloadBookTitle": ["booksModuleMessages"],
+        "download": ["booksModuleMessages"],
+        "cancel": ["booksModuleMessages"]
+    }
+}

@@ -1,0 +1,11 @@
+<aw-command-panel caption="{{i18n.downloadBookTitle}}">
+    <aw-panel-body>
+        <aw-list dataprovider="data.dataProviders.retriveServerBooks">
+            <aw-default-cell vmo="item"></aw-default-cell>
+        </aw-list>
+    </aw-panel-body>
+    <aw-panel-footer>
+        <aw-button action="downloadBook" enable-when="conditions.singleSelection"><aw-i18n>i18n.download</aw-i18n></aw-button>
+        <aw-button action="cancelDownload" button-type="base">{{i18n.cancel}}</aw-button>
+    </aw-panel-footer>
+</aw-command-panel>

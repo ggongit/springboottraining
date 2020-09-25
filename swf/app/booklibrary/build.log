@@ -1,17 +1,17 @@
-[17:04:58] verbose: site/booklib: Processing booklib site.json
-[17:05:07] verbose: iconUtils/buildSvgCache:  ... built icon definition cache (8.33 s)
-[17:05:13] verbose: site/booklib:  ... copied native roots (5.74 s)
-[17:05:13] warn: site/booklib: No priority data for books
-[17:05:13] warn: site/booklib: Defaulting to priority 999
-[17:05:13] warn: site/booklib: clientScopeURI is null for state books
-[17:05:13] verbose: site/booklib:  ... generated OOTB verification lists (96 ms)
-[17:05:13] verbose: site/booklib:  ... generated all configuration data, custom elements and services templates (163 ms)
-[17:05:13] verbose: site/booklib:  ... copied schema files (197 ms)
-[17:05:14] verbose: processL10n:  ... concatenated l10n files (696 ms)
-[17:05:14] verbose: site/booklib:  ... generated module SCSS (718 ms)
-[17:05:14] verbose: site/booklib:  ... generated angular HTML template cache (1.23 s)
-[17:05:15] verbose: site/booklib:  ... compiled SASS (1.17 s)
-[17:05:15] verbose: site/booklib:  ... webpack starting
-[17:05:51] info: site/booklib:  ... Imported darsi data (36 s)
-[17:05:57] verbose: site/booklib:  ... webpack completed (42 s)
-[17:05:57] info:  ... linked out/site/booklib to out/site_last
+[20:37:53] verbose: site/booklib: Processing booklib site.json
+[20:38:02] verbose: iconUtils/buildSvgCache:  ... built icon definition cache (8.22 s)
+[20:38:07] verbose: site/booklib:  ... copied native roots (5.35 s)
+[20:38:07] warn: site/booklib: No priority data for books
+[20:38:07] warn: site/booklib: Defaulting to priority 999
+[20:38:07] warn: site/booklib: clientScopeURI is null for state books
+[20:38:07] verbose: site/booklib:  ... generated OOTB verification lists (71 ms)
+[20:38:07] verbose: site/booklib:  ... generated all configuration data, custom elements and services templates (125 ms)
+[20:38:07] verbose: site/booklib:  ... copied schema files (149 ms)
+[20:38:08] verbose: processL10n:  ... concatenated l10n files (541 ms)
+[20:38:08] verbose: site/booklib:  ... generated module SCSS (571 ms)
+[20:38:08] verbose: site/booklib:  ... generated angular HTML template cache (1.02 s)
+[20:38:09] verbose: site/booklib:  ... compiled SASS (1.01 s)
+[20:38:09] verbose: site/booklib:  ... webpack starting
+[20:38:28] info: site/booklib:  ... Imported darsi data (19 s)
+[20:38:31] verbose: site/booklib:  ... webpack completed (22 s)
+[20:38:31] info:  ... linked out/site/booklib to out/site_last

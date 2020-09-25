@@ -113,3 +113,86 @@
 [17:06:13] warn/gateway: 127.0.0.1 - - [24/Sep/2020:11:36:13 +0000] "GET /assets/lib/require-2.1.17/require.min.js HTTP/1.1" 404 179
 [20:06:27] warn/gateway: 127.0.0.1 - - [24/Sep/2020:14:36:27 +0000] "GET /assets/lib/require-2.1.17/require.min.js HTTP/1.1" 404 179
 [20:55:15] warn/gateway: 127.0.0.1 - - [24/Sep/2020:15:25:15 +0000] "GET /assets/lib/require-2.1.17/require.min.js HTTP/1.1" 404 179
+[11:24:30] info/gateway: Serving static content locally from out\site_last\index.html
+[11:24:31] info/gateway: Express web application server started @ http://localhost:3000/ OR http://INCNI6P031:3000/
+[11:24:31] warn/gateway: 127.0.0.1 - - [25/Sep/2020:05:54:31 +0000] "GET /assets/lib/require-2.1.17/require.min.js HTTP/1.1" 404 179
+[11:33:10] info/gateway: Serving static content locally from out\site_last\index.html
+[11:33:10] info/gateway: Express web application server started @ http://localhost:3000/ OR http://INCNI6P031:3000/
+[11:33:11] warn/gateway: 127.0.0.1 - - [25/Sep/2020:06:03:11 +0000] "GET /assets/lib/require-2.1.17/require.min.js HTTP/1.1" 404 179
+[11:33:19] warn/gateway: 127.0.0.1 - - [25/Sep/2020:06:03:19 +0000] "GET /assets/html/DownloadBookCmdView.html HTTP/1.1" 404 175
+[11:33:19] warn/gateway: 127.0.0.1 - - [25/Sep/2020:06:03:19 +0000] "GET /assets/viewmodel/DownloadBookCmdViewModel.json HTTP/1.1" 404 185
+[11:33:22] warn/gateway: 127.0.0.1 - - [25/Sep/2020:06:03:22 +0000] "GET /assets/html/DownloadBookCmdView.html HTTP/1.1" 404 175
+[11:33:22] warn/gateway: 127.0.0.1 - - [25/Sep/2020:06:03:22 +0000] "GET /assets/viewmodel/DownloadBookCmdViewModel.json HTTP/1.1" 404 185
+[11:33:24] warn/gateway: 127.0.0.1 - - [25/Sep/2020:06:03:24 +0000] "GET /assets/html/DownloadBookCmdView.html HTTP/1.1" 404 175
+[11:33:24] warn/gateway: 127.0.0.1 - - [25/Sep/2020:06:03:24 +0000] "GET /assets/viewmodel/DownloadBookCmdViewModel.json HTTP/1.1" 404 185
+[11:59:44] info/gateway: Serving static content locally from out\site_last\index.html
+[11:59:44] info/gateway: Express web application server started @ http://localhost:3000/ OR http://INCNI6P031:3000/
+[11:59:45] warn/gateway: 127.0.0.1 - - [25/Sep/2020:06:29:45 +0000] "GET /assets/lib/require-2.1.17/require.min.js HTTP/1.1" 404 179
+[12:25:05] info/gateway: Serving static content locally from out\site_last\index.html
+[12:25:05] info/gateway: Express web application server started @ http://localhost:3000/ OR http://INCNI6P031:3000/
+[12:25:06] warn/gateway: 127.0.0.1 - - [25/Sep/2020:06:55:06 +0000] "GET /assets/lib/require-2.1.17/require.min.js HTTP/1.1" 404 179
+[12:48:17] info/gateway: Serving static content locally from out\site_last\index.html
+[12:48:18] info/gateway: Express web application server started @ http://localhost:3000/ OR http://INCNI6P031:3000/
+[12:48:19] warn/gateway: 127.0.0.1 - - [25/Sep/2020:07:18:19 +0000] "GET /assets/lib/require-2.1.17/require.min.js HTTP/1.1" 404 179
+[12:51:49] info/gateway: Serving static content locally from out\site_last\index.html
+[12:51:49] info/gateway: Express web application server started @ http://localhost:3000/ OR http://INCNI6P031:3000/
+[12:51:50] warn/gateway: 127.0.0.1 - - [25/Sep/2020:07:21:50 +0000] "GET /assets/lib/require-2.1.17/require.min.js HTTP/1.1" 404 179
+[13:33:25] info/gateway: Serving static content locally from out\site_last\index.html
+[13:33:26] info/gateway: Express web application server started @ http://localhost:3000/ OR http://INCNI6P031:3000/
+[13:33:27] warn/gateway: 127.0.0.1 - - [25/Sep/2020:08:03:27 +0000] "GET /assets/lib/require-2.1.17/require.min.js HTTP/1.1" 404 179
+[13:33:47] warn/gateway: 127.0.0.1 - - [25/Sep/2020:08:03:47 +0000] "GET /assets/lib/require-2.1.17/require.min.js HTTP/1.1" 404 179
+[13:38:02] info/gateway: Serving static content locally from out\site_last\index.html
+[13:38:02] info/gateway: Express web application server started @ http://localhost:3000/ OR http://INCNI6P031:3000/
+[13:38:03] warn/gateway: 127.0.0.1 - - [25/Sep/2020:08:08:03 +0000] "GET /assets/lib/require-2.1.17/require.min.js HTTP/1.1" 404 179
+[13:38:56] warn/gateway: 127.0.0.1 - - [25/Sep/2020:08:08:56 +0000] "GET /assets/lib/require-2.1.17/require.min.js HTTP/1.1" 404 179
+[13:46:10] info/gateway: Serving static content locally from out\site_last\index.html
+[13:46:11] info/gateway: Express web application server started @ http://localhost:3000/ OR http://INCNI6P031:3000/
+[13:46:11] warn/gateway: 127.0.0.1 - - [25/Sep/2020:08:16:11 +0000] "GET /assets/lib/require-2.1.17/require.min.js HTTP/1.1" 404 179
+[13:52:10] info/gateway: Serving static content locally from out\site_last\index.html
+[13:52:10] info/gateway: Express web application server started @ http://localhost:3000/ OR http://INCNI6P031:3000/
+[13:52:11] warn/gateway: 127.0.0.1 - - [25/Sep/2020:08:22:11 +0000] "GET /assets/lib/require-2.1.17/require.min.js HTTP/1.1" 404 179
+[14:00:39] info/gateway: Serving static content locally from out\site_last\index.html
+[14:00:40] info/gateway: Express web application server started @ http://localhost:3000/ OR http://INCNI6P031:3000/
+[14:00:41] warn/gateway: 127.0.0.1 - - [25/Sep/2020:08:30:41 +0000] "GET /assets/lib/require-2.1.17/require.min.js HTTP/1.1" 404 179
+[14:49:11] info/gateway: Serving static content locally from out\site_last\index.html
+[14:49:11] info/gateway: Express web application server started @ http://localhost:3000/ OR http://INCNI6P031:3000/
+[14:49:12] warn/gateway: 127.0.0.1 - - [25/Sep/2020:09:19:12 +0000] "GET /assets/lib/require-2.1.17/require.min.js HTTP/1.1" 404 179
+[17:57:13] info/gateway: Serving static content locally from out\site_last\index.html
+[17:57:14] info/gateway: Express web application server started @ http://localhost:3000/ OR http://INCNI6P031:3000/
+[17:57:15] warn/gateway: 127.0.0.1 - - [25/Sep/2020:12:27:15 +0000] "GET /assets/lib/require-2.1.17/require.min.js HTTP/1.1" 404 179
+[18:04:40] warn/gateway: 127.0.0.1 - - [25/Sep/2020:12:34:40 +0000] "GET /assets/lib/require-2.1.17/require.min.js HTTP/1.1" 404 179
+[18:06:14] info/gateway: Serving static content locally from out\site_last\index.html
+[18:06:15] info/gateway: Express web application server started @ http://localhost:3000/ OR http://INCNI6P031:3000/
+[18:06:16] warn/gateway: 127.0.0.1 - - [25/Sep/2020:12:36:16 +0000] "GET /assets/lib/require-2.1.17/require.min.js HTTP/1.1" 404 179
+[19:38:53] info/gateway: Serving static content locally from out\site_last\index.html
+[19:38:53] info/gateway: Express web application server started @ http://localhost:3000/ OR http://INCNI6P031:3000/
+[19:38:54] warn/gateway: 127.0.0.1 - - [25/Sep/2020:14:08:54 +0000] "GET /assets/lib/require-2.1.17/require.min.js HTTP/1.1" 404 179
+[19:41:50] warn/gateway: 127.0.0.1 - - [25/Sep/2020:14:11:50 +0000] "GET /assets/lib/require-2.1.17/require.min.js HTTP/1.1" 404 179
+[19:59:12] info/gateway: Serving static content locally from out\site_last\index.html
+[19:59:13] info/gateway: Express web application server started @ http://localhost:3000/ OR http://INCNI6P031:3000/
+[19:59:14] warn/gateway: 127.0.0.1 - - [25/Sep/2020:14:29:14 +0000] "GET /assets/lib/require-2.1.17/require.min.js HTTP/1.1" 404 179
+[20:11:53] info/gateway: Serving static content locally from out\site_last\index.html
+[20:11:54] info/gateway: Express web application server started @ http://localhost:3000/ OR http://INCNI6P031:3000/
+[20:11:55] warn/gateway: 127.0.0.1 - - [25/Sep/2020:14:41:55 +0000] "GET /assets/lib/require-2.1.17/require.min.js HTTP/1.1" 404 179
+[20:13:07] warn/gateway: 127.0.0.1 - - [25/Sep/2020:14:43:07 +0000] "GET /assets/lib/require-2.1.17/require.min.js HTTP/1.1" 404 179
+[20:20:22] info/gateway: Serving static content locally from out\site_last\index.html
+[20:20:22] info/gateway: Express web application server started @ http://localhost:3000/ OR http://INCNI6P031:3000/
+[20:20:23] warn/gateway: 127.0.0.1 - - [25/Sep/2020:14:50:23 +0000] "GET /assets/lib/require-2.1.17/require.min.js HTTP/1.1" 404 179
+[20:24:01] info/gateway: Serving static content locally from out\site_last\index.html
+[20:24:01] info/gateway: Express web application server started @ http://localhost:3000/ OR http://INCNI6P031:3000/
+[20:24:02] warn/gateway: 127.0.0.1 - - [25/Sep/2020:14:54:02 +0000] "GET /assets/lib/require-2.1.17/require.min.js HTTP/1.1" 404 179
+[20:25:54] info/gateway: Serving static content locally from out\site_last\index.html
+[20:25:54] info/gateway: Express web application server started @ http://localhost:3000/ OR http://INCNI6P031:3000/
+[20:25:56] warn/gateway: 127.0.0.1 - - [25/Sep/2020:14:55:56 +0000] "GET /assets/lib/require-2.1.17/require.min.js HTTP/1.1" 404 179
+[20:27:51] info/gateway: Serving static content locally from out\site_last\index.html
+[20:27:51] info/gateway: Express web application server started @ http://localhost:3000/ OR http://INCNI6P031:3000/
+[20:27:52] warn/gateway: 127.0.0.1 - - [25/Sep/2020:14:57:52 +0000] "GET /assets/lib/require-2.1.17/require.min.js HTTP/1.1" 404 179
+[20:30:57] info/gateway: Serving static content locally from out\site_last\index.html
+[20:30:58] info/gateway: Express web application server started @ http://localhost:3000/ OR http://INCNI6P031:3000/
+[20:30:59] warn/gateway: 127.0.0.1 - - [25/Sep/2020:15:00:59 +0000] "GET /assets/lib/require-2.1.17/require.min.js HTTP/1.1" 404 179
+[20:33:08] info/gateway: Serving static content locally from out\site_last\index.html
+[20:33:08] info/gateway: Express web application server started @ http://localhost:3000/ OR http://INCNI6P031:3000/
+[20:33:09] warn/gateway: 127.0.0.1 - - [25/Sep/2020:15:03:09 +0000] "GET /assets/lib/require-2.1.17/require.min.js HTTP/1.1" 404 179
+[20:38:54] info/gateway: Serving static content locally from out\site_last\index.html
+[20:38:54] info/gateway: Express web application server started @ http://localhost:3000/ OR http://INCNI6P031:3000/
+[20:38:55] warn/gateway: 127.0.0.1 - - [25/Sep/2020:15:08:55 +0000] "GET /assets/lib/require-2.1.17/require.min.js HTTP/1.1" 404 179
