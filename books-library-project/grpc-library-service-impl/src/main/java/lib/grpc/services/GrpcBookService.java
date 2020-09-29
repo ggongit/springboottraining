@@ -62,7 +62,8 @@ public class GrpcBookService extends BookServiceImplBase
 					.setTitle(book.getTitle())
 					.setAuthor(book.getAuthor())
 					.setPublisher(book.getPublisher())
-					.setRepoId(book.getRepoId());
+					.setRepoId(book.getRepoId())
+					.setPreviewPath(getBookPreviewPath(book));
 			});
 			
 			if(bookOptional.isPresent() == false)
@@ -119,7 +120,8 @@ public class GrpcBookService extends BookServiceImplBase
 					.setTitle(bookDto.getTitle())
 					.setAuthor(bookDto.getAuthor())
 					.setPublisher(bookDto.getPublisher())
-					.setRepoId(bookDto.getRepoId());
+					.setRepoId(bookDto.getRepoId())
+					.setPreviewPath(getBookPreviewPath(bookDto));
 			bookListResponseBuilder.addBookList(bookDetailBuilder);
 		});
 		
@@ -227,7 +229,8 @@ public class GrpcBookService extends BookServiceImplBase
 					.setTitle(bookDto.getTitle())
 					.setAuthor(bookDto.getAuthor())
 					.setPublisher(bookDto.getPublisher())
-					.setRepoId(bookDto.getRepoId());
+					.setRepoId(bookDto.getRepoId())
+					.setPreviewPath(getBookPreviewPath(bookDto));
 			genericResponse = getGenericResponseBuilder(ResponseType.SUCCESS, "Book is downloaded successfully from server");
 		} catch (ServerException | BookException e) {
 			genericResponse = getGenericResponseBuilder(ResponseType.ERROR, e.getMessage());
@@ -268,7 +271,8 @@ public class GrpcBookService extends BookServiceImplBase
 					.setTitle(bookDto.getTitle())
 					.setAuthor(bookDto.getAuthor())
 					.setPublisher(bookDto.getPublisher())
-					.setRepoId(bookDto.getRepoId());
+					.setRepoId(bookDto.getRepoId())
+					.setPreviewPath(getBookPreviewPath(bookDto));
 			
 			bookListResBuilder.addBookList(bookDetailsBuilder);
 		});
@@ -286,6 +290,11 @@ public class GrpcBookService extends BookServiceImplBase
 		}
 		
 		return bookListResBuilder;
+	}
+	
+	private String getBookPreviewPath(BookDTO book)
+	{
+		return book != null && !book.getRepoId().equals("NA") ? "publishedbook.png" : "unpublishedbook.jpg"; 
 	}
 	
 }

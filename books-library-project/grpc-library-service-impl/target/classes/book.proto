@@ -32,6 +32,7 @@ message BookDetails
 	string author=3;
 	string publisher=4;
 	string repoId=5;
+	string previewPath=6;
 }
 
 message BookRequest

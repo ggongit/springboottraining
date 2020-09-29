@@ -482,6 +482,16 @@ public final class BookLibraryProtos {
      */
     com.google.protobuf.ByteString
         getRepoIdBytes();
+
+    /**
+     * <code>string previewPath = 6;</code>
+     */
+    java.lang.String getPreviewPath();
+    /**
+     * <code>string previewPath = 6;</code>
+     */
+    com.google.protobuf.ByteString
+        getPreviewPathBytes();
   }
   /**
    * Protobuf type {@code lib.grpc.services.auto.BookDetails}
@@ -501,6 +511,7 @@ public final class BookLibraryProtos {
       author_ = "";
       publisher_ = "";
       repoId_ = "";
+      previewPath_ = "";
     }
 
     @java.lang.Override
@@ -554,6 +565,12 @@ public final class BookLibraryProtos {
               java.lang.String s = input.readStringRequireUtf8();
 
               repoId_ = s;
+              break;
+            }
+            case 50: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              previewPath_ = s;
               break;
             }
             default: {
@@ -733,6 +750,40 @@ public final class BookLibraryProtos {
       }
     }
 
+    public static final int PREVIEWPATH_FIELD_NUMBER = 6;
+    private volatile java.lang.Object previewPath_;
+    /**
+     * <code>string previewPath = 6;</code>
+     */
+    public java.lang.String getPreviewPath() {
+      java.lang.Object ref = previewPath_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        previewPath_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string previewPath = 6;</code>
+     */
+    public com.google.protobuf.ByteString
+        getPreviewPathBytes() {
+      java.lang.Object ref = previewPath_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        previewPath_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -762,6 +813,9 @@ public final class BookLibraryProtos {
       if (!getRepoIdBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 5, repoId_);
       }
+      if (!getPreviewPathBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 6, previewPath_);
+      }
       unknownFields.writeTo(output);
     }
 
@@ -786,6 +840,9 @@ public final class BookLibraryProtos {
       }
       if (!getRepoIdBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, repoId_);
+      }
+      if (!getPreviewPathBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(6, previewPath_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -813,6 +870,8 @@ public final class BookLibraryProtos {
           .equals(other.getPublisher());
       result = result && getRepoId()
           .equals(other.getRepoId());
+      result = result && getPreviewPath()
+          .equals(other.getPreviewPath());
       result = result && unknownFields.equals(other.unknownFields);
       return result;
     }
@@ -835,6 +894,8 @@ public final class BookLibraryProtos {
       hash = (53 * hash) + getPublisher().hashCode();
       hash = (37 * hash) + REPOID_FIELD_NUMBER;
       hash = (53 * hash) + getRepoId().hashCode();
+      hash = (37 * hash) + PREVIEWPATH_FIELD_NUMBER;
+      hash = (53 * hash) + getPreviewPath().hashCode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -978,6 +1039,8 @@ public final class BookLibraryProtos {
 
         repoId_ = "";
 
+        previewPath_ = "";
+
         return this;
       }
 
@@ -1009,6 +1072,7 @@ public final class BookLibraryProtos {
         result.author_ = author_;
         result.publisher_ = publisher_;
         result.repoId_ = repoId_;
+        result.previewPath_ = previewPath_;
         onBuilt();
         return result;
       }
@@ -1074,6 +1138,10 @@ public final class BookLibraryProtos {
         }
         if (!other.getRepoId().isEmpty()) {
           repoId_ = other.repoId_;
+          onChanged();
+        }
+        if (!other.getPreviewPath().isEmpty()) {
+          previewPath_ = other.previewPath_;
           onChanged();
         }
         this.mergeUnknownFields(other.unknownFields);
@@ -1403,6 +1471,75 @@ public final class BookLibraryProtos {
   checkByteStringIsUtf8(value);
         
         repoId_ = value;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object previewPath_ = "";
+      /**
+       * <code>string previewPath = 6;</code>
+       */
+      public java.lang.String getPreviewPath() {
+        java.lang.Object ref = previewPath_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          previewPath_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string previewPath = 6;</code>
+       */
+      public com.google.protobuf.ByteString
+          getPreviewPathBytes() {
+        java.lang.Object ref = previewPath_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          previewPath_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string previewPath = 6;</code>
+       */
+      public Builder setPreviewPath(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        previewPath_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string previewPath = 6;</code>
+       */
+      public Builder clearPreviewPath() {
+        
+        previewPath_ = getDefaultInstance().getPreviewPath();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string previewPath = 6;</code>
+       */
+      public Builder setPreviewPathBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        previewPath_ = value;
         onChanged();
         return this;
       }
@@ -8600,60 +8737,61 @@ public final class BookLibraryProtos {
   static {
     java.lang.String[] descriptorData = {
       "\n\nbook.proto\022\026lib.grpc.services.auto\"\016\n\014" +
-      "EmptyRequest\"]\n\013BookDetails\022\014\n\004isbn\030\001 \001(" +
+      "EmptyRequest\"r\n\013BookDetails\022\014\n\004isbn\030\001 \001(" +
       "\003\022\r\n\005title\030\002 \001(\t\022\016\n\006author\030\003 \001(\t\022\021\n\tpubl" +
-      "isher\030\004 \001(\t\022\016\n\006repoId\030\005 \001(\t\"^\n\013BookReque" +
-      "st\022\025\n\rbookRequestId\030\001 \001(\005\0228\n\013bookDetails" +
-      "\030\002 \001(\0132#.lib.grpc.services.auto.BookDeta" +
-      "ils\"\035\n\014TitleRequest\022\r\n\005title\030\001 \001(\t\"\033\n\013Is" +
-      "bnRequest\022\014\n\004isbn\030\001 \001(\003\"%\n\023SingleAuthorR" +
-      "equest\022\016\n\006author\030\001 \001(\t\"\\\n\026MultipleAuthor" +
-      "sRequest\022B\n\rauthorRequest\030\001 \003(\0132+.lib.gr" +
-      "pc.services.auto.SingleAuthorRequest\"G\n\020" +
-      "UserLoginRequest\022\021\n\tserverUrl\030\001 \001(\t\022\016\n\006u" +
-      "serId\030\002 \001(\t\022\020\n\010password\030\003 \001(\t\"\245\001\n\017Generi" +
-      "cResponse\022B\n\004type\030\001 \001(\01624.lib.grpc.servi" +
-      "ces.auto.GenericResponse.ResponseType\022\017\n" +
-      "\007message\030\002 \001(\t\"=\n\014ResponseType\022\010\n\004NONE\020\000" +
-      "\022\013\n\007SUCCESS\020\001\022\013\n\007WARNING\020\002\022\t\n\005ERROR\020\003\"\220\001" +
-      "\n\022SingleBookResponse\0228\n\013bookDetails\030\001 \001(" +
-      "\0132#.lib.grpc.services.auto.BookDetails\022@" +
-      "\n\017genericResponse\030\002 \001(\0132\'.lib.grpc.servi" +
-      "ces.auto.GenericResponse\"\213\001\n\020BookListRes" +
-      "ponse\0225\n\010bookList\030\001 \003(\0132#.lib.grpc.servi" +
-      "ces.auto.BookDetails\022@\n\017genericResponse\030" +
+      "isher\030\004 \001(\t\022\016\n\006repoId\030\005 \001(\t\022\023\n\013previewPa" +
+      "th\030\006 \001(\t\"^\n\013BookRequest\022\025\n\rbookRequestId" +
+      "\030\001 \001(\005\0228\n\013bookDetails\030\002 \001(\0132#.lib.grpc.s" +
+      "ervices.auto.BookDetails\"\035\n\014TitleRequest" +
+      "\022\r\n\005title\030\001 \001(\t\"\033\n\013IsbnRequest\022\014\n\004isbn\030\001" +
+      " \001(\003\"%\n\023SingleAuthorRequest\022\016\n\006author\030\001 " +
+      "\001(\t\"\\\n\026MultipleAuthorsRequest\022B\n\rauthorR" +
+      "equest\030\001 \003(\0132+.lib.grpc.services.auto.Si" +
+      "ngleAuthorRequest\"G\n\020UserLoginRequest\022\021\n" +
+      "\tserverUrl\030\001 \001(\t\022\016\n\006userId\030\002 \001(\t\022\020\n\010pass" +
+      "word\030\003 \001(\t\"\245\001\n\017GenericResponse\022B\n\004type\030\001" +
+      " \001(\01624.lib.grpc.services.auto.GenericRes" +
+      "ponse.ResponseType\022\017\n\007message\030\002 \001(\t\"=\n\014R" +
+      "esponseType\022\010\n\004NONE\020\000\022\013\n\007SUCCESS\020\001\022\013\n\007WA" +
+      "RNING\020\002\022\t\n\005ERROR\020\003\"\220\001\n\022SingleBookRespons" +
+      "e\0228\n\013bookDetails\030\001 \001(\0132#.lib.grpc.servic" +
+      "es.auto.BookDetails\022@\n\017genericResponse\030\002" +
+      " \001(\0132\'.lib.grpc.services.auto.GenericRes" +
+      "ponse\"\213\001\n\020BookListResponse\0225\n\010bookList\030\001" +
+      " \003(\0132#.lib.grpc.services.auto.BookDetail" +
+      "s\022@\n\017genericResponse\030\002 \001(\0132\'.lib.grpc.se" +
+      "rvices.auto.GenericResponse\"a\n\rCountResp" +
+      "onse\022\016\n\006counts\030\001 \001(\005\022@\n\017genericResponse\030" +
       "\002 \001(\0132\'.lib.grpc.services.auto.GenericRe" +
-      "sponse\"a\n\rCountResponse\022\016\n\006counts\030\001 \001(\005\022" +
-      "@\n\017genericResponse\030\002 \001(\0132\'.lib.grpc.serv" +
-      "ices.auto.GenericResponse2\312\010\n\013BookServic" +
-      "e\022Z\n\007addBook\022#.lib.grpc.services.auto.Bo" +
-      "okRequest\032*.lib.grpc.services.auto.Singl" +
-      "eBookResponse\022a\n\017getBooksByTitle\022$.lib.g" +
-      "rpc.services.auto.TitleRequest\032(.lib.grp" +
-      "c.services.auto.BookListResponse\022\\\n\rgetB" +
-      "ookCounts\022$.lib.grpc.services.auto.Empty" +
-      "Request\032%.lib.grpc.services.auto.CountRe" +
-      "sponse\022]\n\013getAllBooks\022$.lib.grpc.service" +
-      "s.auto.EmptyRequest\032(.lib.grpc.services." +
-      "auto.BookListResponse\022`\n\020deleteBookByIsb" +
-      "n\022#.lib.grpc.services.auto.IsbnRequest\032\'" +
-      ".lib.grpc.services.auto.GenericResponse\022" +
-      "p\n\024getBooksByAuthorList\022..lib.grpc.servi" +
-      "ces.auto.MultipleAuthorsRequest\032(.lib.gr" +
-      "pc.services.auto.BookListResponse\022Z\n\005log" +
-      "in\022(.lib.grpc.services.auto.UserLoginReq" +
-      "uest\032\'.lib.grpc.services.auto.GenericRes" +
-      "ponse\022W\n\006logout\022$.lib.grpc.services.auto" +
-      ".EmptyRequest\032\'.lib.grpc.services.auto.G" +
-      "enericResponse\022`\n\020saveBookToServer\022#.lib" +
-      ".grpc.services.auto.IsbnRequest\032\'.lib.gr" +
-      "pc.services.auto.GenericResponse\022i\n\027fetc" +
-      "hAllBooksFromServer\022$.lib.grpc.services." +
-      "auto.EmptyRequest\032(.lib.grpc.services.au" +
-      "to.BookListResponse\022i\n\026downloadBookFromS" +
-      "erver\022#.lib.grpc.services.auto.IsbnReque" +
-      "st\032*.lib.grpc.services.auto.SingleBookRe" +
-      "sponseB\023B\021BookLibraryProtosb\006proto3"
+      "sponse2\312\010\n\013BookService\022Z\n\007addBook\022#.lib." +
+      "grpc.services.auto.BookRequest\032*.lib.grp" +
+      "c.services.auto.SingleBookResponse\022a\n\017ge" +
+      "tBooksByTitle\022$.lib.grpc.services.auto.T" +
+      "itleRequest\032(.lib.grpc.services.auto.Boo" +
+      "kListResponse\022\\\n\rgetBookCounts\022$.lib.grp" +
+      "c.services.auto.EmptyRequest\032%.lib.grpc." +
+      "services.auto.CountResponse\022]\n\013getAllBoo" +
+      "ks\022$.lib.grpc.services.auto.EmptyRequest" +
+      "\032(.lib.grpc.services.auto.BookListRespon" +
+      "se\022`\n\020deleteBookByIsbn\022#.lib.grpc.servic" +
+      "es.auto.IsbnRequest\032\'.lib.grpc.services." +
+      "auto.GenericResponse\022p\n\024getBooksByAuthor" +
+      "List\022..lib.grpc.services.auto.MultipleAu" +
+      "thorsRequest\032(.lib.grpc.services.auto.Bo" +
+      "okListResponse\022Z\n\005login\022(.lib.grpc.servi" +
+      "ces.auto.UserLoginRequest\032\'.lib.grpc.ser" +
+      "vices.auto.GenericResponse\022W\n\006logout\022$.l" +
+      "ib.grpc.services.auto.EmptyRequest\032\'.lib" +
+      ".grpc.services.auto.GenericResponse\022`\n\020s" +
+      "aveBookToServer\022#.lib.grpc.services.auto" +
+      ".IsbnRequest\032\'.lib.grpc.services.auto.Ge" +
+      "nericResponse\022i\n\027fetchAllBooksFromServer" +
+      "\022$.lib.grpc.services.auto.EmptyRequest\032(" +
+      ".lib.grpc.services.auto.BookListResponse" +
+      "\022i\n\026downloadBookFromServer\022#.lib.grpc.se" +
+      "rvices.auto.IsbnRequest\032*.lib.grpc.servi" +
+      "ces.auto.SingleBookResponseB\023B\021BookLibra" +
+      "ryProtosb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -8678,7 +8816,7 @@ public final class BookLibraryProtos {
     internal_static_lib_grpc_services_auto_BookDetails_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_lib_grpc_services_auto_BookDetails_descriptor,
-        new java.lang.String[] { "Isbn", "Title", "Author", "Publisher", "RepoId", });
+        new java.lang.String[] { "Isbn", "Title", "Author", "Publisher", "RepoId", "PreviewPath", });
     internal_static_lib_grpc_services_auto_BookRequest_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_lib_grpc_services_auto_BookRequest_fieldAccessorTable = new

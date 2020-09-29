@@ -6,7 +6,7 @@ import lib.model.Book;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2020-09-24T17:35:39+0530",
+    date = "2020-09-29T12:59:29+0530",
     comments = "version: 1.3.1.Final, compiler: javac, environment: Java 1.8.0_252 (AdoptOpenJDK)"
 )
 public class BookEntityMapperImpl implements BookEntityMapper {
