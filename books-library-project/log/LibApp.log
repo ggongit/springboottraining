@@ -1407,3 +1407,1835 @@ password: "gaurav"
 2020-09-25 20:38:56,973 85635017 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.getAllBooks(EmptyRequest,StreamObserver))
 2020-09-25 20:38:57,135 85635179 INFO  - ==> GRPC service request ended:  >>> 
 2020-09-25 20:38:57,135 85635179 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 20:39:15,869 85653913 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.fetchAllBooksFromServer(EmptyRequest,StreamObserver))
+2020-09-25 20:39:15,880 85653924 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 20:39:15,880 85653924 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 20:39:21,050 85659094 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.getAllBooks(EmptyRequest,StreamObserver))
+2020-09-25 20:39:21,154 85659198 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 20:39:21,154 85659198 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 20:39:29,019 85667063 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.getAllBooks(EmptyRequest,StreamObserver))
+2020-09-25 20:39:29,105 85667149 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 20:39:29,105 85667149 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 20:39:34,581 85672625 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.IsbnRequest >>> isbn: 1111
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.deleteBookByIsbn(IsbnRequest,StreamObserver))
+2020-09-25 20:39:34,592 85672636 INFO  - ==> GRPC service request ended:  >>> isbn: 1111
+
+2020-09-25 20:39:34,592 85672636 INFO  - ==> GRPC service request successfull:  >>> isbn: 1111
+
+2020-09-25 20:39:34,613 85672657 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.getAllBooks(EmptyRequest,StreamObserver))
+2020-09-25 20:39:34,725 85672769 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 20:39:34,725 85672769 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 20:39:48,083 85686127 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.IsbnRequest >>> isbn: 1111
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.downloadBookFromServer(IsbnRequest,StreamObserver))
+2020-09-25 20:39:48,104 85686148 INFO  - ==> GRPC service request ended:  >>> isbn: 1111
+
+2020-09-25 20:39:48,105 85686149 INFO  - ==> GRPC service request successfull:  >>> isbn: 1111
+
+2020-09-25 20:39:48,141 85686185 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.getAllBooks(EmptyRequest,StreamObserver))
+2020-09-25 20:39:48,294 85686338 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 20:39:48,294 85686338 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 20:39:59,051 85697095 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.IsbnRequest >>> isbn: 69987
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.downloadBookFromServer(IsbnRequest,StreamObserver))
+2020-09-25 20:39:59,052 85697096 INFO  - ==> GRPC service request ended:  >>> isbn: 69987
+
+2020-09-25 20:39:59,052 85697096 INFO  - ==> GRPC service request successfull:  >>> isbn: 69987
+
+2020-09-25 20:40:01,530 85699574 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.IsbnRequest >>> isbn: 1000
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.downloadBookFromServer(IsbnRequest,StreamObserver))
+2020-09-25 20:40:01,554 85699598 INFO  - ==> GRPC service request ended:  >>> isbn: 1000
+
+2020-09-25 20:40:01,554 85699598 INFO  - ==> GRPC service request successfull:  >>> isbn: 1000
+
+2020-09-25 20:40:01,586 85699630 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.getAllBooks(EmptyRequest,StreamObserver))
+2020-09-25 20:40:01,736 85699780 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 20:40:01,736 85699780 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 20:40:10,981 85709025 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.getAllBooks(EmptyRequest,StreamObserver))
+2020-09-25 20:40:11,099 85709143 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 20:40:11,099 85709143 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-25 20:41:46,411 85804455 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.getAllBooks(EmptyRequest,StreamObserver))
+2020-09-25 20:41:46,526 85804570 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-25 20:41:46,526 85804570 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-26 01:20:15,045 102513089 WARN  - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h28s412ms533µs200ns).
+2020-09-26 10:27:34,164 135352208 WARN  - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9h7m27s985ms158µs300ns).
+2020-09-28 12:40:24,650 1831  INFO  - Neither @ContextConfiguration nor @ContextHierarchy found for test class [lib.application.test.BookServicesTest], using SpringBootContextLoader
+2020-09-28 12:40:24,669 1850  INFO  - Could not detect default resource locations for test class [lib.application.test.BookServicesTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-09-28 12:40:24,670 1851  INFO  - Could not detect default configuration classes for test class [lib.application.test.BookServicesTest]: BookServicesTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-09-28 12:40:24,856 2037  INFO  - Found @SpringBootConfiguration lib.application.BooksLibraryApp for test class lib.application.test.BookServicesTest
+2020-09-28 12:40:24,859 2040  INFO  - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2020-09-28 12:40:24,881 2062  INFO  - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@19fe4644, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@21d8bcbe, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@5be067de, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7383eae2, org.springframework.test.context.transaction.TransactionalTestExecutionListener@18245eb0, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7c7d3c46, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@24fb6a80, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@48c35007, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@72a85671, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6722db6e, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@18f20260]
+2020-09-28 12:40:25,450 2631  INFO  - Starting BookServicesTest on INCNI6P031 with PID 140564 (started by msn2t7 in D:\mlm_dev\gitrepo\books-library-project\library-application)
+2020-09-28 12:40:25,454 2635  INFO  - No active profile set, falling back to default profiles: default
+2020-09-28 12:40:26,214 3395  INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-09-28 12:40:26,308 3489  INFO  - Finished Spring Data repository scanning in 81ms. Found 2 JPA repository interfaces.
+2020-09-28 12:40:26,426 3607  INFO  - Replacing 'dataSource' DataSource bean with embedded version
+2020-09-28 12:40:27,500 4681  INFO  - Starting embedded database: url='jdbc:derby:memory:ddf12e84-c847-4697-91f3-e42d63062324;create=true', username='sa'
+2020-09-28 15:03:44,527 2237  INFO  - Starting BooksLibraryApp on INCNI6P031 with PID 169004 (D:\mlm_dev\gitrepo\books-library-project\library-application\target\classes started by msn2t7 in D:\mlm_dev\gitrepo\books-library-project\library-application)
+2020-09-28 15:03:44,534 2244  INFO  - No active profile set, falling back to default profiles: default
+2020-09-28 15:03:45,596 3306  INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-09-28 15:03:45,698 3408  INFO  - Finished Spring Data repository scanning in 89ms. Found 2 JPA repository interfaces.
+2020-09-28 15:03:46,930 4640  INFO  - HikariPool-1 - Starting...
+2020-09-28 15:03:46,935 4645  WARN  - Registered driver with driverClassName=org.apache.derby.jdbc.EmbeddedDriver was not found, trying direct instantiation.
+2020-09-28 15:03:47,418 5128  INFO  - HikariPool-1 - Driver does not support get/set network timeout for connections. (Feature not implemented: No details.)
+2020-09-28 15:03:47,424 5134  INFO  - HikariPool-1 - Start completed.
+2020-09-28 15:03:47,516 5226  INFO  - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-09-28 15:03:47,716 5426  INFO  - HHH000412: Hibernate Core {5.3.17.Final}
+2020-09-28 15:03:47,720 5430  INFO  - HHH000206: hibernate.properties not found
+2020-09-28 15:03:47,988 5698  INFO  - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-09-28 15:03:48,792 6502  INFO  - HHH000400: Using dialect: org.hibernate.dialect.DerbyDialect
+2020-09-28 15:03:48,801 6511  WARN  - HHH000430: The DerbyDialect dialect has been deprecated; use one of the version-specific dialects instead
+2020-09-28 15:03:50,213 7923  INFO  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-28 15:03:51,077 8787  INFO  - Unable to proxy interface-implementing method [public final io.grpc.ServerServiceDefinition lib.grpc.services.auto.BookServiceGrpc$BookServiceImplBase.bindService()] because it is marked as final: Consider using interface-based JDK proxies instead!
+2020-09-28 15:03:51,722 9432  INFO  - Started BooksLibraryApp in 7.69 seconds (JVM running for 9.502)
+2020-09-28 15:03:51,723 9433  INFO  - Starting gRPC Server ...
+2020-09-28 15:03:51,806 9516  INFO  - 'lib.grpc.services.GrpcBookService$$EnhancerBySpringCGLIB$$6c703f75' service has been registered.
+2020-09-28 15:03:52,841 10551 INFO  - gRPC Server started, listening on port 7070.
+2020-09-28 15:04:17,749 35459 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.IsbnRequest >>> isbn: 1000
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.saveBookToServer(IsbnRequest,StreamObserver))
+2020-09-28 15:04:27,128 44838 INFO  - HHH000397: Using ASTQueryTranslatorFactory
+2020-09-28 15:04:56,222 73932 INFO  - ==> GRPC service request ended:  >>> isbn: 1000
+
+2020-09-28 15:04:56,222 73932 INFO  - ==> GRPC service request successfull:  >>> isbn: 1000
+
+2020-09-28 15:30:20,772 1598482 WARN  - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=21m3s157ms670µs800ns).
+2020-09-28 15:39:41,649 2159359 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.IsbnRequest >>> isbn: 1000
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.saveBookToServer(IsbnRequest,StreamObserver))
+2020-09-28 15:39:44,083 2161793 WARN  - SQL Warning Code: 10000, SQLState: 01J01
+2020-09-28 15:39:44,084 2161794 WARN  - Database 'mydb' not created, connection made to existing database instead.
+2020-09-28 15:39:44,095 2161805 INFO  - ==> GRPC service request ended:  >>> isbn: 1000
+
+2020-09-28 15:39:44,096 2161806 INFO  - ==> GRPC service request successfull:  >>> isbn: 1000
+
+2020-09-28 15:40:16,451 2194161 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.IsbnRequest >>> isbn: 1000
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.saveBookToServer(IsbnRequest,StreamObserver))
+2020-09-28 15:40:16,463 2194173 INFO  - ==> GRPC service request ended:  >>> isbn: 1000
+
+2020-09-28 15:40:16,464 2194174 INFO  - ==> GRPC service request successfull:  >>> isbn: 1000
+
+2020-09-28 15:45:20,399 2498109 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.IsbnRequest >>> isbn: 1000
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.saveBookToServer(IsbnRequest,StreamObserver))
+2020-09-28 15:45:20,417 2498127 INFO  - ==> GRPC service request ended:  >>> isbn: 1000
+
+2020-09-28 15:45:20,418 2498128 INFO  - ==> GRPC service request successfull:  >>> isbn: 1000
+
+2020-09-28 15:47:28,643 2626353 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.IsbnRequest >>> isbn: 1000
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.saveBookToServer(IsbnRequest,StreamObserver))
+2020-09-28 15:47:28,661 2626371 INFO  - ==> GRPC service request ended:  >>> isbn: 1000
+
+2020-09-28 15:47:28,662 2626372 INFO  - ==> GRPC service request successfull:  >>> isbn: 1000
+
+2020-09-28 16:45:02,212 6079922 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.BookRequest >>> bookDetails {
+  isbn: 78132
+  title: "BookTitle1"
+  author: "BookAuthor1"
+  publisher: "BookPublisher1"
+}
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.addBook(BookRequest,StreamObserver))
+2020-09-28 16:45:02,223 6079933 WARN  - SQL Warning Code: 10000, SQLState: 01J01
+2020-09-28 16:45:02,223 6079933 WARN  - Database 'mydb' not created, connection made to existing database instead.
+2020-09-28 16:45:02,405 6080115 INFO  - ==> GRPC service request ended:  >>> bookDetails {
+  isbn: 78132
+  title: "BookTitle1"
+  author: "BookAuthor1"
+  publisher: "BookPublisher1"
+}
+
+2020-09-28 16:45:02,406 6080116 INFO  - ==> GRPC service request successfull:  >>> bookDetails {
+  isbn: 78132
+  title: "BookTitle1"
+  author: "BookAuthor1"
+  publisher: "BookPublisher1"
+}
+
+2020-09-28 16:45:25,483 6103193 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.IsbnRequest >>> isbn: 1000
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.saveBookToServer(IsbnRequest,StreamObserver))
+2020-09-28 16:45:25,496 6103206 INFO  - ==> GRPC service request ended:  >>> isbn: 1000
+
+2020-09-28 16:45:25,496 6103206 INFO  - ==> GRPC service request successfull:  >>> isbn: 1000
+
+2020-09-28 16:47:31,078 6228788 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.BookRequest >>> bookDetails {
+  isbn: 61645
+  title: "BookTitle1"
+  author: "BookAuthor1"
+  publisher: "BookPublisher1"
+}
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.addBook(BookRequest,StreamObserver))
+2020-09-28 16:47:31,089 6228799 INFO  - ==> GRPC service request ended:  >>> bookDetails {
+  isbn: 61645
+  title: "BookTitle1"
+  author: "BookAuthor1"
+  publisher: "BookPublisher1"
+}
+
+2020-09-28 16:47:31,089 6228799 INFO  - ==> GRPC service request successfull:  >>> bookDetails {
+  isbn: 61645
+  title: "BookTitle1"
+  author: "BookAuthor1"
+  publisher: "BookPublisher1"
+}
+
+2020-09-28 16:52:53,537 6551247 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.IsbnRequest >>> isbn: 1000
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.saveBookToServer(IsbnRequest,StreamObserver))
+2020-09-28 16:52:53,553 6551263 INFO  - ==> GRPC service request ended:  >>> isbn: 1000
+
+2020-09-28 16:52:53,554 6551264 INFO  - ==> GRPC service request successfull:  >>> isbn: 1000
+
+2020-09-28 17:05:08,079 2540  INFO  - Starting BooksLibraryApp on INCNI6P031 with PID 180220 (D:\mlm_dev\gitrepo\books-library-project\library-application\target\classes started by msn2t7 in D:\mlm_dev\gitrepo\books-library-project\library-application)
+2020-09-28 17:05:08,086 2547  INFO  - No active profile set, falling back to default profiles: default
+2020-09-28 17:05:09,054 3515  INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-09-28 17:05:09,154 3615  INFO  - Finished Spring Data repository scanning in 89ms. Found 2 JPA repository interfaces.
+2020-09-28 17:05:10,409 4870  INFO  - HikariPool-1 - Starting...
+2020-09-28 17:05:10,414 4875  WARN  - Registered driver with driverClassName=org.apache.derby.jdbc.EmbeddedDriver was not found, trying direct instantiation.
+2020-09-28 17:05:10,882 5343  INFO  - HikariPool-1 - Driver does not support get/set network timeout for connections. (Feature not implemented: No details.)
+2020-09-28 17:05:10,887 5348  INFO  - HikariPool-1 - Start completed.
+2020-09-28 17:05:11,006 5467  INFO  - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-09-28 17:05:11,238 5699  INFO  - HHH000412: Hibernate Core {5.3.17.Final}
+2020-09-28 17:05:11,241 5702  INFO  - HHH000206: hibernate.properties not found
+2020-09-28 17:05:11,524 5985  INFO  - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-09-28 17:05:12,315 6776  INFO  - HHH000400: Using dialect: org.hibernate.dialect.DerbyDialect
+2020-09-28 17:05:12,324 6785  WARN  - HHH000430: The DerbyDialect dialect has been deprecated; use one of the version-specific dialects instead
+2020-09-28 17:05:13,860 8321  INFO  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-28 17:05:14,728 9189  INFO  - Unable to proxy interface-implementing method [public final io.grpc.ServerServiceDefinition lib.grpc.services.auto.BookServiceGrpc$BookServiceImplBase.bindService()] because it is marked as final: Consider using interface-based JDK proxies instead!
+2020-09-28 17:05:15,358 9819  INFO  - Started BooksLibraryApp in 7.809 seconds (JVM running for 9.888)
+2020-09-28 17:05:15,360 9821  INFO  - Starting gRPC Server ...
+2020-09-28 17:05:15,440 9901  INFO  - 'lib.grpc.services.GrpcBookService$$EnhancerBySpringCGLIB$$1e98e781' service has been registered.
+2020-09-28 17:05:16,575 11036 INFO  - gRPC Server started, listening on port 7070.
+2020-09-28 17:05:31,707 26168 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.BookRequest >>> bookDetails {
+  isbn: 73126
+  title: "BookTitle1"
+  author: "BookAuthor1"
+  publisher: "BookPublisher1"
+}
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.addBook(BookRequest,StreamObserver))
+2020-09-28 17:05:31,755 26216 INFO  - HHH000397: Using ASTQueryTranslatorFactory
+2020-09-28 17:05:32,236 26697 INFO  - ==> GRPC service request ended:  >>> bookDetails {
+  isbn: 73126
+  title: "BookTitle1"
+  author: "BookAuthor1"
+  publisher: "BookPublisher1"
+}
+
+2020-09-28 17:05:32,236 26697 INFO  - ==> GRPC service request successfull:  >>> bookDetails {
+  isbn: 73126
+  title: "BookTitle1"
+  author: "BookAuthor1"
+  publisher: "BookPublisher1"
+}
+
+2020-09-28 17:05:45,318 39779 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.IsbnRequest >>> isbn: 1000
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.saveBookToServer(IsbnRequest,StreamObserver))
+2020-09-28 17:05:45,438 39899 INFO  - ==> GRPC service request ended:  >>> isbn: 1000
+
+2020-09-28 17:05:45,439 39900 INFO  - ==> GRPC service request successfull:  >>> isbn: 1000
+
+2020-09-28 17:08:39,755 214216 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.BookRequest >>> bookDetails {
+  isbn: 8182
+  title: "BookTitle1"
+  author: "BookAuthor1"
+  publisher: "BookPublisher1"
+}
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.addBook(BookRequest,StreamObserver))
+2020-09-28 17:08:39,766 214227 INFO  - ==> GRPC service request ended:  >>> bookDetails {
+  isbn: 8182
+  title: "BookTitle1"
+  author: "BookAuthor1"
+  publisher: "BookPublisher1"
+}
+
+2020-09-28 17:08:39,767 214228 INFO  - ==> GRPC service request successfull:  >>> bookDetails {
+  isbn: 8182
+  title: "BookTitle1"
+  author: "BookAuthor1"
+  publisher: "BookPublisher1"
+}
+
+2020-09-28 17:08:48,315 222776 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.IsbnRequest >>> isbn: 1000
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.saveBookToServer(IsbnRequest,StreamObserver))
+2020-09-28 17:08:48,329 222790 INFO  - ==> GRPC service request ended:  >>> isbn: 1000
+
+2020-09-28 17:08:48,329 222790 INFO  - ==> GRPC service request successfull:  >>> isbn: 1000
+
+2020-09-28 17:15:19,257 613718 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.BookRequest >>> bookDetails {
+  isbn: 87826
+  title: "BookTitle1"
+  author: "BookAuthor1"
+  publisher: "BookPublisher1"
+}
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.addBook(BookRequest,StreamObserver))
+2020-09-28 17:15:19,276 613737 INFO  - ==> GRPC service request ended:  >>> bookDetails {
+  isbn: 87826
+  title: "BookTitle1"
+  author: "BookAuthor1"
+  publisher: "BookPublisher1"
+}
+
+2020-09-28 17:15:19,276 613737 INFO  - ==> GRPC service request successfull:  >>> bookDetails {
+  isbn: 87826
+  title: "BookTitle1"
+  author: "BookAuthor1"
+  publisher: "BookPublisher1"
+}
+
+2020-09-28 17:15:30,383 624844 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.IsbnRequest >>> isbn: 87826
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.saveBookToServer(IsbnRequest,StreamObserver))
+2020-09-28 17:15:30,389 624850 INFO  - ==> GRPC service request ended:  >>> isbn: 87826
+
+2020-09-28 17:15:30,390 624851 INFO  - ==> GRPC service request successfull:  >>> isbn: 87826
+
+2020-09-28 18:19:43,239 4477700 WARN  - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=18m32s40ms938µs100ns).
+2020-09-28 18:26:35,707 4890168 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.UserLoginRequest >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.login(UserLoginRequest,StreamObserver))
+2020-09-28 18:26:36,292 4890753 INFO  - ==> GRPC service request ended:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 18:26:36,293 4890754 INFO  - ==> GRPC service request successfull:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 18:26:54,221 4908682 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.BookRequest >>> bookDetails {
+  isbn: 83566
+  title: "BookTitle1"
+  author: "BookAuthor1"
+  publisher: "BookPublisher1"
+}
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.addBook(BookRequest,StreamObserver))
+2020-09-28 18:26:54,227 4908688 WARN  - SQL Warning Code: 10000, SQLState: 01J01
+2020-09-28 18:26:54,227 4908688 WARN  - Database 'mydb' not created, connection made to existing database instead.
+2020-09-28 18:26:54,241 4908702 INFO  - ==> GRPC service request ended:  >>> bookDetails {
+  isbn: 83566
+  title: "BookTitle1"
+  author: "BookAuthor1"
+  publisher: "BookPublisher1"
+}
+
+2020-09-28 18:26:54,242 4908703 INFO  - ==> GRPC service request successfull:  >>> bookDetails {
+  isbn: 83566
+  title: "BookTitle1"
+  author: "BookAuthor1"
+  publisher: "BookPublisher1"
+}
+
+2020-09-28 18:26:57,732 4912193 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.IsbnRequest >>> isbn: 83566
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.saveBookToServer(IsbnRequest,StreamObserver))
+2020-09-28 18:26:57,829 4912290 INFO  - ==> GRPC service request ended:  >>> isbn: 83566
+
+2020-09-28 18:26:57,829 4912290 INFO  - ==> GRPC service request successfull:  >>> isbn: 83566
+
+2020-09-28 18:27:32,843 4947304 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.logout(EmptyRequest,StreamObserver))
+2020-09-28 18:27:32,844 4947305 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-28 18:27:32,845 4947306 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-28 18:41:07,522 5761983 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.UserLoginRequest >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.login(UserLoginRequest,StreamObserver))
+2020-09-28 18:41:07,545 5762006 INFO  - ==> GRPC service request ended:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 18:41:07,545 5762006 INFO  - ==> GRPC service request successfull:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 18:41:19,040 5773501 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.BookRequest >>> bookDetails {
+  isbn: 3674
+  title: "BookTitle1"
+  author: "BookAuthor1"
+  publisher: "BookPublisher1"
+}
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.addBook(BookRequest,StreamObserver))
+2020-09-28 18:41:19,060 5773521 INFO  - ==> GRPC service request ended:  >>> bookDetails {
+  isbn: 3674
+  title: "BookTitle1"
+  author: "BookAuthor1"
+  publisher: "BookPublisher1"
+}
+
+2020-09-28 18:41:19,061 5773522 INFO  - ==> GRPC service request successfull:  >>> bookDetails {
+  isbn: 3674
+  title: "BookTitle1"
+  author: "BookAuthor1"
+  publisher: "BookPublisher1"
+}
+
+2020-09-28 18:41:19,092 5773553 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.IsbnRequest >>> isbn: 3674
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.saveBookToServer(IsbnRequest,StreamObserver))
+2020-09-28 18:41:19,123 5773584 INFO  - ==> GRPC service request ended:  >>> isbn: 3674
+
+2020-09-28 18:41:19,123 5773584 INFO  - ==> GRPC service request successfull:  >>> isbn: 3674
+
+2020-09-28 18:41:25,994 5780455 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.logout(EmptyRequest,StreamObserver))
+2020-09-28 18:41:25,997 5780458 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-28 18:41:25,998 5780459 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-28 18:41:26,041 5780502 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.UserLoginRequest >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.login(UserLoginRequest,StreamObserver))
+2020-09-28 18:41:26,087 5780548 INFO  - ==> GRPC service request ended:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 18:41:26,088 5780549 INFO  - ==> GRPC service request successfull:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 18:42:17,864 5832325 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.logout(EmptyRequest,StreamObserver))
+2020-09-28 18:42:17,866 5832327 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-28 18:42:17,867 5832328 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-28 18:42:38,462 5852923 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.UserLoginRequest >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.login(UserLoginRequest,StreamObserver))
+2020-09-28 18:42:38,478 5852939 INFO  - ==> GRPC service request ended:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 18:42:38,478 5852939 INFO  - ==> GRPC service request successfull:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 18:42:38,532 5852993 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.BookRequest >>> bookDetails {
+  isbn: 10941
+  title: "BookTitle1"
+  author: "BookAuthor1"
+  publisher: "BookPublisher1"
+}
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.addBook(BookRequest,StreamObserver))
+2020-09-28 18:42:38,540 5853001 INFO  - ==> GRPC service request ended:  >>> bookDetails {
+  isbn: 10941
+  title: "BookTitle1"
+  author: "BookAuthor1"
+  publisher: "BookPublisher1"
+}
+
+2020-09-28 18:42:38,541 5853002 INFO  - ==> GRPC service request successfull:  >>> bookDetails {
+  isbn: 10941
+  title: "BookTitle1"
+  author: "BookAuthor1"
+  publisher: "BookPublisher1"
+}
+
+2020-09-28 18:42:38,569 5853030 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.IsbnRequest >>> isbn: 10941
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.saveBookToServer(IsbnRequest,StreamObserver))
+2020-09-28 18:42:38,600 5853061 INFO  - ==> GRPC service request ended:  >>> isbn: 10941
+
+2020-09-28 18:42:38,600 5853061 INFO  - ==> GRPC service request successfull:  >>> isbn: 10941
+
+2020-09-28 18:42:38,621 5853082 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.logout(EmptyRequest,StreamObserver))
+2020-09-28 18:42:38,622 5853083 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-28 18:42:38,622 5853083 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-28 18:42:38,638 5853099 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.UserLoginRequest >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.login(UserLoginRequest,StreamObserver))
+2020-09-28 18:42:38,651 5853112 INFO  - ==> GRPC service request ended:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 18:42:38,652 5853113 INFO  - ==> GRPC service request successfull:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 18:42:38,662 5853123 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.fetchAllBooksFromServer(EmptyRequest,StreamObserver))
+2020-09-28 18:42:38,709 5853170 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-28 18:42:38,709 5853170 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-28 18:43:10,534 5884995 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.logout(EmptyRequest,StreamObserver))
+2020-09-28 18:43:10,537 5884998 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-28 18:43:10,537 5884998 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-28 18:43:24,760 5899221 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.UserLoginRequest >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.login(UserLoginRequest,StreamObserver))
+2020-09-28 18:43:24,777 5899238 INFO  - ==> GRPC service request ended:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 18:43:24,777 5899238 INFO  - ==> GRPC service request successfull:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 18:43:24,839 5899300 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.BookRequest >>> bookDetails {
+  isbn: 77549
+  title: "BookTitle1"
+  author: "BookAuthor1"
+  publisher: "BookPublisher1"
+}
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.addBook(BookRequest,StreamObserver))
+2020-09-28 18:43:24,854 5899315 INFO  - ==> GRPC service request ended:  >>> bookDetails {
+  isbn: 77549
+  title: "BookTitle1"
+  author: "BookAuthor1"
+  publisher: "BookPublisher1"
+}
+
+2020-09-28 18:43:24,854 5899315 INFO  - ==> GRPC service request successfull:  >>> bookDetails {
+  isbn: 77549
+  title: "BookTitle1"
+  author: "BookAuthor1"
+  publisher: "BookPublisher1"
+}
+
+2020-09-28 18:43:24,880 5899341 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.IsbnRequest >>> isbn: 77549
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.saveBookToServer(IsbnRequest,StreamObserver))
+2020-09-28 18:43:24,904 5899365 INFO  - ==> GRPC service request ended:  >>> isbn: 77549
+
+2020-09-28 18:43:24,905 5899366 INFO  - ==> GRPC service request successfull:  >>> isbn: 77549
+
+2020-09-28 18:43:24,919 5899380 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.logout(EmptyRequest,StreamObserver))
+2020-09-28 18:43:24,920 5899381 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-28 18:43:24,920 5899381 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-28 18:43:24,933 5899394 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.UserLoginRequest >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.login(UserLoginRequest,StreamObserver))
+2020-09-28 18:43:24,945 5899406 INFO  - ==> GRPC service request ended:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 18:43:24,945 5899406 INFO  - ==> GRPC service request successfull:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 18:43:24,954 5899415 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.fetchAllBooksFromServer(EmptyRequest,StreamObserver))
+2020-09-28 18:43:24,973 5899434 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-28 18:43:24,973 5899434 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-28 18:43:52,450 5926911 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.logout(EmptyRequest,StreamObserver))
+2020-09-28 18:43:52,451 5926912 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-28 18:43:52,451 5926912 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-28 18:50:37,370 6331831 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.UserLoginRequest >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.login(UserLoginRequest,StreamObserver))
+2020-09-28 18:50:37,514 6331975 INFO  - ==> GRPC service request ended:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 18:50:37,514 6331975 INFO  - ==> GRPC service request successfull:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 18:50:37,576 6332037 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.BookRequest >>> bookDetails {
+  isbn: 29630
+  title: "BookTitle1"
+  author: "BookAuthor1"
+  publisher: "BookPublisher1"
+}
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.addBook(BookRequest,StreamObserver))
+2020-09-28 18:50:37,578 6332039 WARN  - SQL Warning Code: 10000, SQLState: 01J01
+2020-09-28 18:50:37,579 6332040 WARN  - Database 'mydb' not created, connection made to existing database instead.
+2020-09-28 18:50:37,588 6332049 INFO  - ==> GRPC service request ended:  >>> bookDetails {
+  isbn: 29630
+  title: "BookTitle1"
+  author: "BookAuthor1"
+  publisher: "BookPublisher1"
+}
+
+2020-09-28 18:50:37,588 6332049 INFO  - ==> GRPC service request successfull:  >>> bookDetails {
+  isbn: 29630
+  title: "BookTitle1"
+  author: "BookAuthor1"
+  publisher: "BookPublisher1"
+}
+
+2020-09-28 18:50:37,613 6332074 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.IsbnRequest >>> isbn: 29630
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.saveBookToServer(IsbnRequest,StreamObserver))
+2020-09-28 18:50:37,637 6332098 INFO  - ==> GRPC service request ended:  >>> isbn: 29630
+
+2020-09-28 18:50:37,637 6332098 INFO  - ==> GRPC service request successfull:  >>> isbn: 29630
+
+2020-09-28 18:50:37,650 6332111 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.logout(EmptyRequest,StreamObserver))
+2020-09-28 18:50:37,650 6332111 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-28 18:50:37,650 6332111 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-28 18:50:37,661 6332122 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.UserLoginRequest >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.login(UserLoginRequest,StreamObserver))
+2020-09-28 18:50:37,673 6332134 INFO  - ==> GRPC service request ended:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 18:50:37,673 6332134 INFO  - ==> GRPC service request successfull:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 18:50:37,678 6332139 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.BookRequest >>> bookDetails {
+  isbn: 42711
+  title: "BookTitle2"
+  author: "BookAuthor2"
+  publisher: "BookPublisher2"
+}
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.addBook(BookRequest,StreamObserver))
+2020-09-28 18:50:37,685 6332146 INFO  - ==> GRPC service request ended:  >>> bookDetails {
+  isbn: 42711
+  title: "BookTitle2"
+  author: "BookAuthor2"
+  publisher: "BookPublisher2"
+}
+
+2020-09-28 18:50:37,685 6332146 INFO  - ==> GRPC service request successfull:  >>> bookDetails {
+  isbn: 42711
+  title: "BookTitle2"
+  author: "BookAuthor2"
+  publisher: "BookPublisher2"
+}
+
+2020-09-28 18:50:37,692 6332153 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.fetchAllBooksFromServer(EmptyRequest,StreamObserver))
+2020-09-28 18:50:37,717 6332178 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-28 18:50:37,717 6332178 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-28 18:50:37,761 6332222 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.logout(EmptyRequest,StreamObserver))
+2020-09-28 18:50:37,762 6332223 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-28 18:50:37,762 6332223 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-28 18:51:27,655 6382116 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.UserLoginRequest >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.login(UserLoginRequest,StreamObserver))
+2020-09-28 18:51:27,669 6382130 INFO  - ==> GRPC service request ended:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 18:51:27,669 6382130 INFO  - ==> GRPC service request successfull:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 18:51:27,723 6382184 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.BookRequest >>> bookDetails {
+  isbn: 47012
+  title: "BookTitle1"
+  author: "BookAuthor1"
+  publisher: "BookPublisher1"
+}
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.addBook(BookRequest,StreamObserver))
+2020-09-28 18:51:27,737 6382198 INFO  - ==> GRPC service request ended:  >>> bookDetails {
+  isbn: 47012
+  title: "BookTitle1"
+  author: "BookAuthor1"
+  publisher: "BookPublisher1"
+}
+
+2020-09-28 18:51:27,738 6382199 INFO  - ==> GRPC service request successfull:  >>> bookDetails {
+  isbn: 47012
+  title: "BookTitle1"
+  author: "BookAuthor1"
+  publisher: "BookPublisher1"
+}
+
+2020-09-28 18:51:27,763 6382224 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.IsbnRequest >>> isbn: 47012
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.saveBookToServer(IsbnRequest,StreamObserver))
+2020-09-28 18:51:27,787 6382248 INFO  - ==> GRPC service request ended:  >>> isbn: 47012
+
+2020-09-28 18:51:27,788 6382249 INFO  - ==> GRPC service request successfull:  >>> isbn: 47012
+
+2020-09-28 18:51:27,802 6382263 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.logout(EmptyRequest,StreamObserver))
+2020-09-28 18:51:27,802 6382263 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-28 18:51:27,802 6382263 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-28 18:51:27,818 6382279 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.UserLoginRequest >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.login(UserLoginRequest,StreamObserver))
+2020-09-28 18:51:27,831 6382292 INFO  - ==> GRPC service request ended:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 18:51:27,831 6382292 INFO  - ==> GRPC service request successfull:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 18:51:27,841 6382302 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.BookRequest >>> bookDetails {
+  isbn: 99836
+  title: "BookTitle2"
+  author: "BookAuthor2"
+  publisher: "BookPublisher2"
+}
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.addBook(BookRequest,StreamObserver))
+2020-09-28 18:51:27,847 6382308 INFO  - ==> GRPC service request ended:  >>> bookDetails {
+  isbn: 99836
+  title: "BookTitle2"
+  author: "BookAuthor2"
+  publisher: "BookPublisher2"
+}
+
+2020-09-28 18:51:27,848 6382309 INFO  - ==> GRPC service request successfull:  >>> bookDetails {
+  isbn: 99836
+  title: "BookTitle2"
+  author: "BookAuthor2"
+  publisher: "BookPublisher2"
+}
+
+2020-09-28 18:51:27,857 6382318 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.fetchAllBooksFromServer(EmptyRequest,StreamObserver))
+2020-09-28 18:51:27,871 6382332 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-28 18:51:27,871 6382332 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-28 18:54:23,292 6557753 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.logout(EmptyRequest,StreamObserver))
+2020-09-28 18:54:23,294 6557755 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-28 18:54:23,295 6557756 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-28 19:01:57,160 7011621 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.UserLoginRequest >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.login(UserLoginRequest,StreamObserver))
+2020-09-28 19:01:57,174 7011635 INFO  - ==> GRPC service request ended:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 19:01:57,175 7011636 INFO  - ==> GRPC service request successfull:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 19:01:57,225 7011686 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.BookRequest >>> bookDetails {
+  isbn: 46659
+  title: "BookTitle1"
+  author: "BookAuthor1"
+  publisher: "BookPublisher1"
+}
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.addBook(BookRequest,StreamObserver))
+2020-09-28 19:01:57,234 7011695 INFO  - ==> GRPC service request ended:  >>> bookDetails {
+  isbn: 46659
+  title: "BookTitle1"
+  author: "BookAuthor1"
+  publisher: "BookPublisher1"
+}
+
+2020-09-28 19:01:57,235 7011696 INFO  - ==> GRPC service request successfull:  >>> bookDetails {
+  isbn: 46659
+  title: "BookTitle1"
+  author: "BookAuthor1"
+  publisher: "BookPublisher1"
+}
+
+2020-09-28 19:01:57,268 7011729 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.IsbnRequest >>> isbn: 46659
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.saveBookToServer(IsbnRequest,StreamObserver))
+2020-09-28 19:01:57,296 7011757 INFO  - ==> GRPC service request ended:  >>> isbn: 46659
+
+2020-09-28 19:01:57,297 7011758 INFO  - ==> GRPC service request successfull:  >>> isbn: 46659
+
+2020-09-28 19:01:57,311 7011772 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.logout(EmptyRequest,StreamObserver))
+2020-09-28 19:01:57,312 7011773 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-28 19:01:57,312 7011773 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-28 19:01:57,323 7011784 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.UserLoginRequest >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.login(UserLoginRequest,StreamObserver))
+2020-09-28 19:01:57,335 7011796 INFO  - ==> GRPC service request ended:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 19:01:57,335 7011796 INFO  - ==> GRPC service request successfull:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 19:01:57,341 7011802 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.BookRequest >>> bookDetails {
+  isbn: 72141
+  title: "BookTitle2"
+  author: "BookAuthor2"
+  publisher: "BookPublisher2"
+}
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.addBook(BookRequest,StreamObserver))
+2020-09-28 19:01:57,347 7011808 INFO  - ==> GRPC service request ended:  >>> bookDetails {
+  isbn: 72141
+  title: "BookTitle2"
+  author: "BookAuthor2"
+  publisher: "BookPublisher2"
+}
+
+2020-09-28 19:01:57,348 7011809 INFO  - ==> GRPC service request successfull:  >>> bookDetails {
+  isbn: 72141
+  title: "BookTitle2"
+  author: "BookAuthor2"
+  publisher: "BookPublisher2"
+}
+
+2020-09-28 19:01:57,357 7011818 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.fetchAllBooksFromServer(EmptyRequest,StreamObserver))
+2020-09-28 19:01:57,375 7011836 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-28 19:01:57,375 7011836 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-28 19:11:39,901 7594362 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.UserLoginRequest >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.login(UserLoginRequest,StreamObserver))
+2020-09-28 19:11:39,902 7594363 INFO  - ==> GRPC service request ended:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 19:11:39,903 7594364 INFO  - ==> GRPC service request successfull:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 19:11:39,952 7594413 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.logout(EmptyRequest,StreamObserver))
+2020-09-28 19:11:39,952 7594413 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-28 19:11:39,953 7594414 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-28 19:11:39,974 7594435 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.UserLoginRequest >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.login(UserLoginRequest,StreamObserver))
+2020-09-28 19:11:39,989 7594450 INFO  - ==> GRPC service request ended:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 19:11:39,989 7594450 INFO  - ==> GRPC service request successfull:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 19:11:40,007 7594468 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.BookRequest >>> bookDetails {
+  isbn: 43573
+  title: "BookTitle2"
+  author: "BookAuthor2"
+  publisher: "BookPublisher2"
+}
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.addBook(BookRequest,StreamObserver))
+2020-09-28 19:11:40,016 7594477 INFO  - ==> GRPC service request ended:  >>> bookDetails {
+  isbn: 43573
+  title: "BookTitle2"
+  author: "BookAuthor2"
+  publisher: "BookPublisher2"
+}
+
+2020-09-28 19:11:40,016 7594477 INFO  - ==> GRPC service request successfull:  >>> bookDetails {
+  isbn: 43573
+  title: "BookTitle2"
+  author: "BookAuthor2"
+  publisher: "BookPublisher2"
+}
+
+2020-09-28 19:11:40,041 7594502 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.fetchAllBooksFromServer(EmptyRequest,StreamObserver))
+2020-09-28 19:11:40,054 7594515 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-28 19:11:40,054 7594515 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-28 19:19:20,197 8054658 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.UserLoginRequest >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.login(UserLoginRequest,StreamObserver))
+2020-09-28 19:19:20,198 8054659 INFO  - ==> GRPC service request ended:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 19:19:20,198 8054659 INFO  - ==> GRPC service request successfull:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 19:19:20,247 8054708 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.logout(EmptyRequest,StreamObserver))
+2020-09-28 19:19:20,247 8054708 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-28 19:19:20,247 8054708 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-28 19:19:20,267 8054728 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.UserLoginRequest >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.login(UserLoginRequest,StreamObserver))
+2020-09-28 19:19:20,280 8054741 INFO  - ==> GRPC service request ended:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 19:19:20,280 8054741 INFO  - ==> GRPC service request successfull:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 19:19:20,297 8054758 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.BookRequest >>> bookDetails {
+  isbn: 16431
+  title: "BookTitle2"
+  author: "BookAuthor2"
+  publisher: "BookPublisher2"
+}
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.addBook(BookRequest,StreamObserver))
+2020-09-28 19:19:20,299 8054760 WARN  - SQL Warning Code: 10000, SQLState: 01J01
+2020-09-28 19:19:20,300 8054761 WARN  - Database 'mydb' not created, connection made to existing database instead.
+2020-09-28 19:19:20,308 8054769 INFO  - ==> GRPC service request ended:  >>> bookDetails {
+  isbn: 16431
+  title: "BookTitle2"
+  author: "BookAuthor2"
+  publisher: "BookPublisher2"
+}
+
+2020-09-28 19:19:20,308 8054769 INFO  - ==> GRPC service request successfull:  >>> bookDetails {
+  isbn: 16431
+  title: "BookTitle2"
+  author: "BookAuthor2"
+  publisher: "BookPublisher2"
+}
+
+2020-09-28 19:19:20,332 8054793 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.fetchAllBooksFromServer(EmptyRequest,StreamObserver))
+2020-09-28 19:19:20,353 8054814 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-28 19:19:20,353 8054814 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-28 19:20:17,849 8112310 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.logout(EmptyRequest,StreamObserver))
+2020-09-28 19:20:17,851 8112312 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-28 19:20:17,851 8112312 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-28 19:21:18,819 8173280 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.UserLoginRequest >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.login(UserLoginRequest,StreamObserver))
+2020-09-28 19:21:18,834 8173295 INFO  - ==> GRPC service request ended:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 19:21:18,834 8173295 INFO  - ==> GRPC service request successfull:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 19:21:18,888 8173349 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.BookRequest >>> bookDetails {
+  isbn: 85139
+  title: "BookTitle1"
+  author: "BookAuthor1"
+  publisher: "BookPublisher1"
+}
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.addBook(BookRequest,StreamObserver))
+2020-09-28 19:21:18,890 8173351 WARN  - SQL Warning Code: 10000, SQLState: 01J01
+2020-09-28 19:21:18,890 8173351 WARN  - Database 'mydb' not created, connection made to existing database instead.
+2020-09-28 19:21:18,904 8173365 INFO  - ==> GRPC service request ended:  >>> bookDetails {
+  isbn: 85139
+  title: "BookTitle1"
+  author: "BookAuthor1"
+  publisher: "BookPublisher1"
+}
+
+2020-09-28 19:21:18,905 8173366 INFO  - ==> GRPC service request successfull:  >>> bookDetails {
+  isbn: 85139
+  title: "BookTitle1"
+  author: "BookAuthor1"
+  publisher: "BookPublisher1"
+}
+
+2020-09-28 19:21:18,933 8173394 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.IsbnRequest >>> isbn: 85139
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.saveBookToServer(IsbnRequest,StreamObserver))
+2020-09-28 19:21:18,963 8173424 INFO  - ==> GRPC service request ended:  >>> isbn: 85139
+
+2020-09-28 19:21:18,963 8173424 INFO  - ==> GRPC service request successfull:  >>> isbn: 85139
+
+2020-09-28 19:21:18,981 8173442 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.logout(EmptyRequest,StreamObserver))
+2020-09-28 19:21:18,982 8173443 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-28 19:21:18,982 8173443 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-28 19:21:19,001 8173462 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.UserLoginRequest >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.login(UserLoginRequest,StreamObserver))
+2020-09-28 19:21:19,014 8173475 INFO  - ==> GRPC service request ended:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 19:21:19,014 8173475 INFO  - ==> GRPC service request successfull:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 19:21:19,025 8173486 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.BookRequest >>> bookDetails {
+  isbn: 24578
+  title: "AAABookTitle2"
+  author: "BookAuthor2"
+  publisher: "BookPublisher2"
+}
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.addBook(BookRequest,StreamObserver))
+2020-09-28 19:21:19,036 8173497 INFO  - ==> GRPC service request ended:  >>> bookDetails {
+  isbn: 24578
+  title: "AAABookTitle2"
+  author: "BookAuthor2"
+  publisher: "BookPublisher2"
+}
+
+2020-09-28 19:21:19,037 8173498 INFO  - ==> GRPC service request successfull:  >>> bookDetails {
+  isbn: 24578
+  title: "AAABookTitle2"
+  author: "BookAuthor2"
+  publisher: "BookPublisher2"
+}
+
+2020-09-28 19:21:19,052 8173513 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.fetchAllBooksFromServer(EmptyRequest,StreamObserver))
+2020-09-28 19:21:19,071 8173532 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-28 19:21:19,071 8173532 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-28 19:21:19,131 8173592 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.logout(EmptyRequest,StreamObserver))
+2020-09-28 19:21:19,132 8173593 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-28 19:21:19,132 8173593 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-28 19:27:33,208 8547669 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.UserLoginRequest >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.login(UserLoginRequest,StreamObserver))
+2020-09-28 19:27:33,233 8547694 INFO  - ==> GRPC service request ended:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 19:27:33,235 8547696 INFO  - ==> GRPC service request successfull:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 19:27:33,344 8547805 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.BookRequest >>> bookDetails {
+  isbn: 88841
+  title: "AABookTitle1"
+  author: "BookAuthor1"
+  publisher: "BookPublisher1"
+}
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.addBook(BookRequest,StreamObserver))
+2020-09-28 19:27:33,365 8547826 INFO  - ==> GRPC service request ended:  >>> bookDetails {
+  isbn: 88841
+  title: "AABookTitle1"
+  author: "BookAuthor1"
+  publisher: "BookPublisher1"
+}
+
+2020-09-28 19:27:33,366 8547827 INFO  - ==> GRPC service request successfull:  >>> bookDetails {
+  isbn: 88841
+  title: "AABookTitle1"
+  author: "BookAuthor1"
+  publisher: "BookPublisher1"
+}
+
+2020-09-28 19:27:33,418 8547879 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.IsbnRequest >>> isbn: 88841
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.saveBookToServer(IsbnRequest,StreamObserver))
+2020-09-28 19:27:33,476 8547937 INFO  - ==> GRPC service request ended:  >>> isbn: 88841
+
+2020-09-28 19:27:33,476 8547937 INFO  - ==> GRPC service request successfull:  >>> isbn: 88841
+
+2020-09-28 19:28:31,118 8605579 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.logout(EmptyRequest,StreamObserver))
+2020-09-28 19:28:31,119 8605580 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-28 19:28:31,119 8605580 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-28 19:28:31,132 8605593 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.UserLoginRequest >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.login(UserLoginRequest,StreamObserver))
+2020-09-28 19:28:31,145 8605606 INFO  - ==> GRPC service request ended:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 19:28:31,145 8605606 INFO  - ==> GRPC service request successfull:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 19:28:31,152 8605613 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.BookRequest >>> bookDetails {
+  isbn: 97068
+  title: "BookTitle2"
+  author: "BookAuthor2"
+  publisher: "BookPublisher2"
+}
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.addBook(BookRequest,StreamObserver))
+2020-09-28 19:28:31,166 8605627 INFO  - ==> GRPC service request ended:  >>> bookDetails {
+  isbn: 97068
+  title: "BookTitle2"
+  author: "BookAuthor2"
+  publisher: "BookPublisher2"
+}
+
+2020-09-28 19:28:31,166 8605627 INFO  - ==> GRPC service request successfull:  >>> bookDetails {
+  isbn: 97068
+  title: "BookTitle2"
+  author: "BookAuthor2"
+  publisher: "BookPublisher2"
+}
+
+2020-09-28 19:28:31,174 8605635 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.IsbnRequest >>> isbn: 97068
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.saveBookToServer(IsbnRequest,StreamObserver))
+2020-09-28 19:28:31,197 8605658 INFO  - ==> GRPC service request ended:  >>> isbn: 97068
+
+2020-09-28 19:28:31,197 8605658 INFO  - ==> GRPC service request successfull:  >>> isbn: 97068
+
+2020-09-28 19:28:31,208 8605669 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.fetchAllBooksFromServer(EmptyRequest,StreamObserver))
+2020-09-28 19:28:31,245 8605706 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-28 19:28:31,245 8605706 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-28 19:28:43,506 8617967 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.logout(EmptyRequest,StreamObserver))
+2020-09-28 19:28:43,507 8617968 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-28 19:28:43,507 8617968 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-28 19:33:39,595 8914056 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.UserLoginRequest >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.login(UserLoginRequest,StreamObserver))
+2020-09-28 19:33:39,614 8914075 INFO  - ==> GRPC service request ended:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 19:33:39,614 8914075 INFO  - ==> GRPC service request successfull:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 19:33:39,660 8914121 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.BookRequest >>> bookDetails {
+  isbn: 66883
+  title: "AABookTitle1"
+  author: "BookAuthor1"
+  publisher: "BookPublisher1"
+}
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.addBook(BookRequest,StreamObserver))
+2020-09-28 19:33:39,668 8914129 INFO  - ==> GRPC service request ended:  >>> bookDetails {
+  isbn: 66883
+  title: "AABookTitle1"
+  author: "BookAuthor1"
+  publisher: "BookPublisher1"
+}
+
+2020-09-28 19:33:39,668 8914129 INFO  - ==> GRPC service request successfull:  >>> bookDetails {
+  isbn: 66883
+  title: "AABookTitle1"
+  author: "BookAuthor1"
+  publisher: "BookPublisher1"
+}
+
+2020-09-28 19:33:39,690 8914151 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.IsbnRequest >>> isbn: 66883
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.saveBookToServer(IsbnRequest,StreamObserver))
+2020-09-28 19:33:39,715 8914176 INFO  - ==> GRPC service request ended:  >>> isbn: 66883
+
+2020-09-28 19:33:39,715 8914176 INFO  - ==> GRPC service request successfull:  >>> isbn: 66883
+
+2020-09-28 19:33:39,733 8914194 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.logout(EmptyRequest,StreamObserver))
+2020-09-28 19:33:39,733 8914194 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-28 19:33:39,734 8914195 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-28 19:33:39,747 8914208 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.UserLoginRequest >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.login(UserLoginRequest,StreamObserver))
+2020-09-28 19:33:39,758 8914219 INFO  - ==> GRPC service request ended:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 19:33:39,759 8914220 INFO  - ==> GRPC service request successfull:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 19:33:39,766 8914227 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.BookRequest >>> bookDetails {
+  isbn: 28776
+  title: "BookTitle2"
+  author: "BookAuthor2"
+  publisher: "BookPublisher2"
+}
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.addBook(BookRequest,StreamObserver))
+2020-09-28 19:33:39,773 8914234 INFO  - ==> GRPC service request ended:  >>> bookDetails {
+  isbn: 28776
+  title: "BookTitle2"
+  author: "BookAuthor2"
+  publisher: "BookPublisher2"
+}
+
+2020-09-28 19:33:39,773 8914234 INFO  - ==> GRPC service request successfull:  >>> bookDetails {
+  isbn: 28776
+  title: "BookTitle2"
+  author: "BookAuthor2"
+  publisher: "BookPublisher2"
+}
+
+2020-09-28 19:33:39,782 8914243 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.IsbnRequest >>> isbn: 28776
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.saveBookToServer(IsbnRequest,StreamObserver))
+2020-09-28 19:33:39,807 8914268 INFO  - ==> GRPC service request ended:  >>> isbn: 28776
+
+2020-09-28 19:33:39,807 8914268 INFO  - ==> GRPC service request successfull:  >>> isbn: 28776
+
+2020-09-28 19:33:39,824 8914285 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.fetchAllBooksFromServer(EmptyRequest,StreamObserver))
+2020-09-28 19:33:39,843 8914304 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-28 19:33:39,843 8914304 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-28 19:33:39,907 8914368 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.logout(EmptyRequest,StreamObserver))
+2020-09-28 19:33:39,909 8914370 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-28 19:33:39,909 8914370 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-28 19:50:41,932 9936393 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.UserLoginRequest >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.login(UserLoginRequest,StreamObserver))
+2020-09-28 19:50:41,946 9936407 INFO  - ==> GRPC service request ended:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 19:50:41,946 9936407 INFO  - ==> GRPC service request successfull:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 19:50:49,228 9943689 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.BookRequest >>> bookDetails {
+  isbn: 51742
+  title: "BookTitle3"
+  author: "BookAuthor3"
+  publisher: "BookPublisher3"
+}
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.addBook(BookRequest,StreamObserver))
+2020-09-28 19:50:49,230 9943691 WARN  - SQL Warning Code: 10000, SQLState: 01J01
+2020-09-28 19:50:49,230 9943691 WARN  - Database 'mydb' not created, connection made to existing database instead.
+2020-09-28 19:50:49,242 9943703 INFO  - ==> GRPC service request ended:  >>> bookDetails {
+  isbn: 51742
+  title: "BookTitle3"
+  author: "BookAuthor3"
+  publisher: "BookPublisher3"
+}
+
+2020-09-28 19:50:49,242 9943703 INFO  - ==> GRPC service request successfull:  >>> bookDetails {
+  isbn: 51742
+  title: "BookTitle3"
+  author: "BookAuthor3"
+  publisher: "BookPublisher3"
+}
+
+2020-09-28 19:51:17,624 9972085 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.IsbnRequest >>> isbn: 51742
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.saveBookToServer(IsbnRequest,StreamObserver))
+2020-09-28 19:51:17,652 9972113 INFO  - ==> GRPC service request ended:  >>> isbn: 51742
+
+2020-09-28 19:51:17,652 9972113 INFO  - ==> GRPC service request successfull:  >>> isbn: 51742
+
+2020-09-28 19:51:26,444 9980905 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.IsbnRequest >>> isbn: 51742
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.deleteBookByIsbn(IsbnRequest,StreamObserver))
+2020-09-28 19:51:26,566 9981027 INFO  - ==> GRPC service request ended:  >>> isbn: 51742
+
+2020-09-28 19:51:26,566 9981027 INFO  - ==> GRPC service request successfull:  >>> isbn: 51742
+
+2020-09-28 19:52:04,018 10018479 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.logout(EmptyRequest,StreamObserver))
+2020-09-28 19:52:04,019 10018480 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-28 19:52:04,019 10018480 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-28 19:52:04,047 10018508 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.UserLoginRequest >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.login(UserLoginRequest,StreamObserver))
+2020-09-28 19:52:04,060 10018521 INFO  - ==> GRPC service request ended:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 19:52:04,061 10018522 INFO  - ==> GRPC service request successfull:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 19:52:04,067 10018528 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.BookRequest >>> bookDetails {
+  isbn: 55495
+  title: "BookTitle1"
+  author: "BookAuthor1"
+  publisher: "BookPublisher1"
+}
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.addBook(BookRequest,StreamObserver))
+2020-09-28 19:52:04,079 10018540 INFO  - ==> GRPC service request ended:  >>> bookDetails {
+  isbn: 55495
+  title: "BookTitle1"
+  author: "BookAuthor1"
+  publisher: "BookPublisher1"
+}
+
+2020-09-28 19:52:04,080 10018541 INFO  - ==> GRPC service request successfull:  >>> bookDetails {
+  isbn: 55495
+  title: "BookTitle1"
+  author: "BookAuthor1"
+  publisher: "BookPublisher1"
+}
+
+2020-09-28 19:52:04,085 10018546 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.IsbnRequest >>> isbn: 55495
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.saveBookToServer(IsbnRequest,StreamObserver))
+2020-09-28 19:52:04,117 10018578 INFO  - ==> GRPC service request ended:  >>> isbn: 55495
+
+2020-09-28 19:52:04,117 10018578 INFO  - ==> GRPC service request successfull:  >>> isbn: 55495
+
+2020-09-28 19:52:45,625 10060086 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.UserLoginRequest >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.login(UserLoginRequest,StreamObserver))
+2020-09-28 19:52:45,625 10060086 INFO  - ==> GRPC service request ended:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 19:52:45,625 10060086 INFO  - ==> GRPC service request successfull:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 19:52:45,677 10060138 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.logout(EmptyRequest,StreamObserver))
+2020-09-28 19:52:45,678 10060139 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-28 19:52:45,678 10060139 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-28 19:52:45,699 10060160 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.UserLoginRequest >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.login(UserLoginRequest,StreamObserver))
+2020-09-28 19:52:45,712 10060173 INFO  - ==> GRPC service request ended:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 19:52:45,712 10060173 INFO  - ==> GRPC service request successfull:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 19:52:45,733 10060194 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.BookRequest >>> bookDetails {
+  isbn: 92788
+  title: "BookTitle1"
+  author: "BookAuthor1"
+  publisher: "BookPublisher1"
+}
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.addBook(BookRequest,StreamObserver))
+2020-09-28 19:52:45,750 10060211 INFO  - ==> GRPC service request ended:  >>> bookDetails {
+  isbn: 92788
+  title: "BookTitle1"
+  author: "BookAuthor1"
+  publisher: "BookPublisher1"
+}
+
+2020-09-28 19:52:45,751 10060212 INFO  - ==> GRPC service request successfull:  >>> bookDetails {
+  isbn: 92788
+  title: "BookTitle1"
+  author: "BookAuthor1"
+  publisher: "BookPublisher1"
+}
+
+2020-09-28 19:52:45,778 10060239 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.IsbnRequest >>> isbn: 92788
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.saveBookToServer(IsbnRequest,StreamObserver))
+2020-09-28 19:52:45,804 10060265 INFO  - ==> GRPC service request ended:  >>> isbn: 92788
+
+2020-09-28 19:52:45,804 10060265 INFO  - ==> GRPC service request successfull:  >>> isbn: 92788
+
+2020-09-28 19:53:13,115 10087576 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.UserLoginRequest >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.login(UserLoginRequest,StreamObserver))
+2020-09-28 19:53:13,116 10087577 INFO  - ==> GRPC service request ended:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 19:53:13,116 10087577 INFO  - ==> GRPC service request successfull:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 19:53:13,165 10087626 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.logout(EmptyRequest,StreamObserver))
+2020-09-28 19:53:13,166 10087627 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-28 19:53:13,166 10087627 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-28 19:53:13,186 10087647 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.UserLoginRequest >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.login(UserLoginRequest,StreamObserver))
+2020-09-28 19:53:13,197 10087658 INFO  - ==> GRPC service request ended:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 19:53:13,197 10087658 INFO  - ==> GRPC service request successfull:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 19:53:13,214 10087675 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.BookRequest >>> bookDetails {
+  isbn: 4598
+  title: "BookTitle1"
+  author: "BookAuthor1"
+  publisher: "BookPublisher1"
+}
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.addBook(BookRequest,StreamObserver))
+2020-09-28 19:53:13,228 10087689 INFO  - ==> GRPC service request ended:  >>> bookDetails {
+  isbn: 4598
+  title: "BookTitle1"
+  author: "BookAuthor1"
+  publisher: "BookPublisher1"
+}
+
+2020-09-28 19:53:13,228 10087689 INFO  - ==> GRPC service request successfull:  >>> bookDetails {
+  isbn: 4598
+  title: "BookTitle1"
+  author: "BookAuthor1"
+  publisher: "BookPublisher1"
+}
+
+2020-09-28 19:53:13,255 10087716 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.IsbnRequest >>> isbn: 4598
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.saveBookToServer(IsbnRequest,StreamObserver))
+2020-09-28 19:53:13,278 10087739 INFO  - ==> GRPC service request ended:  >>> isbn: 4598
+
+2020-09-28 19:53:13,278 10087739 INFO  - ==> GRPC service request successfull:  >>> isbn: 4598
+
+2020-09-28 19:53:56,613 10131074 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.UserLoginRequest >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.login(UserLoginRequest,StreamObserver))
+2020-09-28 19:53:56,614 10131075 INFO  - ==> GRPC service request ended:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 19:53:56,614 10131075 INFO  - ==> GRPC service request successfull:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 19:53:56,661 10131122 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.logout(EmptyRequest,StreamObserver))
+2020-09-28 19:53:56,661 10131122 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-28 19:53:56,661 10131122 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-28 19:53:56,682 10131143 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.UserLoginRequest >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.login(UserLoginRequest,StreamObserver))
+2020-09-28 19:53:56,696 10131157 INFO  - ==> GRPC service request ended:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 19:53:56,696 10131157 INFO  - ==> GRPC service request successfull:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 19:53:56,714 10131175 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.BookRequest >>> bookDetails {
+  isbn: 59375
+  title: "BookTitle1"
+  author: "BookAuthor1"
+  publisher: "BookPublisher1"
+}
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.addBook(BookRequest,StreamObserver))
+2020-09-28 19:53:56,727 10131188 INFO  - ==> GRPC service request ended:  >>> bookDetails {
+  isbn: 59375
+  title: "BookTitle1"
+  author: "BookAuthor1"
+  publisher: "BookPublisher1"
+}
+
+2020-09-28 19:53:56,728 10131189 INFO  - ==> GRPC service request successfull:  >>> bookDetails {
+  isbn: 59375
+  title: "BookTitle1"
+  author: "BookAuthor1"
+  publisher: "BookPublisher1"
+}
+
+2020-09-28 19:53:56,763 10131224 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.IsbnRequest >>> isbn: 59375
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.saveBookToServer(IsbnRequest,StreamObserver))
+2020-09-28 19:53:56,789 10131250 INFO  - ==> GRPC service request ended:  >>> isbn: 59375
+
+2020-09-28 19:53:56,789 10131250 INFO  - ==> GRPC service request successfull:  >>> isbn: 59375
+
+2020-09-28 19:54:53,555 10188016 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.logout(EmptyRequest,StreamObserver))
+2020-09-28 19:54:53,555 10188016 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-28 19:54:53,555 10188016 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-28 19:54:53,568 10188029 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.UserLoginRequest >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.login(UserLoginRequest,StreamObserver))
+2020-09-28 19:54:53,581 10188042 INFO  - ==> GRPC service request ended:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 19:54:53,581 10188042 INFO  - ==> GRPC service request successfull:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 19:54:53,588 10188049 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.BookRequest >>> bookDetails {
+  isbn: 49905
+  title: "BookTitle2"
+  author: "BookAuthor2"
+  publisher: "BookPublisher2"
+}
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.addBook(BookRequest,StreamObserver))
+2020-09-28 19:54:53,602 10188063 INFO  - ==> GRPC service request ended:  >>> bookDetails {
+  isbn: 49905
+  title: "BookTitle2"
+  author: "BookAuthor2"
+  publisher: "BookPublisher2"
+}
+
+2020-09-28 19:54:53,602 10188063 INFO  - ==> GRPC service request successfull:  >>> bookDetails {
+  isbn: 49905
+  title: "BookTitle2"
+  author: "BookAuthor2"
+  publisher: "BookPublisher2"
+}
+
+2020-09-28 19:54:53,609 10188070 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.IsbnRequest >>> isbn: 49905
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.saveBookToServer(IsbnRequest,StreamObserver))
+2020-09-28 19:54:53,630 10188091 INFO  - ==> GRPC service request ended:  >>> isbn: 49905
+
+2020-09-28 19:54:53,630 10188091 INFO  - ==> GRPC service request successfull:  >>> isbn: 49905
+
+2020-09-28 19:54:53,639 10188100 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.fetchAllBooksFromServer(EmptyRequest,StreamObserver))
+2020-09-28 19:54:53,670 10188131 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-28 19:54:53,670 10188131 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-28 19:54:53,728 10188189 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.logout(EmptyRequest,StreamObserver))
+2020-09-28 19:54:53,728 10188189 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-28 19:54:53,729 10188190 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-28 20:52:02,446 13616907 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.UserLoginRequest >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.login(UserLoginRequest,StreamObserver))
+2020-09-28 20:52:02,469 13616930 INFO  - ==> GRPC service request ended:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 20:52:02,469 13616930 INFO  - ==> GRPC service request successfull:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 20:52:15,731 13630192 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.BookRequest >>> bookDetails {
+  isbn: 86704
+  title: "BookTitle3"
+  author: "BookAuthor3"
+  publisher: "BookPublisher3"
+}
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.addBook(BookRequest,StreamObserver))
+2020-09-28 20:52:15,736 13630197 WARN  - SQL Warning Code: 10000, SQLState: 01J01
+2020-09-28 20:52:15,736 13630197 WARN  - Database 'mydb' not created, connection made to existing database instead.
+2020-09-28 20:52:15,753 13630214 INFO  - ==> GRPC service request ended:  >>> bookDetails {
+  isbn: 86704
+  title: "BookTitle3"
+  author: "BookAuthor3"
+  publisher: "BookPublisher3"
+}
+
+2020-09-28 20:52:15,753 13630214 INFO  - ==> GRPC service request successfull:  >>> bookDetails {
+  isbn: 86704
+  title: "BookTitle3"
+  author: "BookAuthor3"
+  publisher: "BookPublisher3"
+}
+
+2020-09-28 20:52:15,786 13630247 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.IsbnRequest >>> isbn: 86704
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.saveBookToServer(IsbnRequest,StreamObserver))
+2020-09-28 20:52:15,822 13630283 INFO  - ==> GRPC service request ended:  >>> isbn: 86704
+
+2020-09-28 20:52:15,822 13630283 INFO  - ==> GRPC service request successfull:  >>> isbn: 86704
+
+2020-09-28 20:52:33,626 13648087 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.IsbnRequest >>> isbn: 86704
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.deleteBookByIsbn(IsbnRequest,StreamObserver))
+2020-09-28 20:52:33,640 13648101 INFO  - ==> GRPC service request ended:  >>> isbn: 86704
+
+2020-09-28 20:52:33,640 13648101 INFO  - ==> GRPC service request successfull:  >>> isbn: 86704
+
+2020-09-28 20:53:26,268 13700729 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.IsbnRequest >>> isbn: 86704
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.downloadBookFromServer(IsbnRequest,StreamObserver))
+2020-09-28 20:53:30,197 13704658 INFO  - ==> GRPC service request ended:  >>> isbn: 86704
+
+2020-09-28 20:53:30,197 13704658 INFO  - ==> GRPC service request successfull:  >>> isbn: 86704
+
+2020-09-28 20:54:05,874 13740335 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.logout(EmptyRequest,StreamObserver))
+2020-09-28 20:54:05,874 13740335 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-28 20:54:05,875 13740336 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-28 20:54:05,887 13740348 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.UserLoginRequest >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.login(UserLoginRequest,StreamObserver))
+2020-09-28 20:54:05,899 13740360 INFO  - ==> GRPC service request ended:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 20:54:05,899 13740360 INFO  - ==> GRPC service request successfull:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 20:54:10,524 13744985 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.BookRequest >>> bookDetails {
+  isbn: 54053
+  title: "BookTitle1"
+  author: "BookAuthor1"
+  publisher: "BookPublisher1"
+}
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.addBook(BookRequest,StreamObserver))
+2020-09-28 20:54:10,541 13745002 INFO  - ==> GRPC service request ended:  >>> bookDetails {
+  isbn: 54053
+  title: "BookTitle1"
+  author: "BookAuthor1"
+  publisher: "BookPublisher1"
+}
+
+2020-09-28 20:54:10,542 13745003 INFO  - ==> GRPC service request successfull:  >>> bookDetails {
+  isbn: 54053
+  title: "BookTitle1"
+  author: "BookAuthor1"
+  publisher: "BookPublisher1"
+}
+
+2020-09-28 20:54:10,550 13745011 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.IsbnRequest >>> isbn: 54053
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.saveBookToServer(IsbnRequest,StreamObserver))
+2020-09-28 20:54:10,572 13745033 INFO  - ==> GRPC service request ended:  >>> isbn: 54053
+
+2020-09-28 20:54:10,573 13745034 INFO  - ==> GRPC service request successfull:  >>> isbn: 54053
+
+2020-09-28 20:54:16,028 13750489 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.logout(EmptyRequest,StreamObserver))
+2020-09-28 20:54:16,029 13750490 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-28 20:54:16,030 13750491 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-28 20:54:16,040 13750501 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.UserLoginRequest >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.login(UserLoginRequest,StreamObserver))
+2020-09-28 20:54:16,054 13750515 INFO  - ==> GRPC service request ended:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 20:54:16,054 13750515 INFO  - ==> GRPC service request successfull:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 20:54:19,894 13754355 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.BookRequest >>> bookDetails {
+  isbn: 35477
+  title: "BookTitle2"
+  author: "BookAuthor2"
+  publisher: "BookPublisher2"
+}
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.addBook(BookRequest,StreamObserver))
+2020-09-28 20:54:19,912 13754373 INFO  - ==> GRPC service request ended:  >>> bookDetails {
+  isbn: 35477
+  title: "BookTitle2"
+  author: "BookAuthor2"
+  publisher: "BookPublisher2"
+}
+
+2020-09-28 20:54:19,912 13754373 INFO  - ==> GRPC service request successfull:  >>> bookDetails {
+  isbn: 35477
+  title: "BookTitle2"
+  author: "BookAuthor2"
+  publisher: "BookPublisher2"
+}
+
+2020-09-28 20:54:19,919 13754380 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.IsbnRequest >>> isbn: 35477
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.saveBookToServer(IsbnRequest,StreamObserver))
+2020-09-28 20:54:19,941 13754402 INFO  - ==> GRPC service request ended:  >>> isbn: 35477
+
+2020-09-28 20:54:19,941 13754402 INFO  - ==> GRPC service request successfull:  >>> isbn: 35477
+
+2020-09-28 20:54:19,951 13754412 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.fetchAllBooksFromServer(EmptyRequest,StreamObserver))
+2020-09-28 20:54:19,977 13754438 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-28 20:54:19,978 13754439 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-28 20:54:20,034 13754495 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.logout(EmptyRequest,StreamObserver))
+2020-09-28 20:54:20,034 13754495 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-28 20:54:20,035 13754496 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-28 20:54:31,989 13766450 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.UserLoginRequest >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.login(UserLoginRequest,StreamObserver))
+2020-09-28 20:54:31,999 13766460 INFO  - ==> GRPC service request ended:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 20:54:31,999 13766460 INFO  - ==> GRPC service request successfull:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 20:54:32,042 13766503 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.BookRequest >>> bookDetails {
+  isbn: 44878
+  title: "BookTitle3"
+  author: "BookAuthor3"
+  publisher: "BookPublisher3"
+}
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.addBook(BookRequest,StreamObserver))
+2020-09-28 20:54:32,054 13766515 INFO  - ==> GRPC service request ended:  >>> bookDetails {
+  isbn: 44878
+  title: "BookTitle3"
+  author: "BookAuthor3"
+  publisher: "BookPublisher3"
+}
+
+2020-09-28 20:54:32,055 13766516 INFO  - ==> GRPC service request successfull:  >>> bookDetails {
+  isbn: 44878
+  title: "BookTitle3"
+  author: "BookAuthor3"
+  publisher: "BookPublisher3"
+}
+
+2020-09-28 20:54:32,074 13766535 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.IsbnRequest >>> isbn: 44878
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.saveBookToServer(IsbnRequest,StreamObserver))
+2020-09-28 20:54:32,092 13766553 INFO  - ==> GRPC service request ended:  >>> isbn: 44878
+
+2020-09-28 20:54:32,092 13766553 INFO  - ==> GRPC service request successfull:  >>> isbn: 44878
+
+2020-09-28 20:54:32,099 13766560 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.IsbnRequest >>> isbn: 44878
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.deleteBookByIsbn(IsbnRequest,StreamObserver))
+2020-09-28 20:54:32,104 13766565 INFO  - ==> GRPC service request ended:  >>> isbn: 44878
+
+2020-09-28 20:54:32,104 13766565 INFO  - ==> GRPC service request successfull:  >>> isbn: 44878
+
+2020-09-28 20:54:32,112 13766573 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.IsbnRequest >>> isbn: 44878
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.downloadBookFromServer(IsbnRequest,StreamObserver))
+2020-09-28 20:54:37,085 13771546 INFO  - ==> GRPC service request ended:  >>> isbn: 44878
+
+2020-09-28 20:54:37,085 13771546 INFO  - ==> GRPC service request successfull:  >>> isbn: 44878
+
+2020-09-28 20:54:37,096 13771557 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.logout(EmptyRequest,StreamObserver))
+2020-09-28 20:54:37,096 13771557 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-28 20:54:37,096 13771557 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-28 20:54:37,106 13771567 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.UserLoginRequest >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.login(UserLoginRequest,StreamObserver))
+2020-09-28 20:54:37,118 13771579 INFO  - ==> GRPC service request ended:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 20:54:37,118 13771579 INFO  - ==> GRPC service request successfull:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 20:54:37,123 13771584 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.BookRequest >>> bookDetails {
+  isbn: 38676
+  title: "BookTitle1"
+  author: "BookAuthor1"
+  publisher: "BookPublisher1"
+}
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.addBook(BookRequest,StreamObserver))
+2020-09-28 20:54:37,128 13771589 INFO  - ==> GRPC service request ended:  >>> bookDetails {
+  isbn: 38676
+  title: "BookTitle1"
+  author: "BookAuthor1"
+  publisher: "BookPublisher1"
+}
+
+2020-09-28 20:54:37,128 13771589 INFO  - ==> GRPC service request successfull:  >>> bookDetails {
+  isbn: 38676
+  title: "BookTitle1"
+  author: "BookAuthor1"
+  publisher: "BookPublisher1"
+}
+
+2020-09-28 20:54:37,135 13771596 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.IsbnRequest >>> isbn: 38676
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.saveBookToServer(IsbnRequest,StreamObserver))
+2020-09-28 20:54:37,158 13771619 INFO  - ==> GRPC service request ended:  >>> isbn: 38676
+
+2020-09-28 20:54:37,158 13771619 INFO  - ==> GRPC service request successfull:  >>> isbn: 38676
+
+2020-09-28 20:54:37,165 13771626 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.logout(EmptyRequest,StreamObserver))
+2020-09-28 20:54:37,166 13771627 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-28 20:54:37,166 13771627 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-28 20:54:37,176 13771637 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.UserLoginRequest >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.login(UserLoginRequest,StreamObserver))
+2020-09-28 20:54:37,187 13771648 INFO  - ==> GRPC service request ended:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 20:54:37,187 13771648 INFO  - ==> GRPC service request successfull:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 20:54:37,196 13771657 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.BookRequest >>> bookDetails {
+  isbn: 70495
+  title: "BookTitle2"
+  author: "BookAuthor2"
+  publisher: "BookPublisher2"
+}
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.addBook(BookRequest,StreamObserver))
+2020-09-28 20:54:37,202 13771663 INFO  - ==> GRPC service request ended:  >>> bookDetails {
+  isbn: 70495
+  title: "BookTitle2"
+  author: "BookAuthor2"
+  publisher: "BookPublisher2"
+}
+
+2020-09-28 20:54:37,202 13771663 INFO  - ==> GRPC service request successfull:  >>> bookDetails {
+  isbn: 70495
+  title: "BookTitle2"
+  author: "BookAuthor2"
+  publisher: "BookPublisher2"
+}
+
+2020-09-28 20:54:37,209 13771670 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.IsbnRequest >>> isbn: 70495
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.saveBookToServer(IsbnRequest,StreamObserver))
+2020-09-28 20:54:37,233 13771694 INFO  - ==> GRPC service request ended:  >>> isbn: 70495
+
+2020-09-28 20:54:37,233 13771694 INFO  - ==> GRPC service request successfull:  >>> isbn: 70495
+
+2020-09-28 20:54:37,243 13771704 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.fetchAllBooksFromServer(EmptyRequest,StreamObserver))
+2020-09-28 20:54:37,258 13771719 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-28 20:54:37,258 13771719 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-28 20:54:37,306 13771767 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.logout(EmptyRequest,StreamObserver))
+2020-09-28 20:54:37,307 13771768 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-28 20:54:37,307 13771768 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-28 20:54:47,460 13781921 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.UserLoginRequest >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.login(UserLoginRequest,StreamObserver))
+2020-09-28 20:54:47,470 13781931 INFO  - ==> GRPC service request ended:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 20:54:47,470 13781931 INFO  - ==> GRPC service request successfull:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 20:54:47,518 13781979 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.BookRequest >>> bookDetails {
+  isbn: 69350
+  title: "BookTitle3"
+  author: "BookAuthor3"
+  publisher: "BookPublisher3"
+}
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.addBook(BookRequest,StreamObserver))
+2020-09-28 20:54:47,531 13781992 INFO  - ==> GRPC service request ended:  >>> bookDetails {
+  isbn: 69350
+  title: "BookTitle3"
+  author: "BookAuthor3"
+  publisher: "BookPublisher3"
+}
+
+2020-09-28 20:54:47,532 13781993 INFO  - ==> GRPC service request successfull:  >>> bookDetails {
+  isbn: 69350
+  title: "BookTitle3"
+  author: "BookAuthor3"
+  publisher: "BookPublisher3"
+}
+
+2020-09-28 20:54:47,554 13782015 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.IsbnRequest >>> isbn: 69350
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.saveBookToServer(IsbnRequest,StreamObserver))
+2020-09-28 20:54:47,584 13782045 INFO  - ==> GRPC service request ended:  >>> isbn: 69350
+
+2020-09-28 20:54:47,584 13782045 INFO  - ==> GRPC service request successfull:  >>> isbn: 69350
+
+2020-09-28 20:54:47,606 13782067 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.IsbnRequest >>> isbn: 69350
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.deleteBookByIsbn(IsbnRequest,StreamObserver))
+2020-09-28 20:54:47,611 13782072 INFO  - ==> GRPC service request ended:  >>> isbn: 69350
+
+2020-09-28 20:54:47,611 13782072 INFO  - ==> GRPC service request successfull:  >>> isbn: 69350
+
+2020-09-28 20:54:47,622 13782083 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.IsbnRequest >>> isbn: 69350
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.downloadBookFromServer(IsbnRequest,StreamObserver))
+2020-09-28 20:54:47,644 13782105 INFO  - ==> GRPC service request ended:  >>> isbn: 69350
+
+2020-09-28 20:54:47,645 13782106 INFO  - ==> GRPC service request successfull:  >>> isbn: 69350
+
+2020-09-28 20:54:47,664 13782125 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.logout(EmptyRequest,StreamObserver))
+2020-09-28 20:54:47,665 13782126 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-28 20:54:47,665 13782126 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-28 20:54:47,678 13782139 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.UserLoginRequest >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.login(UserLoginRequest,StreamObserver))
+2020-09-28 20:54:47,690 13782151 INFO  - ==> GRPC service request ended:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 20:54:47,690 13782151 INFO  - ==> GRPC service request successfull:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 20:54:47,698 13782159 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.BookRequest >>> bookDetails {
+  isbn: 17584
+  title: "BookTitle1"
+  author: "BookAuthor1"
+  publisher: "BookPublisher1"
+}
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.addBook(BookRequest,StreamObserver))
+2020-09-28 20:54:47,705 13782166 INFO  - ==> GRPC service request ended:  >>> bookDetails {
+  isbn: 17584
+  title: "BookTitle1"
+  author: "BookAuthor1"
+  publisher: "BookPublisher1"
+}
+
+2020-09-28 20:54:47,705 13782166 INFO  - ==> GRPC service request successfull:  >>> bookDetails {
+  isbn: 17584
+  title: "BookTitle1"
+  author: "BookAuthor1"
+  publisher: "BookPublisher1"
+}
+
+2020-09-28 20:54:47,713 13782174 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.IsbnRequest >>> isbn: 17584
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.saveBookToServer(IsbnRequest,StreamObserver))
+2020-09-28 20:54:47,739 13782200 INFO  - ==> GRPC service request ended:  >>> isbn: 17584
+
+2020-09-28 20:54:47,739 13782200 INFO  - ==> GRPC service request successfull:  >>> isbn: 17584
+
+2020-09-28 20:54:47,744 13782205 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.logout(EmptyRequest,StreamObserver))
+2020-09-28 20:54:47,745 13782206 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-28 20:54:47,745 13782206 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-28 20:54:47,756 13782217 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.UserLoginRequest >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.login(UserLoginRequest,StreamObserver))
+2020-09-28 20:54:47,766 13782227 INFO  - ==> GRPC service request ended:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 20:54:47,766 13782227 INFO  - ==> GRPC service request successfull:  >>> serverUrl: "http://localhost:8080/nuxeo"
+userId: "Administrator"
+password: "Administrator"
+
+2020-09-28 20:54:47,775 13782236 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.BookRequest >>> bookDetails {
+  isbn: 87053
+  title: "BookTitle2"
+  author: "BookAuthor2"
+  publisher: "BookPublisher2"
+}
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.addBook(BookRequest,StreamObserver))
+2020-09-28 20:54:47,782 13782243 INFO  - ==> GRPC service request ended:  >>> bookDetails {
+  isbn: 87053
+  title: "BookTitle2"
+  author: "BookAuthor2"
+  publisher: "BookPublisher2"
+}
+
+2020-09-28 20:54:47,782 13782243 INFO  - ==> GRPC service request successfull:  >>> bookDetails {
+  isbn: 87053
+  title: "BookTitle2"
+  author: "BookAuthor2"
+  publisher: "BookPublisher2"
+}
+
+2020-09-28 20:54:47,789 13782250 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.IsbnRequest >>> isbn: 87053
+ >>> Requester: execution(void lib.grpc.services.GrpcBookService.saveBookToServer(IsbnRequest,StreamObserver))
+2020-09-28 20:54:47,816 13782277 INFO  - ==> GRPC service request ended:  >>> isbn: 87053
+
+2020-09-28 20:54:47,816 13782277 INFO  - ==> GRPC service request successfull:  >>> isbn: 87053
+
+2020-09-28 20:54:47,827 13782288 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.fetchAllBooksFromServer(EmptyRequest,StreamObserver))
+2020-09-28 20:54:47,843 13782304 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-28 20:54:47,843 13782304 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-28 20:54:47,895 13782356 INFO  - ==> GRPC service request recieved: lib.grpc.services.auto.EmptyRequest >>>  >>> Requester: execution(void lib.grpc.services.GrpcBookService.logout(EmptyRequest,StreamObserver))
+2020-09-28 20:54:47,895 13782356 INFO  - ==> GRPC service request ended:  >>> 
+2020-09-28 20:54:47,895 13782356 INFO  - ==> GRPC service request successfull:  >>> 
+2020-09-28 23:55:43,398 24637859 WARN  - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h29s475ms720µs700ns).
+2020-09-29 10:18:29,272 62003733 WARN  - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10h22m52s262ms879µs).
