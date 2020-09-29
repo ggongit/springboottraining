@@ -100,7 +100,7 @@
         "bookParser": {
             "identifier": "{{response.isbn}}",
             "cellHeader1": "{{response.title}}",
-            "typeIconURL": "assets/images/RepoBook.png",
+            "typeIconURL": "assets/images/{{response.previewPath}}",
             "cellProperties": {
                 "Author": {
                     "key": "Author",

@@ -73,7 +73,7 @@
         "bookParser": {
             "identifier": "{{response.isbn}}",
             "cellHeader1": "{{response.title}}",
-            "typeIconURL": "assets/images/book.jpg",
+            "typeIconURL": "assets/images/{{response.previewPath}}",
             "cellProperties": {
                 "Author": {
                     "key": "Author",
